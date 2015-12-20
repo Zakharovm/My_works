@@ -1,4 +1,4 @@
-public class Flowers {
+public class Files {
     public static void main(String[] args) {
     public class File {
             protected String name;
