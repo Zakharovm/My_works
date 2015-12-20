@@ -1,4 +1,6 @@
-public class File {
+public class Flowers {
+    public static void main(String[] args) {
+    public class File {
             protected String name;
             protected String extension;
             public void setName(String newName){
@@ -94,4 +96,5 @@ public class Directory {
     public void removeFile(File e){
         files.remove(e);
     }
+}
 }
