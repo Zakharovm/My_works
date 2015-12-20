@@ -1,4 +1,3 @@
-//агрегация магазина и инструментов
 public class Shop {
     private String type;
     private int price;
