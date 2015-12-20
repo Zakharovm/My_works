@@ -1,4 +1,4 @@
 // наследуем класс File аудиофайлом
-class AudioFile extends File {
+public class AudioFile extends File {
     
 }
