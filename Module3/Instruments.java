@@ -1,3 +1,5 @@
+public class Instruments {
+    public static void main(String[] args) {
 public class Instrument {
     protected String name;
     protected String sound;
@@ -99,3 +101,4 @@ public class Instrument {
             instruments.remove(e);
         }
     }
+}
