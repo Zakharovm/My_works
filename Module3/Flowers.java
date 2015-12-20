@@ -1,3 +1,5 @@
+public class Flowers {
+    public static void main(String[] args) {
 public class Flower {
         protected String name;
         protected String species;
@@ -130,4 +132,5 @@ public class Bush {
         roses.remove(e);
     }
 
+}
 }
