@@ -1,4 +1,6 @@
 // наследуем класс File текстовым файлом
-class TextFile extends File {
+public class TextFile extends File {
+
+
 
 }
