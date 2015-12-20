@@ -1,4 +1,4 @@
-class File {
+public class File {
 
 }
 
