@@ -1,12 +1,12 @@
 public class Circle {
-    private final double r;
+    private double radius;
 
-    public Circle(final double radius) {
-        r = radius;
+    public Circle(double r) {
+        radius = r;
     }
 
-    public double getR() {
-        return r;
+    public double getRadius() {
+        return radius;
     }
 
 }

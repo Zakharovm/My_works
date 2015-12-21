@@ -1,9 +1,8 @@
 public class Point {
-    private final double x;
-    private final double y;
+    private double x;
+    private double y;
 
-    public Point(final double xx, final double yy) {
-        super();
+    public Point(double xx, double yy) {
         x = xx;
         y = yy;
     }

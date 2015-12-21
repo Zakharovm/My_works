@@ -1,23 +1,18 @@
-
-
 public class Calculation {
 
     //  S = √p(p - a)(p - b)(p - c)     p=(a+b+c)/2     Формулы
-    public double findingT(Triangle t) {
-        double p = (t.getA() + t.getB() + t.getC())/2;                      // находим полупериметр
-        double s1 = Math.sqrt(p*(p-t.getA())*(p-t.getB())*(p-t.getC()));    // находим площадь
-        return s1;
+    public double findTriangleSquare(Triangle triangle) {
+        double p = (triangle.getSide1() + triangle.getSide2() + triangle.getSide3())/2;                      // находим полупериметр
+        return Math.sqrt(p*(p-triangle.getSide1())*(p-triangle.getSide2())*(p-triangle.getSide3()));    // находим площадь
     }
 
     //S=a*b
-    public double findingR(Rectangle r) {
-        double s2 = (r.getA() * r.getB());
-        return s2;
+    public double findRectangleSquare(Rectangle rectangle) {
+        return rectangle.getSide1() * rectangle.getSide2();
     }
 
     // S=pi*r^2
-    public double findingC(Circle c) {
-        double s3=Math.PI*Math.pow(c.getR(),2);
-        return s3;
+    public double findCircleSquare(Circle circle) {
+        return Math.PI*Math.pow(circle.getRadius(),2);
     }
 }

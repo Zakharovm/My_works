@@ -1,23 +1,23 @@
 public class Triangle {
-    private final double a;
-    private final double b;
-    private final double c;
+    private double side1;
+    private double side2;
+    private double side3;
 
-    public Triangle(final double s1, final double s2, final double s3) {
-        a = s1;
-        b = s2;
-        c = s3;
+    public Triangle(double s1, double s2, double s3) {
+        side1 = s1;
+        side2 = s2;
+        side3 = s3;
     }
 
-    public double getA() {
-        return a;
+    public double getSide1() {
+        return side1;
     }
 
-    public double getB() {
-        return b;
+    public double getSide2() {
+        return side2;
     }
 
-    public double getC() {
-        return c;
+    public double getSide3() {
+        return side3;
     }
 }

@@ -1,17 +1,17 @@
 public class Rectangle {
-    private final double a;
-    private final double b;
+    private double side1;
+    private double side2;
 
     public Rectangle(final double s1, final double s2) {
-        a = s1;
-        b = s2;
+        side1 = s1;
+        side2 = s2;
     }
 
-    public double getA() {
-        return a;
+    public double getSide1() {
+        return side1;
     }
 
-    public double getB() {
-        return b;
+    public double getSide2() {
+        return side2;
     }
 }
