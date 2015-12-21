@@ -1,8 +1,8 @@
 //композиция букета из цветов
 public class Bouquet {
     private Flower rose = new Rose();
-    private Flower tulip = new Aster();
+    private Flower aster = new Aster();
     private Flower camomile = new Camomile();
-    private Flower aster = new Tulip();
+    private Flower tulip = new Tulip();
 }
 
