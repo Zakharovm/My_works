@@ -1,7 +1,7 @@
 public class Shop {
-    Instrument guitar = new Guitar();
-    Instrument piano = new Piano();
-    Instrument trumpet = new Trumpet();
+    Instrument guitar;
+    Instrument piano;
+    Instrument trumpet;
 
 
     public Shop (Instrument guitar, Instrument piano, Instrument trumpet) {

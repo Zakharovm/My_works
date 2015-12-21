@@ -1,5 +1,4 @@
-// наследуем класс Instrument аудиофайлом
+// наследуем класс Instrument классом труба
 class Trumpet extends Instrument {
-
 
 }
