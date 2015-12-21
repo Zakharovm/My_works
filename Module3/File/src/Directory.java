@@ -1,8 +1,8 @@
 public class Directory {
 
-    File image;
-    File audio;
-    File text;
+    private File image;
+    private File audio;
+    private File text;
 
     public Directory (File image, File audio, File text) {
         this.image = image;

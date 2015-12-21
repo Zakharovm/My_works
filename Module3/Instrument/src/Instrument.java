@@ -1,4 +1,4 @@
-class Instrument {
+public class Instrument {
 
 }
 

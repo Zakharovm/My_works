@@ -1,7 +1,7 @@
 public class Shop {
-    Instrument guitar;
-    Instrument piano;
-    Instrument trumpet;
+    private Instrument guitar;
+    private Instrument piano;
+    private Instrument trumpet;
 
 
     public Shop (Instrument guitar, Instrument piano, Instrument trumpet) {

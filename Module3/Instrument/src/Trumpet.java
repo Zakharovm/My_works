@@ -1,4 +1,4 @@
 // наследуем класс Instrument классом труба
-class Trumpet extends Instrument {
+public class Trumpet extends Instrument {
 
 }

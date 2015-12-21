@@ -1,4 +1,4 @@
 // наследуем класс Instrument классом пианино
-class Piano extends Instrument {
+public class Piano extends Instrument {
 
 }

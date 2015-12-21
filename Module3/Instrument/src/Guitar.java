@@ -1,4 +1,4 @@
 // наследуем класс Instrument классом гитара
-class Guitar extends Instrument {
+public class Guitar extends Instrument {
 
 }
