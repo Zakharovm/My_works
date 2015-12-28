@@ -1,4 +1,4 @@
-package Sort;
+package sort;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -22,15 +22,15 @@ public class Sorting {
         switch (choice) {
             case 1:
                 method = "bubble";
-                bubble.bubbleSort(intArray);
+                SortArray.bubbleSort(intArray);
                 break; // вызов метода сортировки пузырьком (выполняется примерно одинаково с Arrays.sort)
             case 2:
                 method = "insertion";
-                insertion.insertionSort(intArray);
+                SortArray.insertionSort(intArray);
                 break; // вызов метода сортировки вставками
             case 3:
                 method = "selection";
-                selection.selectionSort(intArray);
+                SortArray.selectionSort(intArray);
                 break; // вызов метода сортировки выбором
             default:
                 method = "Arrays.sort()";
