@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Sorting {
     public static void main(String[] args) {
-        long startTime = System.currentTimeMillis();
+
         int choice = 0;
         String method = " ";
         int[] intArray = new int[7];
@@ -19,6 +19,7 @@ public class Sorting {
 
         System.out.println("Choose the method of sorting:" + "\n" + "1 - bubble, 2 - insertion, 3 - selection, or another number - by method Sort in Arrays class");
         choice = scanner.nextInt();
+        long startTime = System.currentTimeMillis();
         switch (choice) {
             case 1:
                 method = "bubble";
