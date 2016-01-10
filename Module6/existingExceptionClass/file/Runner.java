@@ -13,7 +13,7 @@ public class Runner {
 
         try {
 
-            new Directory(filesArray).getFilesArray(filename);//обработка IOException не предусмотрена
+            new Directory(filesArray).getFilesArray(filename);
             System.out.println("Your file is " + filename);
         } catch (FileNotFoundException e) {
 
