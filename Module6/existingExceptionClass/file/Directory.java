@@ -8,13 +8,11 @@ public class Directory extends File {
 
     private static File[] filesArray = new File[3];
 
-    public Directory(String name) {
+    public Directory(String name, File[] array) {
         super.name = name;
-    }
-
-    public Directory(File[] array) {
         this.filesArray = array;
     }
+
 
     public static File getFilesArray(String filename) throws FileNotFoundException {
         for (int i = 0; i < filesArray.length; i++) {

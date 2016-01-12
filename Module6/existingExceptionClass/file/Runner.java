@@ -12,7 +12,7 @@ public class Runner {
         try {
             System.out.println("Input the name of the file: ");
             filename = scanner.nextLine();
-            new Directory(filesArray).getFilesArray(filename);
+            new Directory("Файлы", filesArray).getFilesArray(filename);
             System.out.println("Your file is " + filename);
         } catch (FileNotFoundException e) {
 
