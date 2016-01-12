@@ -3,8 +3,7 @@ package existingExceptionClass.file;
 import java.io.FileNotFoundException;
 
 public class Directory extends File {
-    boolean check = false;
-    int temp = 0;
+
 
     private File[] filesArray = new File[3];
 
@@ -13,19 +12,20 @@ public class Directory extends File {
         this.filesArray = array;
     }
 
-    public File getFilesArray(String filename) throws FileNotFoundException {
+    public File getFile(String filename) throws FileNotFoundException {
+        int temp = 0;
         for (int i = 0; i < filesArray.length; i++) {
             if (filename.equals(filesArray[i].getName())) {
-                check = true;
                 temp = i;
+                break;
+            } else if (i==filesArray.length - 1) {
+                throw new FileNotFoundException(filename);
             }
-
         }
-        if (check == true) {
-            return filesArray[temp];
-        } else {
-            throw new FileNotFoundException(filename);
-        }
+        return filesArray[temp];
     }
 }
+
+
+
 
