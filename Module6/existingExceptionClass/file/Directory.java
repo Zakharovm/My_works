@@ -8,7 +8,7 @@ public class Directory extends File {
     private File[] filesArray = new File[3];
 
     public Directory(String name, File[] array) {
-        super.name = name;
+        super(name);
         this.filesArray = array;
     }
 

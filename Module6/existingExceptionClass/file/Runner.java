@@ -8,16 +8,15 @@ public class Runner {
         String filename = " ";
         final Scanner scanner = new Scanner(System.in);
         File[] filesArray = {new AudioFile("123.mp3"), new TextFile("data.txt"), new ImageFile("image.jpg")};
-        System.out.println(filesArray[0].getName());
         try {
             System.out.println("Input the name of the file: ");
             filename = scanner.nextLine();
             new Directory("Файлы", filesArray).getFile(filename);
             System.out.println("Your file is " + filename);
+
         } catch (FileNotFoundException e) {
 
             System.out.print("файл " + filename + " не найден");
-
         }
 
     }
