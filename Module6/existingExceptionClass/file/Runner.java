@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Runner {
     public static void main(String[] args) {
-        String filename = "";
+        String filename = " ";
         final Scanner scanner = new Scanner(System.in);
         File[] filesArray = {new AudioFile("123.mp3"), new TextFile("data.txt"), new ImageFile("image.jpg")};
 

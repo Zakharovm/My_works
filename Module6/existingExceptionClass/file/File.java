@@ -1,9 +1,9 @@
 package existingExceptionClass.file;
 
 public class File {
-    protected static String name;
+    protected String name;
 
-    public static String getName() {
+    public String getName() {
         return name;
     }
 }
