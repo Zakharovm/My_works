@@ -5,14 +5,13 @@ import java.util.Scanner;
 
 public class Runner {
     public static void main(String[] args) {
-        String filename =" ";
+        String filename = "";
         final Scanner scanner = new Scanner(System.in);
-        File[] filesArray = new File[3];
-
-
+        File[] filesArray = {new AudioFile("123.mp3"), new TextFile("data.txt"), new ImageFile("image.jpg")};
 
         try {
-
+            System.out.println("Input the name of the file: ");
+            filename = scanner.nextLine();
             new Directory(filesArray).getFilesArray(filename);
             System.out.println("Your file is " + filename);
         } catch (FileNotFoundException e) {
