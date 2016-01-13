@@ -1,12 +1,15 @@
-package existingExceptionClass.file;
+package existingExceptionClass.instrument;
 
-public class File {
+public class Instrument {
     protected String name;
 
-    public File(String name) {
+    public Instrument(String name) {
         this.name = name;
     }
+
     public String getName() {
         return name;
     }
 }
+
+
