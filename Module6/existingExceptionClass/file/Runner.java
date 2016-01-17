@@ -5,18 +5,22 @@ import java.util.Scanner;
 
 public class Runner {
     public static void main(String[] args) {
-        String filename = " ";
         final Scanner scanner = new Scanner(System.in);
-        File[] filesArray = {new AudioFile("123.mp3"), new TextFile("data.txt"), new ImageFile("image.jpg")};
+        final File[] filesArray = {new AudioFile("123.mp3"), new TextFile("data.txt"), new ImageFile("image.jpg")};
+
+        System.out.println("Input the name of the file, which you want to find: ");
+        String fileName = scanner.nextLine();
         try {
-            System.out.println("Input the name of the file: ");
-            filename = scanner.nextLine();
-            new Directory("Файлы", filesArray).getFile(filename);
-            System.out.println("Your file is " + filename);
+            if (fileName == null || fileName.equals("")) {
+                throw new WrongFileNameException(fileName);
+            } else {
+                System.out.println("Your file is " + new Directory("Файлы", filesArray).getFile(fileName).getName());
+            }
 
+        } catch (WrongFileNameException e) {
+            System.out.println("[Error!]: Your file name is ' " + e.getFileName() + "' , but it should consist of at least one letter or number");
         } catch (FileNotFoundException e) {
-
-            System.out.print("файл " + filename + " не найден");
+            System.out.print("файл " + fileName + " не найден");
         }
 
     }
