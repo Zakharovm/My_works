@@ -6,7 +6,9 @@ import java.util.Scanner;
 public class Runner {
     public static void main(String[] args) {
         final Scanner scanner = new Scanner(System.in);
-        Bouquet bouquet = new Bouquet();
+        final Flower[] flowersArray = {new Aster(),new Rose(),new Tulip(),new Camomile()};
+
+        Bouquet bouquet = new Bouquet(flowersArray);
         System.out.println("Input the quantity of flowers for you bouquet: ");
         int quantityOfFlowers = scanner.nextInt();
         try {
