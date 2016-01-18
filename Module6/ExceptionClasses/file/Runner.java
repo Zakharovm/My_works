@@ -1,4 +1,4 @@
-package existingExceptionClass.file;
+package ExceptionClasses.file;
 
 import java.io.FileNotFoundException;
 import java.util.Scanner;

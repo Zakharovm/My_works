@@ -1,4 +1,4 @@
-package existingExceptionClass.file;
+package ExceptionClasses.file;
 
 
 public class WrongFileNameException extends Exception {
