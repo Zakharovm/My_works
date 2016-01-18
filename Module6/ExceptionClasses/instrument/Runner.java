@@ -5,7 +5,10 @@ import java.util.Scanner;
 
 public class Runner {
     public static void main(String[] args) {
-        final Instrument[] instrumentArray = new Instrument[3];
+        final int GUITAR_PRICE = 100;
+        final int PIANO_PRICE = 200;
+        final int TRUMPET_PRICE = 150;
+        final Instrument[] instrumentArray = {new Guitar("Guitar", GUITAR_PRICE), new Piano("Piano", PIANO_PRICE), new Trumpet("Trumpet", TRUMPET_PRICE)};
         final Scanner scanner = new Scanner(System.in);
         final int CASH = 200;
         Shop shop = new Shop(instrumentArray);
@@ -18,8 +21,7 @@ public class Runner {
 
         try {
             shop.sellInstrument(quantityOfInstruments);
-            System.out.println("You have bought " + quantityOfInstruments + " instruments for " + shop.countPtice(instrumentName, CASH, quantityOfInstruments) + "$");
-
+            System.out.println("You have bought " + quantityOfInstruments + " instruments for " + shop.countPrice(instrumentName, CASH, quantityOfInstruments) + "$");
         } catch (IndexOutOfBoundsException ex) {
             System.out.print("You wanted to buy " + quantityOfInstruments + ", but there are only " + instrumentArray.length + " instruments in the shop.");
         } catch (NotEnoughMoneyException e) {
