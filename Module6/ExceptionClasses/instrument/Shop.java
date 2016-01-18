@@ -1,6 +1,9 @@
 package ExceptionClasses.instrument;
 
 public class Shop {
+    public static final int TRUMPET_PRICE = 150;
+    public static final int PIANO_PRICE = 200;
+    public static final int GUITAR_PRICE = 100;
     private Instrument[] instrumentArray = new Instrument[3];
 
     public Shop(Instrument[] instrumentArray) {
@@ -18,19 +21,19 @@ public class Shop {
         int sum = 0;
         switch (instrumentName) {
             case "Guitar":
-                sum = quantity*100 - cash;
+                sum = quantity * GUITAR_PRICE - cash;
                 if (sum > 0) {
                     throw new NotEnoughMoneyException(sum);
                 }
                 break;
             case "Piano":
-                sum = quantity*200 - cash;
+                sum = quantity * PIANO_PRICE - cash;
                 if (sum > 0) {
                     throw new NotEnoughMoneyException(sum);
                 }
                 break;
-            case "Trunpet":
-                sum = quantity*150 - cash;
+            case "Trumpet":
+                sum = quantity * TRUMPET_PRICE - cash;
                 if (sum > 0) {
                     throw new NotEnoughMoneyException(sum);
                 }
