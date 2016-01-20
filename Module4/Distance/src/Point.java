@@ -6,9 +6,11 @@ public class Point {
         x = xx;
         y = yy;
     }
+
     public double getX() {
         return x;
     }
+
     public double getY() {
         return y;
     }
