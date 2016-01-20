@@ -1,4 +1,4 @@
-package ExceptionClasses.instrument;
+package instrument;
 
 // наследуем класс Instrument классом гитара
 public class Guitar extends Instrument {

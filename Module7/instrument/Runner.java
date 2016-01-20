@@ -1,4 +1,4 @@
-package ExceptionClasses.instrument;
+package instrument;
 
 
 import java.util.Scanner;

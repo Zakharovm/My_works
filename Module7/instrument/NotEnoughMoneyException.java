@@ -1,4 +1,4 @@
-package ExceptionClasses.instrument;
+package instrument;
 
 public class NotEnoughMoneyException extends Exception{
     private int sum;

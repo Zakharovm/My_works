@@ -1,4 +1,4 @@
-package ExceptionClasses.instrument;
+package instrument;
 
 public class Instrument {
     protected String name;
