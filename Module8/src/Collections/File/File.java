@@ -1,4 +1,4 @@
-package Collections.File;
+package collections.file;
 
 public class File {
     public static final int COLUMN_NAME_WIDTH = 16;
