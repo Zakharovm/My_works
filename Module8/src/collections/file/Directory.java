@@ -3,12 +3,17 @@ package collections.file;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Directory {
+public class Directory extends File {
 
+    public static ArrayList<File> arrayList = new ArrayList<>(Arrays.asList(new Audio("a.mp3", 10), new Image("picture.jpg", 5), new Text("hello.txt", 1), new Image("image.jpg", 4), new Text("photo.txt", 2)));
+
+    public Directory(String name, int size, ArrayList<File> arrayList) {
+        super(name, size);
+        this.arrayList = arrayList;
+    }
 
     public static void main(String[] args) {
 
-        ArrayList<File> arrayList = new ArrayList<>(Arrays.asList(new Audio("a.mp3", 10), new Image("picture.jpg", 5), new Text("hello.txt", 1), new Image("image.jpg", 4), new Text("photo.txt", 2)));
         System.out.println("Basic list: ");
         print(arrayList);
         sortByName(arrayList);
