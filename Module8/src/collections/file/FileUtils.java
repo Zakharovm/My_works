@@ -1,13 +1,14 @@
 package collections.file;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class FileUtils {
 
 
     public static final int quantityOfDividingLines = 3;
 
-    public void print(ArrayList<File> arrayList) {
+    public void print(List<File> arrayList) {
         int longestFileName = arrayList.get(0).getName().length();
         int longestFileSize = Integer.toString(arrayList.get(0).getSize()).length();
         for (int i = 1; i < arrayList.size(); i++) {

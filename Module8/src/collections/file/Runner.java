@@ -1,7 +1,7 @@
 package collections.file;
 
-import java.util.ArrayList;
-import java.util.Arrays;
+        import java.util.ArrayList;
+        import java.util.Arrays;
 
 public class Runner {
     public static void main(String[] args) {
@@ -9,13 +9,13 @@ public class Runner {
         FileUtils fileUtils = new FileUtils();
 
         System.out.println("Basic list: ");
-        fileUtils.print(directory.getArrayList());
-        directory.sortByName(directory.getArrayList());
+        fileUtils.print(directory.getFiles());
+        directory.sortByName(directory.getFiles());
         System.out.println("\nThe list, sorted by name: ");
-        fileUtils.print(directory.getArrayList());
-        directory.sortBySize(directory.getArrayList());
+        fileUtils.print(directory.getFiles());
+        directory.sortBySize(directory.getFiles());
         System.out.println("\nThe list, sorted by size: ");
-        fileUtils.print(directory.getArrayList());
+        fileUtils.print(directory.getFiles());
 
     }
 }

@@ -1,21 +1,22 @@
 package collections.file;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Directory extends File {
 
-    public ArrayList<File> arrayList = new ArrayList<>();
+    public List<File> files = new ArrayList<>();
 
-    public Directory(String name, int size, ArrayList<File> arrayList) {
+    public Directory(String name, int size, ArrayList<File> files) {
         super(name, size);
-        this.arrayList = arrayList;
+        this.files = files;
     }
 
-    public ArrayList<File> getArrayList() {
-        return arrayList;
+    public List<File> getFiles() {
+        return files;
     }
 
-    public void sortByName(ArrayList<File> arrayList) {
+    public void sortByName(List<File> arrayList) {
         for (int i = 0; i < arrayList.size() - 1; i++) {
             for (int j = 0; j < arrayList.size() - i - 1; j++) {
                 String str1 = arrayList.get(j).getName();
@@ -27,7 +28,7 @@ public class Directory extends File {
         }
     }
 
-    public void sortBySize(ArrayList<File> arrayList) {
+    public void sortBySize(List<File> arrayList) {
         for (int i = 0; i < arrayList.size() - 1; i++) {
             for (int j = 0; j < arrayList.size() - i - 1; j++) {
                 int size1 = arrayList.get(j).getSize();
