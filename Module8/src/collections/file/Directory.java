@@ -7,7 +7,7 @@ public class Directory extends File {
 
     public List<File> files = new ArrayList<>();
 
-    public Directory(String name, int size, ArrayList<File> files) {
+    public Directory(String name, int size, List<File> files) {
         super(name, size);
         this.files = files;
     }
