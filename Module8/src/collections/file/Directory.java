@@ -5,7 +5,8 @@ import java.util.Arrays;
 
 public class Directory extends File {
 
-    public static ArrayList<File> arrayList = new ArrayList<>(Arrays.asList(new Audio("a.mp3", 10), new Image("picture.jpg", 5), new Text("hello.txt", 1), new Image("image.jpg", 4), new Text("photo.txt", 2)));
+    public static ArrayList<File> arrayList = new ArrayList<>(Arrays.asList(new Audio("a.mp3", 10), new Image("picture.jpg", 5), new Text("hello.txt", 1), new Image("image.jpg", 4), new Text("photo.txt", 200)));
+    public static FileUtils fileUtils = new FileUtils();
 
     public Directory(String name, int size, ArrayList<File> arrayList) {
         super(name, size);
@@ -15,23 +16,13 @@ public class Directory extends File {
     public static void main(String[] args) {
 
         System.out.println("Basic list: ");
-        print(arrayList);
+        fileUtils.print(arrayList);
         sortByName(arrayList);
         System.out.println("\nThe list, sorted by name: ");
-        print(arrayList);
+        fileUtils.print(arrayList);
         sortBySize(arrayList);
         System.out.println("\nThe list, sorted by size: ");
-        print(arrayList);
-    }
-
-    public static void print(ArrayList<File> arrayList) {
-        System.out.println("==========================");
-        System.out.println("|\t\tName\t  | Size |");
-        System.out.println("==========================");
-        arrayList
-                .stream()
-                .forEach(file -> System.out.println(file));
-        System.out.println("==========================");
+        fileUtils.print(arrayList);
     }
 
 
