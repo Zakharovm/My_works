@@ -4,24 +4,21 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Cipher {
-    private char[] charArray = new char[1000];
+
+    public static final int ALPHABET_SIZE = 26;
 
     public String encryption(String message, int shiftNumber) {
         char[] text = convertToCharArray(message);
 
         for (int i = 0; i < text.length; i++) {
-            if (text[i] == ' ' || text[i] == '[' || text[i] == ']'||  text[i] == ',') {
-                text[i] = '|';
-                continue;
+            if (text[i] >= 'a' && text[i] <= 'z') {
+                text[i] = (char) (text[i] + shiftNumber);
+                if (text[i] > 'z') {
+                    text[i] = (char) (text[i] - ALPHABET_SIZE);
+                } else if (text[i] < 'a') {
+                    text[i] = (char) (text[i] + ALPHABET_SIZE);
+                }
             }
-
-            text[i] = (char) (text[i] + shiftNumber);
-            if (text[i] > 'z') {
-                text[i] = (char) (text[i] - 26);
-            } else if (text[i] < 'a') {
-                text[i] = (char) (text[i] + 26);
-            }
-
         }
         message = convertToString(text);
         return message;
@@ -31,16 +28,13 @@ public class Cipher {
         char[] text = convertToCharArray(message);
 
         for (int i = 0; i < message.length(); i++) {
-            if (text[i] == ' ' || text[i] == '[' || text[i] == ']') {
-                continue;
-            }
-
-            text[i] = (char) (text[i] - shiftNumber);
-
-            if (text[i] > 'z') {
-                text[i] = (char) (text[i] - 26);
-            } else if (text[i] < 'a') {
-                text[i] = (char) (text[i] + 26);
+            if (text[i] >= 'a' && text[i] <= 'z') {
+                text[i] = (char) (text[i] - shiftNumber);
+                if (text[i] > 'z') {
+                    text[i] = (char) (text[i] - ALPHABET_SIZE);
+                } else if (text[i] < 'a') {
+                    text[i] = (char) (text[i] + ALPHABET_SIZE);
+                }
             }
         }
         message = convertToString(text);
@@ -48,15 +42,11 @@ public class Cipher {
     }
 
     public char[] convertToCharArray(String text) {
-        for (int i = 0; i < text.length(); i++) {
-            charArray[i] = text.charAt(i);
-        }
-
-        return charArray;
+        return text.toCharArray();
     }
 
     public String convertToString(char[] charArray) {
-        return Arrays.toString(charArray).replace("[", "").replace("]", "").replace(",", "").replace(" ", "").trim();
+        return Arrays.toString(charArray).replace("[", "").replace("]", "").replace(",", "").trim();
 
     }
 

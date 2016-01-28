@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Runner {
+
+    public static final int SHIFT_NUMBER = 4;
+
     public static void main(String[] args) {
         ArrayList<File> collectionOfFiles = new ArrayList<>(); //collection of files
         collectionOfFiles.add(new Audio("ghe.mp3", 10));
@@ -38,13 +41,13 @@ public class Runner {
 
             switch (choice) {
                 case 1:
-                    inputText = cipher.encryption(input(), 4);
+                    inputText = cipher.encryption(input(), SHIFT_NUMBER);
                     System.out.println("Your text was encrypted into: ");
                     output(inputText);
                     correct = false;
                     break;
                 case 2:
-                    inputText = cipher.decryption(input(), 4);
+                    inputText = cipher.decryption(input(), SHIFT_NUMBER);
                     System.out.println("Your text was decrypted into: ");
                     output(inputText);
                     correct = false;
@@ -52,21 +55,21 @@ public class Runner {
                 case 3:
                     System.out.println(directory.getFiles().toString());
                     inputText = cipher.convertCollectionToString(directory.getFiles());
-                    inputText = cipher.encryption(inputText, 4);
+                    inputText = cipher.encryption(inputText, SHIFT_NUMBER);
                     output(inputText);
                     correct = false;
                     break;
                 case 4:
                     System.out.println(collectionOfFlowers.toString());
                     inputText = cipher.convertCollectionToString(collectionOfFlowers);
-                    inputText = cipher.encryption(inputText, 4);
+                    inputText = cipher.encryption(inputText, SHIFT_NUMBER);
                     output(inputText);
                     correct = false;
                     break;
                 case 5:
                     System.out.println(collectionOfInstruments.toString());
                     inputText = cipher.convertCollectionToString(collectionOfInstruments);
-                    inputText = cipher.encryption(inputText, 4);
+                    inputText = cipher.encryption(inputText, SHIFT_NUMBER);
                     output(inputText);
                     correct = false;
                     break;
