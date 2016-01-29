@@ -1,57 +1,35 @@
 package caesarCipher;
 
-import java.util.Arrays;
-import java.util.List;
-
 public class Cipher {
-
     public static final int ALPHABET_SIZE = 26;
+    public static final int INITIAL_ALPHABET_NUMBER_LC = 97;
+    public static final int INITIAL_ALPHABET_NUMBER_UC = 65;
 
     public String encryption(String message, int shiftNumber) {
-        char[] text = convertToCharArray(message);
+        char[] text = message.toCharArray();
 
         for (int i = 0; i < text.length; i++) {
             if (text[i] >= 'a' && text[i] <= 'z') {
-                text[i] = (char) (text[i] + shiftNumber);
-                if (text[i] > 'z') {
-                    text[i] = (char) (text[i] - ALPHABET_SIZE);
-                } else if (text[i] < 'a') {
-                    text[i] = (char) (text[i] + ALPHABET_SIZE);
-                }
+                text[i] = (char) ((text[i] + shiftNumber) % (ALPHABET_SIZE + INITIAL_ALPHABET_NUMBER_LC));
+            }
+            if (text[i] >= 'A' && text[i] <= 'Z') {
+                text[i] = (char) ((text[i] + shiftNumber) % (ALPHABET_SIZE + INITIAL_ALPHABET_NUMBER_UC));
             }
         }
-        message = convertToString(text);
-        return message;
+        return new String(text);
     }
 
     public String decryption(String message, int shiftNumber) {
-        char[] text = convertToCharArray(message);
+        char[] text = message.toCharArray();
 
         for (int i = 0; i < message.length(); i++) {
             if (text[i] >= 'a' && text[i] <= 'z') {
-                text[i] = (char) (text[i] - shiftNumber);
-                if (text[i] > 'z') {
-                    text[i] = (char) (text[i] - ALPHABET_SIZE);
-                } else if (text[i] < 'a') {
-                    text[i] = (char) (text[i] + ALPHABET_SIZE);
-                }
+                text[i] = (char) ((text[i] - shiftNumber) % (ALPHABET_SIZE + INITIAL_ALPHABET_NUMBER_LC));
+            }
+            if (text[i] >= 'A' && text[i] <= 'Z') {
+                text[i] = (char) ((text[i] - shiftNumber) % (ALPHABET_SIZE + INITIAL_ALPHABET_NUMBER_UC));
             }
         }
-        message = convertToString(text);
-        return message;
+        return new String(text);
     }
-
-    public char[] convertToCharArray(String text) {
-        return text.toCharArray();
-    }
-
-    public String convertToString(char[] charArray) {
-        return Arrays.toString(charArray).replace("[", "").replace("]", "").replace(",", "").trim();
-
-    }
-
-    public String convertCollectionToString(List list) {
-        return list.toString();
-    }
-
 }

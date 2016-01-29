@@ -54,21 +54,21 @@ public class Runner {
                     break;
                 case 3:
                     System.out.println(directory.getFiles().toString());
-                    inputText = cipher.convertCollectionToString(directory.getFiles());
+                    inputText = directory.getFiles().toString();
                     inputText = cipher.encryption(inputText, SHIFT_NUMBER);
                     output(inputText);
                     correct = false;
                     break;
                 case 4:
                     System.out.println(collectionOfFlowers.toString());
-                    inputText = cipher.convertCollectionToString(collectionOfFlowers);
+                    inputText = collectionOfFlowers.toString();
                     inputText = cipher.encryption(inputText, SHIFT_NUMBER);
                     output(inputText);
                     correct = false;
                     break;
                 case 5:
                     System.out.println(collectionOfInstruments.toString());
-                    inputText = cipher.convertCollectionToString(collectionOfInstruments);
+                    inputText = collectionOfInstruments.toString();
                     inputText = cipher.encryption(inputText, SHIFT_NUMBER);
                     output(inputText);
                     correct = false;
