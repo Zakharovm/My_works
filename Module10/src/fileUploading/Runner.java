@@ -1,8 +1,6 @@
 package fileUploading;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.Scanner;
 
 public class Runner {
@@ -12,21 +10,44 @@ public class Runner {
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
         FileWriter writer = null;
-        BufferedWriter buffer = null;
+        BufferedReader reader = null;
         Cipher cipher = new Cipher();
         boolean correct = true;
-        String message = "";
 
         while (correct) {
             System.out.println("What do you want to do? [E]ncrypt or [D]ecrypt?");
             String choice = scanner.nextLine();
             switch (choice) {
                 case "E":
-                    message = cipher.encryption(input(), SHIFT_NUMBER);
+                    String message = cipher.encryption(input("Input the text for encryption: "), SHIFT_NUMBER);
+                    String fileName = input("Input the name of file for the text: ");
                     correct = false;
+                    try {
+                        writer = new FileWriter(fileName);
+                        writer.write(message);
+                    } finally {
+                        if (writer != null) {
+                            writer.close();
+                        }
+                    }
                     break;
                 case "D":
-                    message = cipher.decryption(input(), SHIFT_NUMBER);
+                    fileName = input("Input the name of file, text you want to decrypt which: ");
+                    try {
+                        while (!new File(fileName).isFile()) {
+                            output("There is no such file. Try again.");
+                            fileName = input("Input the name of file, text you want to decrypt which: ");
+                        }
+                        reader = new BufferedReader(new FileReader(fileName));
+                        message = reader.readLine();
+                        message = cipher.decryption(message, SHIFT_NUMBER);
+                        output(message);
+
+                    } finally {
+                        if (reader != null) {
+                            reader.close();
+                        }
+                    }
                     correct = false;
                     break;
                 default:
@@ -34,24 +55,17 @@ public class Runner {
             }
         }
 
-        try {
-            writer = new FileWriter("receivedMessage.txt");
-
-            writer.write(message);
-
-        } finally {
-            if (writer != null) {
-                writer.close();
-            }
-        }
-
     }
 
-    public static String input() {
+    public static String input(String text) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Input your string: ");
+        System.out.println(text);
         return scanner.nextLine();
+    }
+
+    public static void output(String text) {
+        System.out.println(text);
     }
 
 
