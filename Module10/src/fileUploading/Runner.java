@@ -41,6 +41,8 @@ public class Runner {
                         reader = new BufferedReader(new FileReader(fileName));
                         message = reader.readLine();
                         message = cipher.decryption(message, SHIFT_NUMBER);
+                        StringBuilder builder = new StringBuilder("Decrypted text is: \n");
+                        message = builder.append(message).toString();
                         output(message);
 
                     } finally {
