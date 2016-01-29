@@ -16,9 +16,10 @@ public class Runner {
 
         while (correct) {
             System.out.println("What do you want to do? [E]ncrypt or [D]ecrypt?");
-            String choice = scanner.nextLine();
+            String choice = scanner.nextLine().toLowerCase();
             switch (choice) {
-                case "E":
+                case "encryption":
+                case "e":
                     String message = cipher.encryption(input("Input the text for encryption: "), SHIFT_NUMBER);
                     String fileName = input("Input the name of file for the text: ");
                     correct = false;
@@ -31,7 +32,8 @@ public class Runner {
                         }
                     }
                     break;
-                case "D":
+                case "decryption":
+                case "d":
                     fileName = input("Input the name of file, text you want to decrypt which: ");
                     try {
                         while (!new File(fileName).isFile()) {
