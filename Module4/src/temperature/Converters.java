@@ -1,3 +1,5 @@
+package temperature;
+
 public class Converters {
 
     // Result = ((9*x)/5)+32  из Цельсия в Фаренгейты

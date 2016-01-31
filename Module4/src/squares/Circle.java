@@ -1,3 +1,5 @@
+package squares;
+
 public class Circle {
     private double radius;
 

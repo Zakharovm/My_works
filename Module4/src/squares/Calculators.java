@@ -1,3 +1,5 @@
+package squares;
+
 public class Calculators {
 
     //  S = √p(p - a)(p - b)(p - c)     p=(a+b+c)/2     Формулы

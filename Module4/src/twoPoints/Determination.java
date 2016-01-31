@@ -1,3 +1,5 @@
+package twoPoints;
+
 public class Determination {
 
     /* вычисление расстояния */

@@ -1,3 +1,4 @@
+package squares;
 
 public class FindSquare {
     public static void main(String[] args) {
