@@ -1,11 +1,12 @@
 package maxMinNumber;
 
-import java.util.Scanner;
+        import java.util.Scanner;
 
 public class Runner {
     public static void main(String[] args) {
         int[] intArray = new int[7];
         final Scanner scanner = new Scanner(System.in);
+        MaxMin maxMin = new MaxMin();
 
         //Input of the array
         System.out.println("Input the numbers of the array: ");
@@ -17,7 +18,7 @@ public class Runner {
         for (int element : intArray) {
             System.out.print(element + " | ");
         }
-        System.out.println("\n" + "Maximum element is: " + MaxMin.findMax(intArray));
-        System.out.println("Minimum value is: " + MaxMin.findMin(intArray));
+        System.out.println("\n" + "Maximum element is: " + maxMin.findMax(intArray));
+        System.out.println("Minimum value is: " + maxMin.findMin(intArray));
     }
 }
