@@ -20,7 +20,7 @@ public class ParametrizedCipherDecryptTest {
     }
 
     //declare parameters
-    @Parameterized.Parameters(name = "(index): decrypt(<{0}> by the shift {1}) = {2}")
+    @Parameterized.Parameters(name = "{index}: decrypt(<{0}> by the shift {1}) = {2}")
     public static Iterable<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 {"lipps", 4, "hello"},

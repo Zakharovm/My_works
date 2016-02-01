@@ -5,10 +5,10 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class DeterminationTest {
-    private Determination determination;
+    private static Determination determination;
 
     @BeforeClass
-    public void setUpClass() {
+    public static void setUpClass() {
         determination = new Determination();
 
     }
