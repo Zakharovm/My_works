@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
 public class ExecutorImpl implements Executor<Long> {
 
     private List<Long> validResults = new ArrayList<>();
