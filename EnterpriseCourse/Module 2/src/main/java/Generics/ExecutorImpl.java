@@ -7,7 +7,7 @@ public class ExecutorImpl implements Executor<Long> {
     private List<Long> validResults = new ArrayList<>();
     private List<Long> invalidResults = new ArrayList<>();
 
-    private Map<Task<? extends Long>, Validator<? super Long>> addedTasks = new HashMap<>();
+    private Map<Task<? extends Long>, Validator<? super Long>> tasks = new HashMap<>();
     private boolean tasksExecuted = false;
 
 
@@ -15,27 +15,29 @@ public class ExecutorImpl implements Executor<Long> {
     public void addTask(Task<? extends Long> task) throws RuntimeException {
 
 
-        addedTasks.put(task, null);
+        tasks.put(task, null);
         if (tasksExecuted) {
-            throw new ExecutedTasks();
+            throw new TasksAlreadyExecutedException();
         }
 
     }
 
     @Override
     public void addTask(Task<? extends Long> task, Validator<? super Long> validator) throws RuntimeException {
-        addedTasks.put(task, validator);
+        tasks.put(task, validator);
         if (tasksExecuted) {
-            throw new ExecutedTasks();
+            throw new TasksAlreadyExecutedException();
         }
 
     }
 
     @Override
     public void execute() {
-        addedTasks.forEach( (task, validator) -> task.execute());
+        tasksExecuted = true;
+        
+        tasks.forEach( (task, validator) -> task.execute());
 
-        addedTasks.forEach( (task, validator) -> {
+        tasks.forEach( (task, validator) -> {
             if (validator == null) {
                 validResults.add(task.getResult());
 
@@ -48,13 +50,13 @@ public class ExecutorImpl implements Executor<Long> {
             }
         });
 
-        tasksExecuted = true;
+        
     }
 
     @Override
     public List<Long> getValidResults () throws RuntimeException {
         if (!tasksExecuted) {
-            throw new NoExecutionOfTasks();
+            throw new TasksNotExecutedException();
         }
 
         return validResults;
@@ -63,7 +65,7 @@ public class ExecutorImpl implements Executor<Long> {
     @Override
     public List<Long> getInvalidResults () throws RuntimeException {
         if (!tasksExecuted) {
-            throw new NoExecutionOfTasks();
+            throw new TasksNotExecutedException();
         }
 
         return invalidResults;
