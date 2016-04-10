@@ -1,5 +1,5 @@
-package Generics;
+package generics;
 
-public class noExecutionOfTasks extends RuntimeException {
+public class NoExecutionOfTasks extends RuntimeException {
 
 }

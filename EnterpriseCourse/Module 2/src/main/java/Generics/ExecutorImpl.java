@@ -1,4 +1,4 @@
-package Generics;
+package generics;
 
 import java.util.*;
 
@@ -13,9 +13,11 @@ public class ExecutorImpl implements Executor<Long> {
 
     @Override
     public void addTask(Task<? extends Long> task) throws RuntimeException {
+
+
         addedTasks.put(task, null);
         if (tasksExecuted) {
-            throw new executedTasks();
+            throw new ExecutedTasks();
         }
 
     }
@@ -24,7 +26,7 @@ public class ExecutorImpl implements Executor<Long> {
     public void addTask(Task<? extends Long> task, Validator<? super Long> validator) throws RuntimeException {
         addedTasks.put(task, validator);
         if (tasksExecuted) {
-            throw new executedTasks();
+            throw new ExecutedTasks();
         }
 
     }
@@ -34,7 +36,7 @@ public class ExecutorImpl implements Executor<Long> {
         addedTasks.forEach( (task, validator) -> task.execute());
 
         addedTasks.forEach( (task, validator) -> {
-            if (validator.equals(null)) {
+            if (validator == null) {
                 validResults.add(task.getResult());
 
             } else {
@@ -52,7 +54,7 @@ public class ExecutorImpl implements Executor<Long> {
     @Override
     public List<Long> getValidResults () throws RuntimeException {
         if (!tasksExecuted) {
-            throw new noExecutionOfTasks();
+            throw new NoExecutionOfTasks();
         }
 
         return validResults;
@@ -61,7 +63,7 @@ public class ExecutorImpl implements Executor<Long> {
     @Override
     public List<Long> getInvalidResults () throws RuntimeException {
         if (!tasksExecuted) {
-            throw new noExecutionOfTasks();
+            throw new NoExecutionOfTasks();
         }
 
         return invalidResults;

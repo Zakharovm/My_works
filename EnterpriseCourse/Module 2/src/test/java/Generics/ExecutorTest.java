@@ -1,4 +1,4 @@
-package Generics;
+package generics;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -16,6 +16,7 @@ public class ExecutorTest {
         numberExecutor.addTask(new TaskImpl(15L, 15L, '+'), new ResultValidator());
         numberExecutor.addTask(new TaskImpl(-15L, 15L, '+'), new ResultValidator());
         numberExecutor.addTask(new TaskImpl(-10L, -15L, '+'), new ResultValidator());
+        numberExecutor.addTask(new TaskImpl(-10L, -15L, '+'));
         numberExecutor.execute();
 
     }
@@ -38,13 +39,6 @@ public class ExecutorTest {
             Long number = (Long) invalidResults.get(i);
             System.out.println(number);
         }
-
-    }
-
-
-    @Test(expected = RuntimeException.class)
-    public void addTask () throws RuntimeException {
-        numberExecutor.addTask(new TaskImpl(20L, 80L, '+'));
 
     }
 

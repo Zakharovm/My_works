@@ -1,6 +1,6 @@
-package Generics;
+package generics;
 
-public class executedTasks extends RuntimeException {
+public class ExecutedTasks extends RuntimeException {
 
 
 }

@@ -1,4 +1,4 @@
-package Generics;
+package generics;
 
 public class TaskImpl implements Task<Long> {
     private Long operand1;
