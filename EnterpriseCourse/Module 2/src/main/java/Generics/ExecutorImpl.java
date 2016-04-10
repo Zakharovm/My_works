@@ -6,13 +6,13 @@ public class ExecutorImpl implements Executor<Long> {
 
     private List<Long> validResults = new ArrayList<>();
     private List<Long> invalidResults = new ArrayList<>();
-    private List<Task<Long>> addedTasks = new ArrayList<>();
-    private Map<Task<Long>, Validator<Long>> addedTasksValidator = new HashMap<>();
+    private List<Task<? extends Long>> addedTasks = new ArrayList<>();
+    private Map<Task<? extends Long>, Validator<? super Long>> addedTasksValidator = new HashMap<>();
     private boolean tasksExecuted = false;
 
 
     @Override
-    public void addTask(Task<Long> task) throws RuntimeException {
+    public void addTask(Task<? extends Long> task) throws RuntimeException {
         addedTasks.add(task);
         if (tasksExecuted) {
             throw new executedTasks();
@@ -21,7 +21,7 @@ public class ExecutorImpl implements Executor<Long> {
     }
 
     @Override
-    public void addTask(Task<Long> task, Validator<Long> validator) throws RuntimeException {
+    public void addTask(Task<? extends Long> task, Validator<? super Long> validator) throws RuntimeException {
         addedTasksValidator.put(task, validator);
         if (tasksExecuted) {
             throw new executedTasks();
@@ -35,13 +35,13 @@ public class ExecutorImpl implements Executor<Long> {
                 .stream()
                 .forEach(element -> element.execute());
 
-        Iterator<Map.Entry<Task<Long>, Validator<Long>>> itr1 = addedTasksValidator.entrySet().iterator();
+        Iterator<Map.Entry<Task<? extends Long>, Validator<? super Long>>> itr1 = addedTasksValidator.entrySet().iterator();
 
         while (itr1.hasNext()) {
-            Map.Entry<Task<Long>, Validator<Long>> pair = itr1.next();
+            Map.Entry<Task<? extends Long>, Validator<? super Long>> pair = itr1.next();
 
-            Task<Long> task = pair.getKey();
-            Validator<Long> validator = pair.getValue();
+            Task<? extends Long> task = pair.getKey();
+            Validator<? super Long> validator = pair.getValue();
             pair.getKey().execute();
 
             if (validator.isValid(task.getResult())) {
