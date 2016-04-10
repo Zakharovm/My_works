@@ -1,6 +1,6 @@
 package Generics;
 
-public class executedTasks extends Exception {
+public class executedTasks extends RuntimeException {
 
 
 }

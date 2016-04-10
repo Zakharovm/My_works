@@ -1,11 +1,8 @@
 package Generics;
 
-import org.testng.annotations.Test;
-
-
 public class ResultValidatorTest {
 
-    @Test
+    @org.junit.Test
     public void testIsValid() throws Exception {
         ResultValidator validator = new ResultValidator();
         long result = 10;
