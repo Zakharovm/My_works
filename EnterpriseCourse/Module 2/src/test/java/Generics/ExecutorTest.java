@@ -44,11 +44,9 @@ public class ExecutorTest {
 
     @Test(expected = RuntimeException.class)
     public void addTask () throws RuntimeException {
-        boolean taskWasExecuted = true;
-
-        if (taskWasExecuted) {
-            throw new RuntimeException();
-        }
+        numberExecutor.execute();
+        numberExecutor.addTask(new TaskImpl(-20L, 15L, '+'));
+        
     }
 
 }
