@@ -13,8 +13,8 @@ public class ExecutorTest {
     @BeforeClass
     public static void setUpClass() {
         numberExecutor = new ExecutorImpl();
-        numberExecutor.addTask(new TaskImpl(10L, 15L, '+'), new ResultValidator());
-        numberExecutor.addTask(new TaskImpl(-10L, 15L, '+'), new ResultValidator());
+        numberExecutor.addTask(new TaskImpl(15L, 15L, '+'), new ResultValidator());
+        numberExecutor.addTask(new TaskImpl(-15L, 15L, '+'), new ResultValidator());
         numberExecutor.addTask(new TaskImpl(-10L, -15L, '+'), new ResultValidator());
         numberExecutor.execute();
 
@@ -44,9 +44,8 @@ public class ExecutorTest {
 
     @Test(expected = RuntimeException.class)
     public void addTask () throws RuntimeException {
-        numberExecutor.execute();
-        numberExecutor.addTask(new TaskImpl(-20L, 15L, '+'));
-        
+        numberExecutor.addTask(new TaskImpl(20L, 80L, '+'));
+
     }
 
 }

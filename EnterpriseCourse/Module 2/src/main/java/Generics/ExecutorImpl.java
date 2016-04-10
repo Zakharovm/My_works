@@ -6,14 +6,14 @@ public class ExecutorImpl implements Executor<Long> {
 
     private List<Long> validResults = new ArrayList<>();
     private List<Long> invalidResults = new ArrayList<>();
-    private List<Task<? extends Long>> addedTasks = new ArrayList<>();
-    private Map<Task<? extends Long>, Validator<? super Long>> addedTasksValidator = new HashMap<>();
+
+    private Map<Task<? extends Long>, Validator<? super Long>> addedTasks = new HashMap<>();
     private boolean tasksExecuted = false;
 
 
     @Override
     public void addTask(Task<? extends Long> task) throws RuntimeException {
-        addedTasks.add(task);
+        addedTasks.put(task, null);
         if (tasksExecuted) {
             throw new executedTasks();
         }
@@ -22,7 +22,7 @@ public class ExecutorImpl implements Executor<Long> {
 
     @Override
     public void addTask(Task<? extends Long> task, Validator<? super Long> validator) throws RuntimeException {
-        addedTasksValidator.put(task, validator);
+        addedTasks.put(task, validator);
         if (tasksExecuted) {
             throw new executedTasks();
         }
@@ -31,26 +31,21 @@ public class ExecutorImpl implements Executor<Long> {
 
     @Override
     public void execute() {
-        addedTasks
-                .stream()
-                .forEach(element -> element.execute());
+        addedTasks.forEach( (task, validator) -> task.execute());
 
-        Iterator<Map.Entry<Task<? extends Long>, Validator<? super Long>>> itr1 = addedTasksValidator.entrySet().iterator();
-
-        while (itr1.hasNext()) {
-            Map.Entry<Task<? extends Long>, Validator<? super Long>> pair = itr1.next();
-
-            Task<? extends Long> task = pair.getKey();
-            Validator<? super Long> validator = pair.getValue();
-            pair.getKey().execute();
-
-            if (validator.isValid(task.getResult())) {
+        addedTasks.forEach( (task, validator) -> {
+            if (validator.equals(null)) {
                 validResults.add(task.getResult());
-            } else {
-                invalidResults.add(task.getResult());
-            }
 
-        }
+            } else {
+                if (validator.isValid(task.getResult())) {
+                    validResults.add(task.getResult());
+                } else {
+                    invalidResults.add(task.getResult());
+                }
+            }
+        });
+
         tasksExecuted = true;
     }
 
