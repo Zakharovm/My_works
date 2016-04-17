@@ -4,7 +4,7 @@ public class SemaphoreRealization implements Semaphore {
     private int counter;
 
     public static void main(String[] args) {
-        SemaphoreRealization semaphore = new SemaphoreRealization(3);
+        SemaphoreRealization semaphore = new SemaphoreRealization(2);
         new Thread(new User(semaphore, 100)).start();
         new Thread(new User(semaphore, 80)).start();
         new Thread(new User(semaphore, 70)).start();
@@ -31,11 +31,11 @@ public class SemaphoreRealization implements Semaphore {
     // Запрашивает переданое количество разрешений. Если есть переданое количество свободных разрешений захватывает их.
     // Если нет - приостанавливает поток до тех пор пока не появится переданое колтчество свободных разрешений.
     public synchronized void acquire(int permits) throws InterruptedException {
-        if (permits <= counter) {
-            counter -= permits;
-        } else {
+        while (counter < permits) {
             this.wait();
         }
+        counter -= permits;
+
     }
 
     // Отпускает разрешение возвращая его семафору.
