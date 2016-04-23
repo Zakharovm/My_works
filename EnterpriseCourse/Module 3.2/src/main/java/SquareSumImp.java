@@ -43,7 +43,8 @@ public class SquareSumImp implements SquareSum {
             // начинаем вычисление
             long sum = 0;
             int phase = phaser.getPhase();
-            System.out.println(" \nФаза " + phase + " началась");
+            System.out.println(" \nThread " + i + " started");
+            System.out.format("The interval of elements:  %d - %d ", startPosition + 1, endPosition);
 
             // Вычисление суммы одним потоком
             for (int j = startPosition; j < endPosition; j++) {
@@ -56,13 +57,12 @@ public class SquareSumImp implements SquareSum {
 
             startPosition += elementsPerThread;
             endPosition = startPosition + elementsPerThread;
-            System.out.println("Фаза " + phase + " сейчас закончится");
 
-            phaser.arriveAndAwaitAdvance();
-            System.out.println("Фаза " + phase + " завершена");
+            phaser.arriveAndDeregister();
+            System.out.println("\nThread " + i + " finished");
+            System.out.println("The sum of current part:" + sum);
         }
 
-        phaser.arriveAndDeregister();
 
         ExecutorService executor = Executors.newCachedThreadPool();
         List<Future<Long>> futures = executor.invokeAll(callables);
@@ -70,7 +70,7 @@ public class SquareSumImp implements SquareSum {
         for (Future<Long> future : futures) {
             result += future.get();
         }
-        System.out.println("The sum is:" + result);
+        System.out.println("General sum:" + result);
         return result;
     }
 
