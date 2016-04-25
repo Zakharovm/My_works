@@ -1,76 +1,74 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-import java.util.concurrent.*;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Phaser;
 
 public class SquareSumImp implements SquareSum {
 
     public static void main(String[] args) throws InterruptedException, ExecutionException {
+        int[] array = {1, 2, 1, 3, 1, 4, 1, 5};
 
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Input the quantity of threads: ");
-        final int quantityOfThreads = scanner.nextInt();
-        System.out.println("Input the quantity of elements (%4 = 0 ): ");
-        final int quantityOfElements = scanner.nextInt();
-        int[] array = new int[quantityOfElements];
-
-
-        // заполнение массива
-        System.out.println("Given array: ");
-        for (int i = 0; i < array.length; i++) {
-            array[i] = i;
-            System.out.print(array[i] + ", ");
-        }
-
-        new SquareSumImp().getSquareSum(array, quantityOfThreads);
+        System.out.println("General sum: " + new SquareSumImp().getSquareSum(array, 3));
 
     }
 
     public long getSquareSum(int[] values, int numberOfThreads) throws InterruptedException, ExecutionException {
 
-        List<Callable<Long>> callables = new ArrayList<>();
-        int elementsPerThread = values.length / numberOfThreads;
-        final long[] parts = new long[numberOfThreads];
+        Phaser phaser = new Phaser(1);
+        int quantityOfElements = values.length;
+        int elementsPerThread;
+        long result;
+        int reminder;
+        int[] arrayPart;
+        int elementCounter = 0;
 
-        long result = 0;
+        if (quantityOfElements < numberOfThreads) {
+            elementsPerThread = 1;
+            numberOfThreads = quantityOfElements;
+        } else {
+            reminder = quantityOfElements % numberOfThreads; //4
+            elementsPerThread = quantityOfElements / numberOfThreads; //7
 
-        Phaser phaser = new Phaser(numberOfThreads);
-        int startPosition = 0;
-        int endPosition = elementsPerThread;
+            if (reminder != 0) {
+                elementsPerThread += 1; //8
+                numberOfThreads -= 1; //4
+                reminder = quantityOfElements - numberOfThreads * elementsPerThread; //7
+                arrayPart = new int[reminder];
 
-        for (int i = 0; i < numberOfThreads; i++) {
-            // начинаем вычисление
-            long sum = 0;
-            int phase = phaser.getPhase();
-            System.out.println(" \nThread " + i + " started");
-            System.out.format("The interval of elements:  %d - %d ", startPosition + 1, endPosition);
+                // заполнение подмассива элементами для первого потока, который работает с отличным от других потоков количеством элементов
+                for (int j = 0; j < reminder; j++) {
+                    arrayPart[j] = values[elementCounter];
+                    elementCounter++;
+                }
 
-            // Вычисление суммы одним потоком
-            for (int j = startPosition; j < endPosition; j++) {
-                sum += Math.pow(values[j], 2);
+                new Thread(new Summator(arrayPart, phaser)).start();
             }
-            parts[i] = sum;
-            int finalI = i;
 
-            callables.add(() -> parts[finalI]);
-
-            startPosition += elementsPerThread;
-            endPosition = startPosition + elementsPerThread;
-
-            phaser.arriveAndDeregister();
-            System.out.println("\nThread " + i + " finished");
-            System.out.println("The sum of current part:" + sum);
         }
 
+        arrayPart = new int[elementsPerThread];
 
-        ExecutorService executor = Executors.newCachedThreadPool();
-        List<Future<Long>> futures = executor.invokeAll(callables);
+        // создание нужного количества остальных потоков
+        for (int i = 0; i < numberOfThreads; i++) {
 
-        for (Future<Long> future : futures) {
-            result += future.get();
+            // заполнение подмассива элементами для определенного потока
+            for (int j = 0; j < elementsPerThread; j++) {
+                arrayPart[j] = values[elementCounter];
+                elementCounter++;
+            }
+
+            new Thread(new Summator(arrayPart, phaser)).start();
         }
-        System.out.println("General sum:" + result);
+
+        // ждем завершения фазы 0
+        int phase = phaser.getPhase();
+        phaser.arriveAndAwaitAdvance();
+        System.out.println("Фаза " + phase + " завершена");
+        // ждем завершения фазы 1
+        phase = phaser.getPhase();
+        phaser.arriveAndAwaitAdvance();
+        System.out.println("Фаза " + phase + " завершена");
+        result = Sum.getValue();
+        phaser.arriveAndDeregister();
+
         return result;
     }
 

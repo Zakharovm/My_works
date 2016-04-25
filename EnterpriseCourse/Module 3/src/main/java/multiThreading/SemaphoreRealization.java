@@ -4,7 +4,7 @@ public class SemaphoreRealization implements Semaphore {
     private int counter;
 
     public static void main(String[] args) {
-        SemaphoreRealization semaphore = new SemaphoreRealization(2);
+        SemaphoreRealization semaphore = new SemaphoreRealization(5);
         new Thread(new User(semaphore, 100)).start();
         new Thread(new User(semaphore, 80)).start();
         new Thread(new User(semaphore, 70)).start();
