@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.*;
 
@@ -7,7 +8,10 @@ public class SquareSumImp implements SquareSum {
     public static void main(String[] args) throws InterruptedException, ExecutionException {
         int[] array = {1, 2, 1, 3, 1, 4, 1, 5};
 
-        System.out.println("\nОбщий результат: " + new SquareSumImp().getSquareSum(array, 3));
+        System.out.println("Имеем массив:");
+        System.out.println(Arrays.toString(array));
+
+        System.out.println("\nОбщий результат: " + new SquareSumImp().getSquareSum(array, 4));
 
     }
 
@@ -69,7 +73,7 @@ public class SquareSumImp implements SquareSum {
         // ждем завершения фазы 0 (сумирование элементов)
         int phase = phaser.getPhase();
         phaser.arriveAndAwaitAdvance();
-        System.out.println("Фаза сумирования элементов отдельными потоками завершена(Фаза " + phase + ").");
+        System.out.println("Фаза суммирования элементов отдельными потоками завершена(Фаза " + phase + ").");
 
         // ждем завершения фазы 1 (получения результатов)
         phase = phaser.getPhase();
