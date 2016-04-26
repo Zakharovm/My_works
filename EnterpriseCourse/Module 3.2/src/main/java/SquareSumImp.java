@@ -1,6 +1,4 @@
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 import java.util.concurrent.*;
 
 public class SquareSumImp implements SquareSum {
@@ -17,14 +15,12 @@ public class SquareSumImp implements SquareSum {
 
     public long getSquareSum(int[] values, int numberOfThreads) throws InterruptedException, ExecutionException {
 
-        List<Callable<Long>> callables = new ArrayList<>();
-
         Phaser phaser = new Phaser(1);
         ExecutorService executorService = Executors.newCachedThreadPool();
         int quantityOfElements = values.length;
         int elementsPerThread;
         long result = 0;
-        int reminder;
+        int reminder = 0;
         int[] arrayPart;
         int elementCounter = 0;
 
@@ -49,7 +45,8 @@ public class SquareSumImp implements SquareSum {
 
 
                 // создание потока для остатка данных
-                callables.add(new Summator(arrayPart));
+                executorService.execute(new Summator(arrayPart, phaser));
+
             }
 
         }
@@ -64,11 +61,11 @@ public class SquareSumImp implements SquareSum {
                 elementCounter++;
             }
 
-            callables.add(new Summator(arrayPart));
+            executorService.execute(new Summator(arrayPart, phaser));
 
         }
 
-        List<Future<Long>> futures = executorService.invokeAll(callables);
+
 
         // ждем завершения фазы 0 (сумирование элементов)
         int phase = phaser.getPhase();
@@ -79,11 +76,33 @@ public class SquareSumImp implements SquareSum {
         phase = phaser.getPhase();
         phaser.arriveAndAwaitAdvance();
 
-        for (int i = 0; i < futures.size(); i++) {
-            Future<Long> future = futures.get(i);
-            result += future.get();
-            System.out.println("Сумма " + i + "-го потока получена и добавлена в общий результат");
+        elementCounter = 0;
+        if (reminder != 0) {
+            arrayPart = new int[reminder];
+
+            // заполнение подмассива элементами для первого потока, который работает с остатками данных
+            for (int j = 0; j < reminder; j++) {
+                arrayPart[j] = values[elementCounter];
+                elementCounter++;
+            }
+
+            result += new Summator(arrayPart, phaser).getSum();
         }
+
+        for (int i = 0; i < numberOfThreads; i++) {
+            arrayPart = new int[elementsPerThread];
+            // заполнение подмассива элементами для определенного потока
+            for (int j = 0; j < elementsPerThread; j++) {
+                arrayPart[j] = values[elementCounter];
+                elementCounter++;
+            }
+            System.out.println("Сумма " + i + "-го потока получена и добавлена в общий результат");
+
+            result += new Summator(arrayPart, phaser).getSum();
+
+        }
+
+
         System.out.println("Фаза получения общей суммы со всех потоков завершена(Фаза " + phase + ").");
 
         phaser.arriveAndDeregister();

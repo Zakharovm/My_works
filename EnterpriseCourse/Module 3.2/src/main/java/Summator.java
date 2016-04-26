@@ -1,30 +1,40 @@
-import java.util.concurrent.Callable;
+import java.util.concurrent.Phaser;
 
-public class Summator implements Callable<Long> {
+public class Summator implements Runnable {
 
     private int[] elements;
+    private Phaser phaser;
     private long sum;
 
-    public Summator(int[] elements) {
+    public Summator(int[] elements, Phaser phaser) {
         this.elements = new int[elements.length];
         this.elements = elements;
+        this.phaser = phaser;
         this.sum = 0;
+        phaser.register();
+    }
+
+    public long getSum() {
+        return sum;
     }
 
     @Override
-    public Long call() throws Exception {
+    public void run() {
 
         for (int element : elements) {
             sum += (long) Math.pow(element, 2);
         }
-        System.out.println(Thread.currentThread().getName() + " выполняет суммирование квадратов элементов. Добавляемая сумма: " + sum);
+        System.out.println(Thread.currentThread().getName() + " выполняем сумирование квадратов элементов. Добавляемая сумма: " + sum);
+        phaser.arrive(); // сообщаем, что первая фаза достигнута
         try {
             Thread.sleep(200);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
-        return sum;
+        phaser.arriveAndDeregister(); // сообщаем о завершении фаз и удаляем с регистрации объекты
+
+
     }
 
 }
