@@ -1,5 +1,10 @@
+import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.concurrent.*;
+import java.util.List;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Phaser;
 
 public class SquareSumImp implements SquareSum {
 
@@ -9,18 +14,20 @@ public class SquareSumImp implements SquareSum {
         System.out.println("Имеем массив:");
         System.out.println(Arrays.toString(array));
 
-        System.out.println("\nОбщий результат: " + new SquareSumImp().getSquareSum(array, 4));
+        System.out.println("\nОбщий результат: " + new SquareSumImp().getSquareSum(array, 3));
 
     }
 
     public long getSquareSum(int[] values, int numberOfThreads) throws InterruptedException, ExecutionException {
 
-        Phaser phaser = new Phaser(1);
+        Phaser phaser = new Phaser(numberOfThreads + 1);
         ExecutorService executorService = Executors.newCachedThreadPool();
+        List<Summator> summators = new ArrayList<>();
+
         int quantityOfElements = values.length;
         int elementsPerThread;
-        long result = 0;
-        int reminder = 0;
+        final long[] result = {0};
+        int reminder;
         int[] arrayPart;
         int elementCounter = 0;
 
@@ -43,10 +50,8 @@ public class SquareSumImp implements SquareSum {
                     elementCounter++;
                 }
 
-
                 // создание потока для остатка данных
-                executorService.execute(new Summator(arrayPart, phaser));
-
+                summators.add(new Summator(arrayPart, phaser));
             }
 
         }
@@ -61,11 +66,12 @@ public class SquareSumImp implements SquareSum {
                 elementCounter++;
             }
 
-            executorService.execute(new Summator(arrayPart, phaser));
+            summators.add(new Summator(arrayPart, phaser));
 
         }
 
-
+        // запуск потоков
+        summators.forEach(executorService::execute);
 
         // ждем завершения фазы 0 (сумирование элементов)
         int phase = phaser.getPhase();
@@ -76,39 +82,17 @@ public class SquareSumImp implements SquareSum {
         phase = phaser.getPhase();
         phaser.arriveAndAwaitAdvance();
 
-        elementCounter = 0;
-        if (reminder != 0) {
-            arrayPart = new int[reminder];
-
-            // заполнение подмассива элементами для первого потока, который работает с остатками данных
-            for (int j = 0; j < reminder; j++) {
-                arrayPart[j] = values[elementCounter];
-                elementCounter++;
-            }
-
-            result += new Summator(arrayPart, phaser).getSum();
-        }
-
-        for (int i = 0; i < numberOfThreads; i++) {
-            arrayPart = new int[elementsPerThread];
-            // заполнение подмассива элементами для определенного потока
-            for (int j = 0; j < elementsPerThread; j++) {
-                arrayPart[j] = values[elementCounter];
-                elementCounter++;
-            }
-            System.out.println("Сумма " + i + "-го потока получена и добавлена в общий результат");
-
-            result += new Summator(arrayPart, phaser).getSum();
-
-        }
-
+        summators.forEach(element -> {
+            result[0] += element.getSum();
+            System.out.println("Сумма " + summators.indexOf(element) + "-го потока получена и добавлена в общий результат");
+        });
 
         System.out.println("Фаза получения общей суммы со всех потоков завершена(Фаза " + phase + ").");
 
         phaser.arriveAndDeregister();
 
         executorService.shutdown();
-        return result;
+        return result[0];
     }
 
 

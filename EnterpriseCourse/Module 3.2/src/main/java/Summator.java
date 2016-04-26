@@ -11,7 +11,6 @@ public class Summator implements Runnable {
         this.elements = elements;
         this.phaser = phaser;
         this.sum = 0;
-        phaser.register();
     }
 
     public long getSum() {
