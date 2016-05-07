@@ -23,7 +23,7 @@ public class Summator implements Runnable {
         for (int element : elements) {
             sum += (long) Math.pow(element, 2);
         }
-        System.out.println(Thread.currentThread().getName() + " выполняем сумирование квадратов элементов. Добавляемая сумма: " + sum);
+        System.out.println(Thread.currentThread().getName() + " performs the adding of elements of some part. Added sum: " + sum);
         phaser.arrive(); // сообщаем, что первая фаза достигнута
         try {
             Thread.sleep(200);

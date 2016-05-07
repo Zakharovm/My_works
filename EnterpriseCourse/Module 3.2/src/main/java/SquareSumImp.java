@@ -11,10 +11,10 @@ public class SquareSumImp implements SquareSum {
     public static void main(String[] args) throws InterruptedException, ExecutionException {
         int[] array = {1, 2, 1, 3, 1, 4, 1, 5};
 
-        System.out.println("Имеем массив:");
+        System.out.println("Given array:");
         System.out.println(Arrays.toString(array));
 
-        System.out.println("\nОбщий результат: " + new SquareSumImp().getSquareSum(array, 3));
+        System.out.println("\nThe result is: " + new SquareSumImp().getSquareSum(array, 8));
 
     }
 
@@ -76,7 +76,7 @@ public class SquareSumImp implements SquareSum {
         // ждем завершения фазы 0 (сумирование элементов)
         int phase = phaser.getPhase();
         phaser.arriveAndAwaitAdvance();
-        System.out.println("Фаза суммирования элементов отдельными потоками завершена(Фаза " + phase + ").");
+        System.out.println("Elements summation phase by separate streams is completed(Phase " + phase + ").");
 
         // ждем завершения фазы 1 (получения результатов)
         phase = phaser.getPhase();
@@ -84,10 +84,10 @@ public class SquareSumImp implements SquareSum {
 
         summators.forEach(element -> {
             result[0] += element.getSum();
-            System.out.println("Сумма " + summators.indexOf(element) + "-го потока получена и добавлена в общий результат");
+            System.out.println("Sum " + summators.indexOf(element) + " stream is received and added to the result.");
         });
 
-        System.out.println("Фаза получения общей суммы со всех потоков завершена(Фаза " + phase + ").");
+        System.out.println("Sum receiving from all streams phase is completed(Phase " + phase + ").");
 
         phaser.arriveAndDeregister();
 
