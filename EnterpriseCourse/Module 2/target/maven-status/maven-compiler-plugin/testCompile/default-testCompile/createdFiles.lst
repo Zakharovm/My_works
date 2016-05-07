@@ -1,0 +1,4 @@
+generics\ResultValidatorTest.class
+generics\TasksNotExecutedExceptionTest.class
+generics\ExecutorTest.class
+generics\TasksAlreadyExecutedExceptionTest.class

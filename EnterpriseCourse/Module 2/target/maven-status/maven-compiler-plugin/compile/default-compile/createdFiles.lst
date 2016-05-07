@@ -1,0 +1,8 @@
+generics\ResultValidator.class
+generics\TaskImpl.class
+generics\TasksAlreadyExecutedException.class
+generics\ExecutorImpl.class
+generics\Executor.class
+generics\Task.class
+generics\Validator.class
+generics\TasksNotExecutedException.class

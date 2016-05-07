@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>Module2</groupId>
-    <artifactId>Module2</artifactId>
+    <groupId>Module1</groupId>
+    <artifactId>Module1</artifactId>
     <packaging>jar</packaging>
     <version>1.0</version>
     <build>
@@ -21,10 +21,10 @@
 
             <plugin>
                 <artifactId>maven-jar-plugin</artifactId>
-                <configuration> 
+                <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>generics.ExecutorImpl</mainClass>
+                            <mainClass>collections.Runner</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -32,16 +32,5 @@
 
         </plugins>
     </build>
-
-    <dependencies>
-
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-        </dependency>
-
-    </dependencies>
-
 
 </project>

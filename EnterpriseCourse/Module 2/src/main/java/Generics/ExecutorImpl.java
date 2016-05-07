@@ -14,6 +14,24 @@ public class ExecutorImpl implements Executor<Long> {
     private boolean tasksExecuted = false;
 
 
+    public static void main(String[] args) {
+        Executor<Long> numberExecutor = new ExecutorImpl();
+
+        numberExecutor.addTask(new TaskImpl(25L, 5L, '+'), new ResultValidator());
+        numberExecutor.addTask(new TaskImpl(-25L, 235L, '+'), new ResultValidator());
+        numberExecutor.addTask(new TaskImpl(-103L, -315L, '+'), new ResultValidator());
+        numberExecutor.addTask(new TaskImpl(-105L, -145L, '+'));
+        numberExecutor.execute();
+
+        System.out.println("Valid results:");
+        List<Long> validResults = numberExecutor.getValidResults();
+        validResults.forEach(System.out::println);
+
+        System.out.println("Invalid results:");
+        List<Long> invalidResults = numberExecutor.getInvalidResults();
+        invalidResults.forEach(System.out::println);
+    }
+
     @Override
     public void addTask(Task<? extends Long> task) throws RuntimeException {
 
