@@ -1,0 +1,63 @@
+<project name="module3.2" basedir=".">
+
+    <property name="src" location="src"/>
+    <property name="build" location="build"/>
+    <property name="dist" location="dist"/>
+    <property name="test" location="src/test"/>
+    <property name="build.test" location="build/test"/>
+    <property name="report" location="report"/>
+    <property name="lib" location="lib"/>
+
+    <path id="junit.class.path">
+        <pathelement location="lib/junit-4.12.jar"/>
+        <pathelement location="lib/hamcrest-core-1.3.jar"/>
+        <pathelement location="${build}"/>
+        <pathelement location="${test}"/>
+        <pathelement location="${src}"/>
+    </path>
+
+    <target name="clean">
+        <delete dir="${build}"/>
+        <delete dir="${dist}"/>
+        <delete dir="${report}"/>
+    </target>
+
+    <target name="init">
+        <mkdir dir="${build}"/>
+        <mkdir dir="${dist}"/>
+        <mkdir dir="${build.test}"/>
+        <mkdir dir="${report}"/>
+        <mkdir dir="${lib}"/>
+    </target>
+
+    <target name="compile" depends="init">
+        <javac srcdir="${src}" destdir="${build}" source="1.8" target="1.8"/>
+    </target>
+
+    <target name="dist" depends="test">
+        <jar destfile="${dist}/SquareSumExample.jar">
+            <fileset dir="${build}"/>
+            <manifest>
+                <attribute name="Main-Class" value="SquareSumImp"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="test.compile" depends="init">
+        <javac srcdir="${src}" destdir="${build}">
+            <classpath refid="junit.class.path"/>
+        </javac>
+        <javac srcdir="${test}" destdir="${build.test}">
+            <classpath refid="junit.class.path"/>
+        </javac>
+    </target>
+
+    <target name="test" depends="test.compile">
+        <junit>
+            <classpath refid="junit.class.path" />
+            <formatter type="brief" usefile="false" />
+            <test name="SquareSumImpTest" />
+        </junit>
+    </target>
+
+</project>
