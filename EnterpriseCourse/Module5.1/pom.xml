@@ -21,7 +21,8 @@
         </plugins>
     </build>
     <modules>
-        <module>Module5.1.App</module>
+        <module>CalculatorLibrary</module>
+        <module>Application</module>
     </modules>
 
 

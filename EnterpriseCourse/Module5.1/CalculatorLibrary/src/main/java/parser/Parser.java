@@ -7,6 +7,12 @@ public class Parser {
     private Object operand2;
     private String operator;
 
+    public static void main(String[] args) {
+        Parser parser = new Parser();
+        parser.determine("- 2 3");
+    }
+
+    // The string is divided by the " " (space). Example: + 2 3
     public void determine(String expression) {
         LinkedList<Integer> numbers = new LinkedList<>();
         StringBuilder number = new StringBuilder();
@@ -34,8 +40,10 @@ public class Parser {
             }
 
         }
-        operand1 = numbers.pop(); // достаем первое число
+        numbers.push(Integer.parseInt(number.toString()));
+
         operand2 = numbers.pop(); // достаем второе число
+        operand1 = numbers.pop(); // достаем первое число
 
     }
 
