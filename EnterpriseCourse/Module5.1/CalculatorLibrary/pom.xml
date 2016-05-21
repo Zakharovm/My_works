@@ -6,7 +6,10 @@
         <artifactId>Module5.1</artifactId>
         <groupId>Module5.1</groupId>
         <version>1.0</version>
+
     </parent>
+    <packaging>jar</packaging>
+    <name>CalculatorLibrary</name>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>CalculatorLibrary</artifactId>
@@ -21,6 +24,7 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
+
         </plugins>
     </build>
 
