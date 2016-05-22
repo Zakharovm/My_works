@@ -16,7 +16,7 @@ public class Runner {
         Scanner scanner = new Scanner(System.in);
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
 
-
+        System.out.println("This application supports only such types of data: Integer, Long, Float, Double. But both operands should be of the same type.");
         System.out.println("Input the expression(divide by spaces) {example: 2 + 3  or  2.4 - 2.1}:");
         String input = scanner.nextLine();
         parser.determine(input);
