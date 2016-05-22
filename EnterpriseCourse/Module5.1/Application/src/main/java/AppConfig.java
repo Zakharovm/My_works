@@ -4,17 +4,16 @@ import operations.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import parser.Parser;
-import parser.UtilParse;
+import parser.UtilOperation;
 
 @Configuration
 public class AppConfig {
 
     @Bean
-    public Runner runner(Parser parser, UtilParse utilParse, OperationRegistration operationRegister) {
+    public Runner runner(Parser parser, UtilOperation utilOperation) {
         Runner runner = new Runner();
-        runner.setOperationRegistration(operationRegister);
         runner.setParser(parser);
-        runner.setUtilParse(utilParse);
+        runner.setUtilOperation(utilOperation);
 
         return runner;
     }
@@ -25,18 +24,12 @@ public class AppConfig {
     }
 
     @Bean
-    public UtilParse utilParse() {
-        return new UtilParse();
+    public UtilOperation utilOperation() {
+        UtilOperation utilOperation = new UtilOperation();
+        utilOperation.register("*", integerMultiplier());
+        utilOperation.register("/", integerDivider());
+        return utilOperation;
     }
-
-    @Bean
-    public OperationRegistration operationRegister() {
-        OperationRegistration operationRegistration = new OperationRegistration();
-        operationRegistration.register("*", new IntegerMultiplier());
-        operationRegistration.register("/", new IntegerDivider());
-        return operationRegistration;
-    }
-
 
 
     // NEW OPERATIONS

@@ -1,16 +1,14 @@
-import operations.OperationRegistration;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import parser.Parser;
-import parser.UtilParse;
+import parser.UtilOperation;
 
 import java.util.Scanner;
 
 public class Runner {
 
     private static Parser parser;
-    private static UtilParse utilParse;
-    private static OperationRegistration operationRegistration;
+    private static UtilOperation utilOperation;
 
     public static void main(String[] args) {
 
@@ -24,7 +22,7 @@ public class Runner {
         parser.determine(input);
         Object operand1 = parser.getOperand1();
         Object operand2 = parser.getOperand2();
-        Object result = utilParse.performOperation(parser.getOperator(), operand1, operand2);
+        Object result = utilOperation.performOperation(parser.getOperator(), operand1, operand2);
         System.out.println("Result: \n" + operand1 + " " + parser.getOperator() + " " + operand2 + " = " + result);
 
     }
@@ -33,11 +31,7 @@ public class Runner {
         this.parser = parser;
     }
 
-    public void setUtilParse(UtilParse utilParse) {
-        this.utilParse = utilParse;
-    }
-
-    public void setOperationRegistration(OperationRegistration operationRegistration) {
-        this.operationRegistration = operationRegistration;
+    public void setUtilOperation(UtilOperation utilOperation) {
+        this.utilOperation = utilOperation;
     }
 }

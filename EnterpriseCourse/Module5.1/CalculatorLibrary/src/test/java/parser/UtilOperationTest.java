@@ -3,10 +3,10 @@ package parser;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class UtilParseTest {
+public class UtilOperationTest {
     @Test
     public void performOperation() throws Exception {
-        UtilParse parse = new UtilParse();
+        UtilOperation parse = new UtilOperation();
 
         Assert.assertEquals(parse.performOperation("+", 5, 10), 15);
         Assert.assertEquals(parse.performOperation("+", -100, 10), -90);
