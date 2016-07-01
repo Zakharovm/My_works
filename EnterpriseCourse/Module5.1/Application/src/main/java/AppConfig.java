@@ -1,19 +1,26 @@
+import aop.parser.LogAspect;
 import newOperations.IntegerDivider;
 import newOperations.IntegerMultiplier;
-import operations.*;
+import aop.operations.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import parser.Parser;
-import parser.UtilOperation;
+import aop.parser.Parser;
+import aop.parser.UtilOperation;
 
 @Configuration
 public class AppConfig {
 
     @Bean
-    public Runner runner(Parser parser, UtilOperation utilOperation) {
+    public LogAspect logAspect() {
+        return new LogAspect();
+    }
+
+    @Bean
+    public Runner runner(Parser parser, UtilOperation utilOperation, LogAspect logAspect) {
         Runner runner = new Runner();
         runner.setParser(parser);
         runner.setUtilOperation(utilOperation);
+        runner.setLogAspect(logAspect);
 
         return runner;
     }
