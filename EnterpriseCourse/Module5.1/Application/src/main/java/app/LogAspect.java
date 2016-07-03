@@ -22,6 +22,14 @@ public class LogAspect {
         return result;
     }
 
+    @Around("execution(* operations.Operator.execute(..))")
+    public Object operatorExecute(ProceedingJoinPoint pjp) throws Throwable {
+        LOGGER.info("LogAspect. Before execution of: " + pjp.getSignature());
+        Object result = pjp.proceed();
+        LOGGER.info("LogAspect. After execution of: " + pjp.getSignature());
+        return result;
+    }
+
     @Around("execution(* parser.Parser.*(..))")
     public Object parserDetermine(ProceedingJoinPoint pjp) throws Throwable {
         LOGGER.info("LogAspect. Before execution of: " + pjp.getSignature());
@@ -30,12 +38,6 @@ public class LogAspect {
         return result;
     }
 
-    @Around("execution(* operations.Operator.execute(..))")
-    public Object operatorExecute(ProceedingJoinPoint pjp) throws Throwable {
-        LOGGER.info("LogAspect. Before execution of: " + pjp.getSignature());
-        Object result = pjp.proceed();
-        LOGGER.info("LogAspect. After execution of: " + pjp.getSignature());
-        return result;
-    }
+
 
 }

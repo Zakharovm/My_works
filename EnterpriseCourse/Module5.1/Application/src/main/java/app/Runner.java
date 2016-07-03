@@ -39,7 +39,7 @@ public class Runner {
         LOGGER.info("Start performing the operation.");
         Object result = utilOperation.performOperation(operator, operand1, operand2);
         LOGGER.info("Finish performing the operation.");
-        System.out.println("Result: \n" + operand1 + " " + parser.getOperator() + " " + operand2 + " = " + result);
+        System.out.println("Result: \n" + operand1 + " " + operator + " " + operand2 + " = " + result);
 
     }
 
