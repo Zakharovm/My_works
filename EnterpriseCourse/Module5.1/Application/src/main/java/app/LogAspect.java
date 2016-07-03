@@ -23,10 +23,11 @@ public class LogAspect {
     }
 
     @Around("execution(* parser.Parser.*(..))")
-    public void parserDetermine(ProceedingJoinPoint pjp) throws Throwable {
+    public Object parserDetermine(ProceedingJoinPoint pjp) throws Throwable {
         LOGGER.info("LogAspect. Before execution of: " + pjp.getSignature());
-        pjp.proceed();
+        Object result = pjp.proceed();
         LOGGER.info("LogAspect. After execution of: " + pjp.getSignature());
+        return result;
     }
 
     @Around("execution(* operations.Operator.execute(..))")
