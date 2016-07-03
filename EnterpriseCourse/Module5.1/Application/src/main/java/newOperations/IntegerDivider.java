@@ -1,6 +1,6 @@
 package newOperations;
 
-import aop.operations.Operator;
+import operations.Operator;
 
 public class IntegerDivider implements Operator<Integer> {
 
