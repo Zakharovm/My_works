@@ -1,0 +1,64 @@
+Employee
+	id   <PK>
+	surname
+	name
+	date_of_birth
+	phone_number
+	position_id  <FK> position.id
+	salary
+	
+Position
+	id <PK>
+	name
+	
+Orders
+	ID 	<PK>
+	Employee_ID  <FK> Employee.id
+	table_number
+	date_of_order
+	
+Order_String
+	ID <PK>
+	order_ID   <FK> order.id
+	dish_ID   <FK> dish.id
+	quantity
+	
+	
+Dish
+	id   <PK>
+	name
+	category_ID <FK> category.id
+	price
+	weight
+	
+Menu
+	ID  <PK>
+	Category_ID <FK> from Category.id
+	dish_ID   <FK> from Dish.id	
+
+Ingredient
+	id  <PK>
+	name
+	
+Stock
+	id  <PK>
+	ingredient_ID 	<FK> from Ingredient.id
+	quantity
+	
+PREPARED_DISHES
+	id  <PK>
+	employee_ID <FK> from Employee.id
+	dish_ID  <FK> from Dish.id
+	order_ID <FK> from Order.id
+	date
+	
+Category
+	ID  <PK>
+	name
+
+	
+Dish_Composition
+	id <PK>
+	dish_ID  <FK> Dish.id
+	ingredient_ID <FK> ingredient.ID
+	weight
