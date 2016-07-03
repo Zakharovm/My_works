@@ -4,12 +4,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.stereotype.Component;
 import parser.Parser;
 import parser.UtilOperation;
 
 import java.util.Scanner;
 
-
+@Component
 public class Runner {
 
     private static Logger LOGGER = LoggerFactory.getLogger(app.Runner.class);
@@ -34,8 +35,9 @@ public class Runner {
         parser.determine(input);
         Object operand1 = parser.getOperand1();
         Object operand2 = parser.getOperand2();
+        String operator = parser.getOperator();
         LOGGER.info("Start performing the operation.");
-        Object result = utilOperation.performOperation(parser.getOperator(), operand1, operand2);
+        Object result = utilOperation.performOperation(operator, operand1, operand2);
         LOGGER.info("Finish performing the operation.");
         System.out.println("Result: \n" + operand1 + " " + parser.getOperator() + " " + operand2 + " = " + result);
 

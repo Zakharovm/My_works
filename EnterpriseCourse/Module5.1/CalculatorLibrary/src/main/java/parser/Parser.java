@@ -31,9 +31,6 @@ public class Parser {
                 } else {
 
                     System.out.println("Input error.");
-                    operand1 = 0;
-                    operand2 = 0;
-                    operator = "null";
                     break;
                 }
 

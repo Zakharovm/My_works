@@ -5,14 +5,16 @@ import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 
 @Aspect
+@Component
 public class LogAspect {
 
     private Logger LOGGER = LoggerFactory.getLogger(LogAspect.class);
 
 
-    @Around("execution(* parser.UtilOperation.performOperation(..))")
+    @Around("execution(* parser.UtilOperation.*(..))")
     public Object utilPerformOperation(ProceedingJoinPoint pjp) throws Throwable {
         LOGGER.info("LogAspect. Before execution of: " + pjp.getSignature());
         Object result = pjp.proceed();

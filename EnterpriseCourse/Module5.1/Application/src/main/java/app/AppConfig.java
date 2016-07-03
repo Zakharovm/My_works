@@ -1,16 +1,17 @@
 package app;
 
+import app.newOperations.IntegerDivider;
+import app.newOperations.IntegerMultiplier;
 import operations.*;
-import newOperations.IntegerDivider;
-import newOperations.IntegerMultiplier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import parser.Parser;
 import parser.UtilOperation;
 
+
 @Configuration
-@EnableAspectJAutoProxy
+@EnableAspectJAutoProxy(proxyTargetClass=true)
 public class AppConfig {
 
     @Bean
@@ -88,6 +89,7 @@ public class AppConfig {
     public Operator<Integer> integerSubtraction() {
         return new IntegerSubtraction();
     }
+
 
     @Bean
     public LogAspect logAspect() {

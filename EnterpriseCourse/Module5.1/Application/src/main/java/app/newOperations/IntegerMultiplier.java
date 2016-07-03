@@ -1,4 +1,4 @@
-package newOperations;
+package app.newOperations;
 
 import operations.Operator;
 
