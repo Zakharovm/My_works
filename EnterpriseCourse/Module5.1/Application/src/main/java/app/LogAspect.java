@@ -12,7 +12,7 @@ public class LogAspect {
     private Logger LOGGER = LoggerFactory.getLogger(LogAspect.class);
 
 
-    @Around("execution(* parser.UtilOperation.*(..))")
+    @Around("execution(* parser.UtilOperation.performOperation(..))")
     public Object utilPerformOperation(ProceedingJoinPoint pjp) throws Throwable {
         LOGGER.info("LogAspect. Before execution of: " + pjp.getSignature());
         Object result = pjp.proceed();

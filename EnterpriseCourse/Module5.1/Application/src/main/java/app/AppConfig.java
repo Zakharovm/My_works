@@ -6,16 +6,12 @@ import newOperations.IntegerMultiplier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
-import parser.*;
+import parser.Parser;
+import parser.UtilOperation;
 
 @Configuration
 @EnableAspectJAutoProxy
 public class AppConfig {
-
-    @Bean
-    public LogAspect logAspect() {
-        return new LogAspect();
-    }
 
     @Bean
     public Runner runner(Parser parser, UtilOperation utilOperation) {
@@ -34,22 +30,23 @@ public class AppConfig {
     @Bean
     public UtilOperation utilOperation() {
         UtilOperation utilOperation = new UtilOperation();
-        utilOperation.register("*", integerMultiplier());
         utilOperation.register("/", integerDivider());
+        utilOperation.register("*", integerMultiplier());
         return utilOperation;
     }
 
 
     // NEW OPERATIONS
     @Bean
+    public Operator<Integer> integerDivider() {
+        return new IntegerDivider();
+    }
+
+    @Bean
     public Operator<Integer> integerMultiplier() {
         return new IntegerMultiplier();
     }
 
-    @Bean
-    public Operator<Integer> integerDivider() {
-        return new IntegerDivider();
-    }
 
     // OLD OPERATIONS
     @Bean
@@ -92,6 +89,9 @@ public class AppConfig {
         return new IntegerSubtraction();
     }
 
-
+    @Bean
+    public LogAspect logAspect() {
+        return new LogAspect();
+    }
 
 }
