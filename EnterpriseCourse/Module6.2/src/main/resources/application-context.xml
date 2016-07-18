@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   					   http://www.springframework.org/schema/beans/spring-beans.xsd
+	   					   http://www.springframework.org/schema/tx
+	   					   http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <tx:annotation-driven transaction-manager="txManager" proxy-target-class="true"/>
+
+    <bean id="main" class="databases.Main">
+        <property name="employeeController" ref="employeeController"/>
+        <property name="dishController" ref="dishController"/>
+    </bean>
+
+    <bean id="employeeController" class="databases.controllers.EmployeeController">
+        <property name="employeeDao" ref="jdbcEmployeeDao"/>
+        <property name="dataSource" ref="dataSource"/>
+
+    </bean>
+
+    <bean id="dishController" class="databases.controllers.DishController">
+        <property name="dishDao" ref="jdbcDishDao"/>
+        <property name="dataSource" ref="dataSource"/>
+
+    </bean>
+
+    <bean id="jdbcEmployeeDao" class="databases.model.jdbc.JdbcEmployeeDao">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <bean id="jdbcDishDao" class="databases.model.jdbc.JdbcDishDao">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <bean class="com.mchange.v2.c3p0.ComboPooledDataSource" id="dataSource">
+        <property name="driverClass" value="${jdbc.driver.class}"/>
+        <property name="jdbcUrl" value="${jdbc.url}"/>
+        <property name="user" value="${jdbc.user}"/>
+        <property name="password" value="${jdbc.password}"/>
+        <property name="minPoolSize" value="${jdbc.min.connections}"/>
+        <property name="maxPoolSize" value="${jdbc.max.connections}"/>
+        <property name="acquireIncrement" value="${jdbc.acquire.increment}"/>
+    </bean>
+
+    <bean class="org.springframework.jdbc.datasource.DataSourceTransactionManager" id="txManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location" value="classpath:jdbc.properties"/>
+    </bean>
+
+</beans>
