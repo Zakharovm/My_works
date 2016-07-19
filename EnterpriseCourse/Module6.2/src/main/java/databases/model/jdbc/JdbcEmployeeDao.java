@@ -35,9 +35,9 @@ public class JdbcEmployeeDao extends JdbcDaoSupport implements EmployeeDao {
 
     @Override
     public void add(Employee employee) {
-        LOGGER.info("Adding the employee to table. ");
+        LOGGER.info("Adding the employee to table. " + employee.toString());
         try {
-            this.getJdbcTemplate().update("INSERT INTO EMPLOYEE VALUES (?, ?, ?, ?, ?, ?, ?)",
+            this.getJdbcTemplate().update("INSERT INTO EMPLOYEE (id, surname, name, date_of_birth, phone_number, position_id, salary) VALUES (?, ?, ?, ?, ?, ?, ?)",
                     employee.getId(),
                     employee.getSurname(),
                     employee.getName(),
