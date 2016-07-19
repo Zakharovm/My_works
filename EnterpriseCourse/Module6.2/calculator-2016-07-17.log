@@ -107,7 +107,7 @@
 2016-07-17 20:04:54 - Find the employee in the table by the name: Dima
 2016-07-17 20:04:54 - Create the parameters for the new dish. 
 2016-07-17 20:04:54 - Adding the dish to table. 
-2016-07-17 20:04:57 - Error occurred, while adding dish Dish{id=30, name='Napoleon', categoryId=3, price=50.0, weight=300.0}
+2016-07-17 20:04:57 - Error occurred, while adding dish Dish{id=30, name='Napoleon', menuId=3, price=50.0, weight=300.0}
 2016-07-17 20:10:59 - MLog clients using slf4j logging.
 2016-07-17 20:10:59 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
 2016-07-17 20:10:59 - Create the parameters for the new employee. 
@@ -120,7 +120,7 @@
 2016-07-17 20:11:01 - Find the employee in the table by the name: Dima
 2016-07-17 20:11:01 - Create the parameters for the new dish. 
 2016-07-17 20:11:01 - Adding the dish to table. 
-2016-07-17 20:11:04 - Error occurred, while adding dish Dish{id=30, name='Napoleon', categoryId=2, price=50.0, weight=300.0}
+2016-07-17 20:11:04 - Error occurred, while adding dish Dish{id=30, name='Napoleon', menuId=2, price=50.0, weight=300.0}
 2016-07-17 20:19:30 - MLog clients using slf4j logging.
 2016-07-17 20:19:31 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
 2016-07-17 20:19:31 - Create the parameters for the new employee. 
@@ -133,7 +133,7 @@
 2016-07-17 20:19:33 - Find the employee in the table by the name: Dima
 2016-07-17 20:19:33 - Create the parameters for the new dish. 
 2016-07-17 20:19:33 - Adding the dish to table. 
-2016-07-17 20:19:35 - Error occurred, while adding dish Dish{id=30, name='Napoleon', categoryId=3, price=50.0, weight=300.0}
+2016-07-17 20:19:35 - Error occurred, while adding dish Dish{id=30, name='Napoleon', menuId=3, price=50.0, weight=300.0}
 2016-07-17 20:27:00 - MLog clients using slf4j logging.
 2016-07-17 20:27:00 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
 2016-07-17 20:27:00 - Create the parameters for the new employee. 
@@ -146,7 +146,7 @@
 2016-07-17 20:27:04 - Find the employee in the table by the name: Dima
 2016-07-17 20:27:04 - Create the parameters for the new dish. 
 2016-07-17 20:27:04 - Adding the dish to table. 
-2016-07-17 20:27:04 - Error occurred, while adding dish Dish{id=30, name='Napoleon', categoryId=3, price=50.0, weight=300.0}
+2016-07-17 20:27:04 - Error occurred, while adding dish Dish{id=30, name='Napoleon', menuId=3, price=50.0, weight=300.0}
 2016-07-17 21:04:33 - MLog clients using slf4j logging.
 2016-07-17 21:04:34 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
 2016-07-17 21:04:55 - MLog clients using slf4j logging.
@@ -186,7 +186,7 @@
 2016-07-17 21:20:56 - Selecting the employee list. 
 2016-07-17 21:20:56 - Create the parameters for the new dish. 
 2016-07-17 21:20:56 - Adding the dish to table. 
-2016-07-17 21:21:01 - Error occurred, while adding dish Dish{id=30, name='Napoleon', categoryId=3, price=50.0, weight=300.0}
+2016-07-17 21:21:01 - Error occurred, while adding dish Dish{id=30, name='Napoleon', menuId=3, price=50.0, weight=300.0}
 2016-07-17 21:24:04 - MLog clients using slf4j logging.
 2016-07-17 21:24:04 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
 2016-07-17 21:24:04 - Create the parameters for the new employee. 
@@ -197,7 +197,7 @@
 2016-07-17 21:24:07 - Selecting the employee list. 
 2016-07-17 21:24:07 - Create the parameters for the new dish. 
 2016-07-17 21:24:07 - Adding the dish to table. 
-2016-07-17 21:24:09 - Error occurred, while adding dish Dish{id=30, name='Napoleon', categoryId=3, price=50.0, weight=300.0}
+2016-07-17 21:24:09 - Error occurred, while adding dish Dish{id=30, name='Napoleon', menuId=3, price=50.0, weight=300.0}
 2016-07-17 21:26:12 - MLog clients using slf4j logging.
 2016-07-17 21:26:12 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
 2016-07-17 21:26:12 - Create the parameters for the new employee. 
@@ -218,31 +218,31 @@
 2016-07-17 21:27:01 - Selecting the employee list. 
 2016-07-17 21:27:01 - Create the parameters for the new dish. 
 2016-07-17 21:27:01 - Adding the dish to table. 
-2016-07-17 21:27:04 - Error occurred, while adding dish Dish{id=30, name='Napoleon', categoryId=3, price=50.0, weight=300.0}
+2016-07-17 21:27:04 - Error occurred, while adding dish Dish{id=30, name='Napoleon', menuId=3, price=50.0, weight=300.0}
 2016-07-17 21:27:50 - MLog clients using slf4j logging.
 2016-07-17 21:27:50 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
 2016-07-17 21:27:50 - Create the parameters for the new dish. 
 2016-07-17 21:27:50 - Adding the dish to table. 
 2016-07-17 21:27:50 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9h1xebm76i5c8os|3427b02d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9h1xebm76i5c8os|3427b02d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
-2016-07-17 21:27:55 - Error occurred, while adding dish Dish{id=30, name='Napoleon', categoryId=3, price=50.0, weight=300.0}
+2016-07-17 21:27:55 - Error occurred, while adding dish Dish{id=30, name='Napoleon', menuId=3, price=50.0, weight=300.0}
 2016-07-17 21:29:13 - MLog clients using slf4j logging.
 2016-07-17 21:29:13 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
 2016-07-17 21:29:13 - Create the parameters for the new dish. 
 2016-07-17 21:29:13 - Adding the dish to table. 
 2016-07-17 21:29:13 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9h1xeddv11u8sx7c|3427b02d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9h1xeddv11u8sx7c|3427b02d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
-2016-07-17 21:29:18 - Error occurred, while adding dish Dish{id=30, name='Napoleon', categoryId=3, price=50.0, weight=300.0}
+2016-07-17 21:29:18 - Error occurred, while adding dish Dish{id=30, name='Napoleon', menuId=3, price=50.0, weight=300.0}
 2016-07-17 21:30:27 - MLog clients using slf4j logging.
 2016-07-17 21:30:27 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
 2016-07-17 21:30:28 - Create the parameters for the new dish. 
 2016-07-17 21:30:28 - Adding the dish to table. 
 2016-07-17 21:30:28 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9h1xeezh71g3ut79|3427b02d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9h1xeezh71g3ut79|3427b02d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
-2016-07-17 21:30:33 - Error occurred, while adding dish Dish{id=30, name='Napoleon', categoryId=3, price=50.0, weight=300.0}
+2016-07-17 21:30:33 - Error occurred, while adding dish Dish{id=30, name='Napoleon', menuId=3, price=50.0, weight=300.0}
 2016-07-17 21:31:22 - MLog clients using slf4j logging.
 2016-07-17 21:31:22 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
 2016-07-17 21:31:22 - Create the parameters for the new dish. 
 2016-07-17 21:31:22 - Adding the dish to table. 
 2016-07-17 21:31:22 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9h1xeg5t1krma53|3427b02d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9h1xeg5t1krma53|3427b02d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
-2016-07-17 21:31:27 - Error occurred, while adding dish Dish{id=30, name='Napoleon', categoryId=3, price=50.0, weight=300.0}
+2016-07-17 21:31:27 - Error occurred, while adding dish Dish{id=30, name='Napoleon', menuId=3, price=50.0, weight=300.0}
 2016-07-17 21:35:34 - MLog clients using slf4j logging.
 2016-07-17 21:35:34 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
 2016-07-17 21:35:34 - Create the parameters for the new employee. 
@@ -358,7 +358,7 @@
 2016-07-17 23:21:02 - Selecting the employee list. 
 2016-07-17 23:21:02 - Create the parameters for the new dish. 
 2016-07-17 23:21:02 - Adding the dish to table. 
-2016-07-17 23:21:05 - Error occurred, while adding dish Dish{id=30, name='Napoleon', categoryId=3, price=50.0, weight=300.0}
+2016-07-17 23:21:05 - Error occurred, while adding dish Dish{id=30, name='Napoleon', menuId=3, price=50.0, weight=300.0}
 2016-07-17 23:22:17 - MLog clients using slf4j logging.
 2016-07-17 23:22:17 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
 2016-07-17 23:22:17 - Create the parameters for the new employee. 
@@ -386,7 +386,7 @@
 2016-07-17 23:24:45 - Selecting the employee list. 
 2016-07-17 23:24:55 - Create the parameters for the new dish. 
 2016-07-17 23:25:28 - Adding the dish to table. 
-2016-07-17 23:29:21 - Error occurred, while adding dish Dish{id=30, name='Napoleon', categoryId=3, price=50.0, weight=300.0}
+2016-07-17 23:29:21 - Error occurred, while adding dish Dish{id=30, name='Napoleon', menuId=3, price=50.0, weight=300.0}
 2016-07-17 23:30:14 - MLog clients using slf4j logging.
 2016-07-17 23:30:14 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
 2016-07-17 23:30:14 - Create the parameters for the new employee. 
@@ -409,7 +409,7 @@
 2016-07-17 23:31:44 - Find the employee in the table by the name: Maksym
 2016-07-17 23:31:44 - Selecting the employee list. 
 2016-07-17 23:31:44 - Create the parameters for the new dish. 
-2016-07-17 23:31:44 - Adding the dish to table. Dish{id=30, name='Napoleon', categoryId=3, price=50.0, weight=300.0}
+2016-07-17 23:31:44 - Adding the dish to table. Dish{id=30, name='Napoleon', menuId=3, price=50.0, weight=300.0}
 2016-07-17 23:31:44 - Delete the dish from the table. 
 2016-07-17 23:31:44 - Finding the dish with specific name: Pork
 2016-07-17 23:31:44 - Selecting the dish list. 
