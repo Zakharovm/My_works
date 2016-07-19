@@ -9,6 +9,7 @@ import org.springframework.jdbc.core.support.JdbcDaoSupport;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -19,16 +20,21 @@ public class JdbcEmployeeDao extends JdbcDaoSupport implements EmployeeDao {
 
     @Override
     public List<Employee> findAll() {
+        List<Employee> employeeList = new ArrayList<>();
         LOGGER.info("Selecting the employee list. ");
 
-        List<Employee> employeeList = this.getJdbcTemplate().query("SELECT * FROM EMPLOYEE",
-                new RowMapper<Employee>() {
-                    @Override
-                    public Employee mapRow(ResultSet rs, int rowNumber)
-                            throws SQLException {
-                        return getEmployee(rs);
-                    }
-                });
+        try {
+            employeeList = this.getJdbcTemplate().query("SELECT * FROM EMPLOYEE",
+                    new RowMapper<Employee>() {
+                        @Override
+                        public Employee mapRow(ResultSet rs, int rowNumber)
+                                throws SQLException {
+                            return getEmployee(rs);
+                        }
+                    });
+        } catch (Exception e) {
+            LOGGER.error("Error occurred, during the output of the employee list. ");
+        }
         return employeeList;
     }
 
@@ -71,16 +77,20 @@ public class JdbcEmployeeDao extends JdbcDaoSupport implements EmployeeDao {
 
     @Override
     public List<Employee> find(String name) {
+        List<Employee> employeeList = new ArrayList<>();
         LOGGER.info("Find the employee in the table by the name: " + name);
-
-        List<Employee> employeeList = this.getJdbcTemplate().query("SELECT * FROM EMPLOYEE WHERE name = '" + name + "'",
-                new RowMapper<Employee>() {
-                    @Override
-                    public Employee mapRow(ResultSet rs, int rowNumber)
-                            throws SQLException {
-                        return getEmployee(rs);
-                    }
-                });
+        try {
+            employeeList = this.getJdbcTemplate().query("SELECT * FROM EMPLOYEE WHERE name = '" + name + "'",
+                    new RowMapper<Employee>() {
+                        @Override
+                        public Employee mapRow(ResultSet rs, int rowNumber)
+                                throws SQLException {
+                            return getEmployee(rs);
+                        }
+                    });
+        } catch (Exception e) {
+            LOGGER.error("Error occurred, while finding employee with the name" + name);
+        }
         return employeeList;
 
 

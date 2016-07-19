@@ -19,7 +19,7 @@ public class DishController extends JdbcDaoSupport {
         Dish dish = new Dish();
         dish.setId(30);
         dish.setName("Napoleon");
-        dish.setCategoryId(3);
+        dish.setMenuId(3);
         dish.setPrice(50.0F);
         dish.setWeight(300.0F);
 
