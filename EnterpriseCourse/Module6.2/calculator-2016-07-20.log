@@ -77,3 +77,4 @@
 2016-07-20 20:03:55 - Delete the dish from the table. 
 2016-07-20 20:03:55 - Finding the dish with specific name: Pork
 2016-07-20 20:03:55 - Selecting the dish list. 
+2016-07-20 21:28:58 - Error occurred, while adding employee Employee{id=15, surname='Harchenko', name='Oleg', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position=Waiter, salary=4000.0}

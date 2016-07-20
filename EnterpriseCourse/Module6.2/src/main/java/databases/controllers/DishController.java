@@ -12,7 +12,7 @@ public class DishController extends JdbcDaoSupport {
 
     private DishDao dishDao;
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(EmployeeController.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(DishController.class);
 
     public void createDish() {
         LOGGER.info("Create the parameters for the new dish. ");
