@@ -19,38 +19,26 @@ public class JdbcDishDao extends JdbcDaoSupport implements DishDao {
     @Override
     public void add(Dish dish) {
         LOGGER.info("Adding the dish to table. " + dish.toString());
-        try {
             this.getJdbcTemplate().update("INSERT INTO DISH VALUES (?, ?, ?, ?, ?)",
                     dish.getId(),
                     dish.getName(),
-                    dish.getMenuId(),
+                    dish.getCategory(),
                     dish.getPrice(),
                     dish.getWeight()
             );
-        } catch (Exception e) {
-            LOGGER.error("Error occurred, while adding dish " + dish.toString());
-            throw new RuntimeException();
 
-        }
     }
 
     @Override
     public void delete(int id) {
-        try {
             LOGGER.info("Delete the dish from the table. ");
             this.getJdbcTemplate().update("DELETE FROM DISH WHERE id = ?", id);
-        } catch (Exception e) {
-            LOGGER.error("Error occurred, while adding dish with id " + id);
-        }
-
-
     }
 
     @Override
     public List<Dish> find(String name) {
         List<Dish> dishList = new ArrayList<>();
         LOGGER.info("Finding the dish with specific name: " + name);
-        try {
             dishList = this.getJdbcTemplate().query("SELECT * FROM DISH WHERE name = '" + name + "'",
                     new RowMapper<Dish>() {
                         @Override
@@ -59,9 +47,6 @@ public class JdbcDishDao extends JdbcDaoSupport implements DishDao {
                             return getDish(rs);
                         }
                     });
-        } catch (Exception e) {
-            LOGGER.error("Error occurred, while finding dish with the name" + name);
-        }
         return dishList;
     }
 
@@ -69,7 +54,6 @@ public class JdbcDishDao extends JdbcDaoSupport implements DishDao {
     public List<Dish> findAll() {
         List<Dish> dishList = new ArrayList<>();
         LOGGER.info("Selecting the dish list. ");
-        try {
             dishList = this.getJdbcTemplate().query("SELECT * FROM DISH",
                     new RowMapper<Dish>() {
                         @Override
@@ -78,10 +62,6 @@ public class JdbcDishDao extends JdbcDaoSupport implements DishDao {
                             return getDish(rs);
                         }
                     });
-        } catch (Exception e) {
-            LOGGER.error("Error occurred, during the output of the dish list. ");
-
-        }
         return dishList;
     }
 
@@ -89,7 +69,7 @@ public class JdbcDishDao extends JdbcDaoSupport implements DishDao {
         Dish dish = new Dish();
         dish.setId(rs.getInt("id"));
         dish.setName(rs.getString("name"));
-        dish.setMenuId(rs.getInt("menu_id"));
+        dish.setCategory(rs.getString("category"));
         dish.setPrice(rs.getFloat("price"));
         dish.setWeight(rs.getFloat("weight"));
         return dish;

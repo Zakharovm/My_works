@@ -18,12 +18,12 @@ public class EmployeeController extends JdbcDaoSupport {
     public void createEmployee() {
         LOGGER.info("Create the parameters for the new employee. ");
         Employee employee = new Employee();
-        employee.setId(15);
+        employee.setId(16);
         employee.setSurname("Harchenko");
         employee.setName("Oleg");
         employee.setDateOfBirth("25-01-1965");
         employee.setPhoneNumber("053-123-42-53");
-        employee.setPositionId(2);
+        employee.setPosition("Waiter");
         employee.setSalary(4000.0F);
 
         employeeDao.add(employee);
@@ -31,7 +31,7 @@ public class EmployeeController extends JdbcDaoSupport {
     }
 
     public void deleteEmployee() {
-        employeeDao.delete(15);
+        employeeDao.delete(16);
     }
 
     public List<Employee> getAllEmployees() {

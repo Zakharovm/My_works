@@ -6,7 +6,7 @@ public class Employee {
     private String name;
     private String dateOfBirth;
     private String phoneNumber;
-    private int positionId;
+    private String position;
     private float salary;
 
     public int getId() {
@@ -49,12 +49,12 @@ public class Employee {
         this.phoneNumber = phoneNumber;
     }
 
-    public int getPositionId() {
-        return positionId;
+    public String getPosition() {
+        return position;
     }
 
-    public void setPositionId(int positionId) {
-        this.positionId = positionId;
+    public void setPosition(String position) {
+        this.position = position;
     }
 
     public float getSalary() {
@@ -73,7 +73,7 @@ public class Employee {
                 ", name='" + name + '\'' +
                 ", dateOfBirth='" + dateOfBirth + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +
-                ", positionId=" + positionId +
+                ", position=" + position +
                 ", salary=" + salary +
                 '}';
     }

@@ -4,7 +4,7 @@ public class Dish {
 
     private int id;
     private String name;
-    private int menuId;
+    private String category;
     private float price;
     private float weight;
 
@@ -24,12 +24,12 @@ public class Dish {
         this.name = name;
     }
 
-    public int getMenuId() {
-        return menuId;
+    public String getCategory() {
+        return category;
     }
 
-    public void setMenuId(int menuId) {
-        this.menuId = menuId;
+    public void setCategory(String category) {
+        this.category = category;
     }
 
     public float getPrice() {
@@ -53,7 +53,7 @@ public class Dish {
         return "Dish{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", menuId=" + menuId +
+                ", category=" + category +
                 ", price=" + price +
                 ", weight=" + weight +
                 '}';
