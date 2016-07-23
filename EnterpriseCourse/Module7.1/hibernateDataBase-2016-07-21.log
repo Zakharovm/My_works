@@ -1,0 +1,693 @@
+2016-07-21 13:53:16 - MLog clients using slf4j logging.
+2016-07-21 13:53:17 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 13:53:18 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 13:53:18 - HHH000206: hibernate.properties not found
+2016-07-21 13:53:18 - HHH000021: Bytecode provider name : javassist
+2016-07-21 13:53:19 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 13:53:20 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i3mqedoe3q4oo|4567f35d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i3mqedoe3q4oo|4567f35d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 13:53:22 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 13:53:23 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 13:53:23 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1dd6d4b7
+2016-07-21 13:53:26 - Create the parameters for the new employee. 
+2016-07-21 13:53:26 - Selecting the employee list. 
+2016-07-21 13:53:26 - Adding the employee to table. Employee{id=0, surname='Harchenko', name='Oleg', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}
+2016-07-21 14:40:27 - MLog clients using slf4j logging.
+2016-07-21 14:40:27 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 14:40:27 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 14:40:27 - HHH000206: hibernate.properties not found
+2016-07-21 14:40:27 - HHH000021: Bytecode provider name : javassist
+2016-07-21 14:40:27 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 14:40:27 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i3of23b117kd47|6356695f, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i3of23b117kd47|6356695f, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 14:40:30 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 14:40:31 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 14:40:31 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2dd29a59
+2016-07-21 14:40:32 - Create the parameters for the new employee. 
+2016-07-21 14:40:32 - Selecting the employee list. 
+2016-07-21 14:40:32 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 14:42:48 - MLog clients using slf4j logging.
+2016-07-21 14:42:48 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 14:42:48 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 14:42:48 - HHH000206: hibernate.properties not found
+2016-07-21 14:42:48 - HHH000021: Bytecode provider name : javassist
+2016-07-21 14:42:48 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 14:42:49 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i3oi374jhr2vw|4567f35d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i3oi374jhr2vw|4567f35d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 14:42:51 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 14:42:52 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 14:42:52 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1dd6d4b7
+2016-07-21 14:42:53 - Create the parameters for the new employee. 
+2016-07-21 14:42:53 - Selecting the employee list. 
+2016-07-21 14:42:53 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 14:42:53 - Find the employee in the table by the name: Maksym
+2016-07-21 14:45:09 - MLog clients using slf4j logging.
+2016-07-21 14:45:09 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 14:45:09 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 14:45:09 - HHH000206: hibernate.properties not found
+2016-07-21 14:45:09 - HHH000021: Bytecode provider name : javassist
+2016-07-21 14:45:09 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 14:45:10 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i3ol3sq1cjciyz|517d4a0d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i3ol3sq1cjciyz|517d4a0d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 14:45:13 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 14:45:13 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 14:45:13 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@769d513
+2016-07-21 14:45:14 - Create the parameters for the new employee. 
+2016-07-21 14:45:14 - Selecting the employee list. 
+2016-07-21 14:45:14 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 14:45:14 - Find the employee in the table by the name: Maksym
+2016-07-21 14:49:48 - MLog clients using slf4j logging.
+2016-07-21 14:49:48 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 14:49:49 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 14:49:49 - HHH000206: hibernate.properties not found
+2016-07-21 14:49:49 - HHH000021: Bytecode provider name : javassist
+2016-07-21 14:49:49 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 14:49:49 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i3or3k21t11iq9|4567f35d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i3or3k21t11iq9|4567f35d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 14:49:51 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 14:49:51 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 14:49:51 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1dd6d4b7
+2016-07-21 14:49:52 - Create the parameters for the new employee. 
+2016-07-21 14:49:52 - Selecting the employee list. 
+2016-07-21 14:49:52 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 14:51:32 - MLog clients using slf4j logging.
+2016-07-21 14:51:32 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 14:51:32 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 14:51:32 - HHH000206: hibernate.properties not found
+2016-07-21 14:51:32 - HHH000021: Bytecode provider name : javassist
+2016-07-21 14:51:32 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 14:51:32 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i3otbezlysgc2|4567f35d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i3otbezlysgc2|4567f35d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 14:51:37 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 14:51:38 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 14:51:38 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1dd6d4b7
+2016-07-21 14:51:39 - Create the parameters for the new employee. 
+2016-07-21 14:51:39 - Selecting the employee list. 
+2016-07-21 14:51:39 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 14:51:39 - Adding the employee to table. Employee{id=0, surname='Bedrickiy', name='Oleg', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}
+2016-07-21 14:52:28 - MLog clients using slf4j logging.
+2016-07-21 14:52:28 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 14:52:28 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 14:52:28 - HHH000206: hibernate.properties not found
+2016-07-21 14:52:28 - HHH000021: Bytecode provider name : javassist
+2016-07-21 14:52:28 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 14:52:28 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i3ouijwm3zj9y|4567f35d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i3ouijwm3zj9y|4567f35d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 14:52:31 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 14:52:32 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 14:52:32 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1dd6d4b7
+2016-07-21 14:52:32 - Create the parameters for the new employee. 
+2016-07-21 14:52:33 - Selecting the employee list. 
+2016-07-21 14:52:33 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 14:52:33 - Adding the employee to table. Employee{id=0, surname='Zakharov', name='Oleg', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}
+2016-07-21 14:52:33 - Find the employee in the table by the name: Maksym
+2016-07-21 14:53:35 - MLog clients using slf4j logging.
+2016-07-21 14:53:35 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 14:53:35 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 14:53:35 - HHH000206: hibernate.properties not found
+2016-07-21 14:53:35 - HHH000021: Bytecode provider name : javassist
+2016-07-21 14:53:35 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 14:53:35 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i3ovy97ctjtaa|4567f35d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i3ovy97ctjtaa|4567f35d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 14:53:38 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 14:53:39 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 14:53:39 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1dd6d4b7
+2016-07-21 14:53:40 - Create the parameters for the new employee. 
+2016-07-21 14:53:40 - Selecting the employee list. 
+2016-07-21 14:53:40 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 14:53:40 - Adding the employee to table. Employee{id=0, surname='Zakharova', name='Oksana', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}
+2016-07-21 14:53:40 - Find the employee in the table by the name: Maksym
+2016-07-21 14:56:31 - MLog clients using slf4j logging.
+2016-07-21 14:56:31 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 14:56:31 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 14:56:31 - HHH000206: hibernate.properties not found
+2016-07-21 14:56:31 - HHH000021: Bytecode provider name : javassist
+2016-07-21 14:56:31 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 14:56:31 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i3ozq4no94afs|4567f35d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i3ozq4no94afs|4567f35d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 14:56:34 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 14:56:35 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 14:56:35 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1dd6d4b7
+2016-07-21 14:56:36 - Create the parameters for the new employee. 
+2016-07-21 14:56:36 - Selecting the employee list. 
+2016-07-21 14:56:36 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 14:56:36 - Find the employee in the table by the name: Dima
+2016-07-21 15:03:18 - MLog clients using slf4j logging.
+2016-07-21 15:03:18 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 15:03:19 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 15:03:19 - HHH000206: hibernate.properties not found
+2016-07-21 15:03:19 - HHH000021: Bytecode provider name : javassist
+2016-07-21 15:03:19 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 15:03:19 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i3p8gg81eu1t1g|4567f35d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i3p8gg81eu1t1g|4567f35d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 15:03:22 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 15:03:22 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 15:03:22 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1dd6d4b7
+2016-07-21 15:03:23 - Create the parameters for the new employee. 
+2016-07-21 15:03:23 - Selecting the employee list. 
+2016-07-21 15:03:23 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 15:03:23 - Find the employee in the table by the name: Dima
+2016-07-21 15:11:00 - MLog clients using slf4j logging.
+2016-07-21 15:11:00 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 15:11:00 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 15:11:00 - HHH000206: hibernate.properties not found
+2016-07-21 15:11:00 - HHH000021: Bytecode provider name : javassist
+2016-07-21 15:11:00 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 15:11:00 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i3picnbq4c73q|4567f35d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i3picnbq4c73q|4567f35d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 15:11:03 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 15:11:04 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 15:11:04 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1dd6d4b7
+2016-07-21 15:11:05 - Create the parameters for the new employee. 
+2016-07-21 15:11:05 - Selecting the employee list. 
+2016-07-21 15:11:05 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 15:11:05 - Find the employee in the table by the name: Dima
+2016-07-21 15:15:15 - MLog clients using slf4j logging.
+2016-07-21 15:15:15 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 15:15:15 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 15:15:15 - HHH000206: hibernate.properties not found
+2016-07-21 15:15:15 - HHH000021: Bytecode provider name : javassist
+2016-07-21 15:15:15 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 15:15:15 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i3pntd31g9a7tz|4567f35d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i3pntd31g9a7tz|4567f35d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 15:15:18 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 15:15:19 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 15:15:19 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1dd6d4b7
+2016-07-21 15:15:20 - Create the parameters for the new employee. 
+2016-07-21 15:15:20 - Selecting the employee list. 
+2016-07-21 15:15:20 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 15:15:20 - Find the employee in the table by the name: Oleg
+2016-07-21 15:19:04 - MLog clients using slf4j logging.
+2016-07-21 15:19:04 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 15:19:05 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 15:19:05 - HHH000206: hibernate.properties not found
+2016-07-21 15:19:05 - HHH000021: Bytecode provider name : javassist
+2016-07-21 15:19:05 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 15:19:05 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i3psqff1lb1wjh|4567f35d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i3psqff1lb1wjh|4567f35d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 15:19:10 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 15:19:10 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 15:19:10 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1dd6d4b7
+2016-07-21 15:19:11 - Selecting the employee list. 
+2016-07-21 15:19:11 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 15:19:11 - Adding the employee to table. Employee{id=0, surname='Petrova', name='Valentina', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}
+2016-07-21 15:19:11 - Adding the employee to table. Employee{id=0, surname='Popov', name='Andry', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}
+2016-07-21 15:19:11 - Find the employee in the table by the name: Oleg
+2016-07-21 15:24:50 - MLog clients using slf4j logging.
+2016-07-21 15:24:50 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 15:24:50 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 15:24:50 - HHH000206: hibernate.properties not found
+2016-07-21 15:24:50 - HHH000021: Bytecode provider name : javassist
+2016-07-21 15:24:50 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 15:24:50 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i3q050w7wu3sb|4567f35d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i3q050w7wu3sb|4567f35d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 15:24:53 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 15:24:54 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 15:24:54 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1dd6d4b7
+2016-07-21 15:24:55 - Selecting the employee list. 
+2016-07-21 15:24:55 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 15:24:55 - Find the employee in the table by the name: Oleg
+2016-07-21 15:25:29 - MLog clients using slf4j logging.
+2016-07-21 15:25:29 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 15:25:30 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 15:25:30 - HHH000206: hibernate.properties not found
+2016-07-21 15:25:30 - HHH000021: Bytecode provider name : javassist
+2016-07-21 15:25:30 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 15:25:30 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i3q0zjrcbv0oo|4567f35d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i3q0zjrcbv0oo|4567f35d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 15:25:33 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 15:25:33 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 15:25:33 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1dd6d4b7
+2016-07-21 15:25:34 - Selecting the employee list. 
+2016-07-21 15:25:34 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 15:25:34 - Adding the employee to table. Employee{id=0, surname='Petrova', name='Galia', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Cook', salary=4000.0}
+2016-07-21 15:25:34 - Adding the employee to table. Employee{id=0, surname='Popov', name='Vlad', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}
+2016-07-21 15:25:34 - Find the employee in the table by the name: Oleg
+2016-07-21 15:33:24 - MLog clients using slf4j logging.
+2016-07-21 15:33:24 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 15:33:25 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 15:33:25 - HHH000206: hibernate.properties not found
+2016-07-21 15:33:25 - HHH000021: Bytecode provider name : javassist
+2016-07-21 15:33:25 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 15:33:25 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i3qb5wxw2qpbl|7862f56, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i3qb5wxw2qpbl|7862f56, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 15:33:28 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 15:33:28 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 15:33:28 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5e4fa1da
+2016-07-21 15:33:32 - Selecting the employee list. 
+2016-07-21 15:33:32 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 15:33:32 - Adding the employee to table. Employee{id=0, surname='Peskova', name='Lena', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Cook', salary=4000.0}
+2016-07-21 15:33:32 - Adding the employee to table. Employee{id=0, surname='Popova', name='Vlada', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}
+2016-07-21 15:35:54 - Find the employee in the table by the name: Oleg
+2016-07-21 15:36:06 - MLog clients using slf4j logging.
+2016-07-21 15:36:07 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 15:36:07 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 15:36:07 - HHH000206: hibernate.properties not found
+2016-07-21 15:36:07 - HHH000021: Bytecode provider name : javassist
+2016-07-21 15:36:07 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 15:36:07 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i3qen3b1o5niu3|7862f56, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i3qen3b1o5niu3|7862f56, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 15:36:11 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 15:36:12 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 15:36:12 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5e4fa1da
+2016-07-21 15:36:52 - Selecting the employee list. 
+2016-07-21 15:36:52 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 15:36:53 - Adding the employee to table. Employee{id=0, surname='Peskova', name='Lena', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Cook', salary=4000.0}
+2016-07-21 15:36:53 - Adding the employee to table. Employee{id=0, surname='Popova', name='Vlada', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}
+2016-07-21 15:42:06 - Find the employee in the table by the name: Oleg
+2016-07-21 15:46:28 - MLog clients using slf4j logging.
+2016-07-21 15:46:28 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 15:46:29 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 15:46:29 - HHH000206: hibernate.properties not found
+2016-07-21 15:46:29 - HHH000021: Bytecode provider name : javassist
+2016-07-21 15:46:29 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 15:46:29 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i3qryyj1j7ijdz|4567f35d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i3qryyj1j7ijdz|4567f35d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 15:46:32 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 15:46:32 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 15:46:32 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1dd6d4b7
+2016-07-21 15:46:33 - Selecting the employee list. 
+2016-07-21 15:46:33 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 15:46:33 - Find the employee in the table by the name: Oleg
+2016-07-21 15:46:33 - Selecting the employee list. 
+2016-07-21 16:07:30 - MLog clients using slf4j logging.
+2016-07-21 16:07:30 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 16:07:30 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 16:07:30 - HHH000206: hibernate.properties not found
+2016-07-21 16:07:30 - HHH000021: Bytecode provider name : javassist
+2016-07-21 16:07:30 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 16:07:30 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i3rj0ca1olhmsc|130161f7, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i3rj0ca1olhmsc|130161f7, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 16:07:32 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 16:07:32 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 16:07:32 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2320fa6f
+2016-07-21 16:07:33 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 16:07:33 - Find the employee in the table by the name: Oleg
+2016-07-21 16:18:22 - MLog clients using slf4j logging.
+2016-07-21 16:18:22 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 16:18:22 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 16:18:22 - HHH000206: hibernate.properties not found
+2016-07-21 16:18:22 - HHH000021: Bytecode provider name : javassist
+2016-07-21 16:18:22 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 16:18:22 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i3rwzaa1s1a5io|130161f7, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i3rwzaa1s1a5io|130161f7, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 16:18:26 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 16:18:27 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 16:18:27 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2320fa6f
+2016-07-21 16:18:28 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 16:18:28 - Find the employee in the table by the name: Oleg
+2016-07-21 17:48:17 - MLog clients using slf4j logging.
+2016-07-21 17:48:17 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 17:48:18 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 17:48:18 - HHH000206: hibernate.properties not found
+2016-07-21 17:48:18 - HHH000021: Bytecode provider name : javassist
+2016-07-21 17:48:19 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 17:48:20 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i3v4m6zvq78ln|130161f7, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i3v4m6zvq78ln|130161f7, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 17:48:23 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 17:48:24 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 17:48:24 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2320fa6f
+2016-07-21 17:48:27 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 17:48:27 - Find the employee in the table by the name: Dima
+2016-07-21 17:56:20 - MLog clients using slf4j logging.
+2016-07-21 17:56:20 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 17:56:21 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 17:56:21 - HHH000206: hibernate.properties not found
+2016-07-21 17:56:21 - HHH000021: Bytecode provider name : javassist
+2016-07-21 17:56:21 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 17:56:21 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i3vez1w8kkvc3|130161f7, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i3vez1w8kkvc3|130161f7, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 17:56:25 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 17:56:25 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 17:56:25 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2320fa6f
+2016-07-21 17:56:26 - Selecting the list of employees. 
+2016-07-21 17:56:26 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 17:56:26 - Find the employee in the table by the name: Dima
+2016-07-21 17:56:26 - Selecting the list of employees. 
+2016-07-21 17:57:17 - MLog clients using slf4j logging.
+2016-07-21 17:57:17 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 17:57:18 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 17:57:18 - HHH000206: hibernate.properties not found
+2016-07-21 17:57:18 - HHH000021: Bytecode provider name : javassist
+2016-07-21 17:57:18 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 17:57:18 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i3vg79dateq70|130161f7, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i3vg79dateq70|130161f7, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 17:57:21 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 17:57:21 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 17:57:21 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2320fa6f
+2016-07-21 17:57:22 - Selecting the list of employees. 
+2016-07-21 17:57:22 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 17:57:22 - Find the employee in the table by the name: Dima
+2016-07-21 17:57:22 - Selecting the list of employees. 
+2016-07-21 18:24:39 - MLog clients using slf4j logging.
+2016-07-21 18:24:39 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 18:24:40 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 18:24:40 - HHH000206: hibernate.properties not found
+2016-07-21 18:24:40 - HHH000021: Bytecode provider name : javassist
+2016-07-21 18:24:40 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 18:24:40 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i3wfe97bvtt5n|20deea7f, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i3wfe97bvtt5n|20deea7f, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 18:24:43 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 18:24:43 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 18:24:43 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@fcb4004
+2016-07-21 18:24:44 - Selecting the list of employees. 
+2016-07-21 18:24:44 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 18:24:45 - Find the employee in the table by the name: Dima
+2016-07-21 18:24:45 - Selecting the list of employees. 
+2016-07-21 18:24:45 - Selecting the dish list. 
+2016-07-21 18:24:45 - Adding the dish to table. Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-21 18:24:45 - Adding the dish to table. Dish{id=0, name='Plov', category=Garnish, price=30.0, weight=200.0}
+2016-07-21 18:24:45 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-21 18:24:45 - HHH000114: Handling transient entity in delete processing
+2016-07-21 18:24:45 - Finding the dish with specific name: Pork
+2016-07-21 18:24:45 - Selecting the dish list. 
+2016-07-21 18:25:44 - MLog clients using slf4j logging.
+2016-07-21 18:25:44 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 18:25:44 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 18:25:44 - HHH000206: hibernate.properties not found
+2016-07-21 18:25:44 - HHH000021: Bytecode provider name : javassist
+2016-07-21 18:25:44 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 18:25:44 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i3wgs0ahvwvl1|20deea7f, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i3wgs0ahvwvl1|20deea7f, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 18:25:47 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 18:25:48 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 18:25:48 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@fcb4004
+2016-07-21 18:25:49 - Selecting the list of employees. 
+2016-07-21 18:25:49 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 18:25:49 - Find the employee in the table by the name: Dima
+2016-07-21 18:25:49 - Selecting the list of employees. 
+2016-07-21 18:25:49 - Selecting the dish list. 
+2016-07-21 18:25:49 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-21 18:25:49 - HHH000114: Handling transient entity in delete processing
+2016-07-21 18:25:49 - Finding the dish with specific name: Pork
+2016-07-21 18:25:49 - Selecting the dish list. 
+2016-07-21 19:34:18 - MLog clients using slf4j logging.
+2016-07-21 19:34:18 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 19:34:19 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 19:34:19 - HHH000206: hibernate.properties not found
+2016-07-21 19:34:19 - HHH000021: Bytecode provider name : javassist
+2016-07-21 19:34:19 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 19:34:19 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i3ywytaohljnn|1dde4cb2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i3ywytaohljnn|1dde4cb2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 19:34:22 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 19:34:22 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 19:34:22 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2dd29a59
+2016-07-21 19:35:51 - MLog clients using slf4j logging.
+2016-07-21 19:35:51 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 19:35:51 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 19:35:51 - HHH000206: hibernate.properties not found
+2016-07-21 19:35:51 - HHH000021: Bytecode provider name : javassist
+2016-07-21 19:35:51 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 19:35:51 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i3yyy74bjlk9a|1dde4cb2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i3yyy74bjlk9a|1dde4cb2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 19:35:54 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 19:35:55 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 19:35:55 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2dd29a59
+2016-07-21 19:37:28 - MLog clients using slf4j logging.
+2016-07-21 19:37:28 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 19:37:28 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 19:37:28 - HHH000206: hibernate.properties not found
+2016-07-21 19:37:28 - HHH000021: Bytecode provider name : javassist
+2016-07-21 19:37:29 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 19:37:29 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i3z117a1sfue3r|1dde4cb2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i3z117a1sfue3r|1dde4cb2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 19:37:32 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 19:37:32 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 19:37:32 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2dd29a59
+2016-07-21 19:37:57 - MLog clients using slf4j logging.
+2016-07-21 19:37:57 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 19:37:57 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 19:37:57 - HHH000206: hibernate.properties not found
+2016-07-21 19:37:57 - HHH000021: Bytecode provider name : javassist
+2016-07-21 19:37:57 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 19:37:58 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i3z1nfztqscs6|1dde4cb2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i3z1nfztqscs6|1dde4cb2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 19:37:59 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 19:38:00 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 19:38:00 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2dd29a59
+2016-07-21 19:38:01 - Selecting the list of employees. 
+2016-07-21 19:38:01 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 19:38:01 - Find the employee in the table by the name: Dima
+2016-07-21 19:42:10 - MLog clients using slf4j logging.
+2016-07-21 19:42:10 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 19:42:10 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 19:42:10 - HHH000206: hibernate.properties not found
+2016-07-21 19:42:10 - HHH000021: Bytecode provider name : javassist
+2016-07-21 19:42:10 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 19:42:11 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i3z72oo1b70ktg|1dde4cb2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i3z72oo1b70ktg|1dde4cb2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 19:42:12 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 19:42:12 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 19:42:12 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2dd29a59
+2016-07-21 19:42:14 - Selecting the list of employees. 
+2016-07-21 19:42:14 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 19:42:14 - Find the employee in the table by the name: Vlada
+2016-07-21 19:42:14 - Selecting the list of employees. 
+2016-07-21 19:42:14 - Selecting the dish list. 
+2016-07-21 19:42:14 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-21 19:42:14 - HHH000114: Handling transient entity in delete processing
+2016-07-21 19:42:14 - Finding the dish with specific name: Pork
+2016-07-21 19:42:14 - Selecting the dish list. 
+2016-07-21 19:45:01 - MLog clients using slf4j logging.
+2016-07-21 19:45:02 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 19:45:02 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 19:45:02 - HHH000206: hibernate.properties not found
+2016-07-21 19:45:02 - HHH000021: Bytecode provider name : javassist
+2016-07-21 19:45:02 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 19:45:02 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i3zar0ybbwpln|1dde4cb2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i3zar0ybbwpln|1dde4cb2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 19:45:04 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 19:45:04 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 19:45:04 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2dd29a59
+2016-07-21 19:45:05 - Selecting the list of employees. 
+2016-07-21 19:45:05 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 19:45:05 - Find the employee in the table by the name: Vlada
+2016-07-21 19:45:05 - Selecting the list of employees. 
+2016-07-21 19:45:05 - Selecting the dish list. 
+2016-07-21 19:45:05 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-21 19:45:05 - HHH000114: Handling transient entity in delete processing
+2016-07-21 19:45:05 - Finding the dish with specific name: Pork
+2016-07-21 19:45:05 - Selecting the dish list. 
+2016-07-21 19:49:01 - MLog clients using slf4j logging.
+2016-07-21 19:49:01 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 19:49:01 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 19:49:01 - HHH000206: hibernate.properties not found
+2016-07-21 19:49:01 - HHH000021: Bytecode provider name : javassist
+2016-07-21 19:49:01 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 19:49:01 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i3zfvpwsa1ywq|1dde4cb2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i3zfvpwsa1ywq|1dde4cb2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 19:49:04 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 19:49:05 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 19:49:05 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2dd29a59
+2016-07-21 19:49:06 - Selecting the list of employees. 
+2016-07-21 19:49:06 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 19:49:06 - Find the employee in the table by the name: Vlada
+2016-07-21 19:49:06 - Selecting the list of employees. 
+2016-07-21 19:49:06 - Selecting the dish list. 
+2016-07-21 19:49:06 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-21 19:49:06 - HHH000114: Handling transient entity in delete processing
+2016-07-21 19:49:06 - Finding the dish with specific name: Pork
+2016-07-21 19:49:06 - Selecting the dish list. 
+2016-07-21 20:03:48 - MLog clients using slf4j logging.
+2016-07-21 20:03:48 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 20:03:48 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 20:03:48 - HHH000206: hibernate.properties not found
+2016-07-21 20:03:48 - HHH000021: Bytecode provider name : javassist
+2016-07-21 20:03:48 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 20:03:48 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i3zyw4011vftqc|1dde4cb2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i3zyw4011vftqc|1dde4cb2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 20:03:51 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 20:03:52 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 20:03:52 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2dd29a59
+2016-07-21 20:03:53 - Selecting the list of employees. 
+2016-07-21 20:03:53 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 20:03:53 - Find the employee in the table by the name: Vlada
+2016-07-21 20:03:53 - Selecting the list of employees. 
+2016-07-21 20:03:53 - Selecting the dish list. 
+2016-07-21 20:03:53 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-21 20:03:53 - HHH000114: Handling transient entity in delete processing
+2016-07-21 20:03:53 - Finding the dish with specific name: Pork
+2016-07-21 20:03:53 - Selecting the dish list. 
+2016-07-21 20:04:27 - MLog clients using slf4j logging.
+2016-07-21 20:04:27 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 20:04:28 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 20:04:28 - HHH000206: hibernate.properties not found
+2016-07-21 20:04:28 - HHH000021: Bytecode provider name : javassist
+2016-07-21 20:04:28 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 20:04:28 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i3zzqnk1grnu7r|19835e64, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i3zzqnk1grnu7r|19835e64, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 20:04:32 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 20:04:32 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 20:04:32 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@42435b98
+2016-07-21 20:04:33 - Selecting the list of employees. 
+2016-07-21 20:04:33 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 20:04:33 - Find the employee in the table by the name: Vlada
+2016-07-21 20:04:33 - Selecting the list of employees. 
+2016-07-21 20:04:33 - Selecting the dish list. 
+2016-07-21 20:04:33 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-21 20:04:33 - HHH000114: Handling transient entity in delete processing
+2016-07-21 20:04:33 - Finding the dish with specific name: Pork
+2016-07-21 20:04:33 - Selecting the dish list. 
+2016-07-21 20:05:01 - MLog clients using slf4j logging.
+2016-07-21 20:05:01 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 20:05:01 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 20:05:01 - HHH000206: hibernate.properties not found
+2016-07-21 20:05:01 - HHH000021: Bytecode provider name : javassist
+2016-07-21 20:05:02 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 20:05:02 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i400gdrffluyx|6bca7e0d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i400gdrffluyx|6bca7e0d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 20:05:06 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 20:05:06 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 20:05:06 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@42435b98
+2016-07-21 20:05:08 - Selecting the list of employees. 
+2016-07-21 20:05:08 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 20:05:08 - Find the employee in the table by the name: Vlada
+2016-07-21 20:05:08 - Selecting the list of employees. 
+2016-07-21 20:05:08 - Selecting the dish list. 
+2016-07-21 20:05:08 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-21 20:05:08 - HHH000114: Handling transient entity in delete processing
+2016-07-21 20:05:08 - Finding the dish with specific name: Pork
+2016-07-21 20:05:08 - Selecting the dish list. 
+2016-07-21 20:13:11 - MLog clients using slf4j logging.
+2016-07-21 20:13:11 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 20:13:11 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 20:13:11 - HHH000206: hibernate.properties not found
+2016-07-21 20:13:11 - HHH000021: Bytecode provider name : javassist
+2016-07-21 20:13:11 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 20:13:11 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i40ayivy5ciui|1dde4cb2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i40ayivy5ciui|1dde4cb2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 20:13:14 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 20:13:15 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 20:13:15 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2dd29a59
+2016-07-21 20:13:16 - Selecting the list of employees. 
+2016-07-21 20:13:16 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 20:13:16 - Find the employee in the table by the name: Vlada
+2016-07-21 20:13:16 - Selecting the list of employees. 
+2016-07-21 20:13:16 - Selecting the dish list. 
+2016-07-21 20:13:16 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-21 20:13:16 - HHH000114: Handling transient entity in delete processing
+2016-07-21 20:13:16 - Finding the dish with specific name: Pork
+2016-07-21 20:13:16 - Selecting the dish list. 
+2016-07-21 20:19:51 - MLog clients using slf4j logging.
+2016-07-21 20:19:51 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 20:19:51 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 20:19:51 - HHH000206: hibernate.properties not found
+2016-07-21 20:19:51 - HHH000021: Bytecode provider name : javassist
+2016-07-21 20:19:51 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 20:19:51 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i40jj6v13auquc|1dde4cb2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i40jj6v13auquc|1dde4cb2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 20:19:54 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 20:19:55 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 20:19:55 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2dd29a59
+2016-07-21 20:28:28 - MLog clients using slf4j logging.
+2016-07-21 20:28:28 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 20:28:29 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 20:28:29 - HHH000206: hibernate.properties not found
+2016-07-21 20:28:29 - HHH000021: Bytecode provider name : javassist
+2016-07-21 20:28:29 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 20:28:29 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i40umhb1j6rf0g|1dde4cb2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i40umhb1j6rf0g|1dde4cb2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 20:28:31 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 20:28:31 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 20:28:31 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2dd29a59
+2016-07-21 20:28:32 - Selecting the list of employees. 
+2016-07-21 20:28:32 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 20:28:32 - Find the employee in the table by the name: Vlada
+2016-07-21 20:28:32 - Selecting the list of employees. 
+2016-07-21 20:28:32 - Selecting the dish list. 
+2016-07-21 20:28:32 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-21 20:28:32 - HHH000114: Handling transient entity in delete processing
+2016-07-21 20:28:32 - Finding the dish with specific name: Pork
+2016-07-21 20:28:32 - Selecting the dish list. 
+2016-07-21 20:28:32 - Selecting the list of orders. 
+2016-07-21 20:28:33 - SQL Error: 0, SQLState: 42703
+2016-07-21 20:28:33 - ОШИБКА: столбец orders0_.currentstatus не существует
+  Подсказка: Возможно, предполагалась ссылка на столбец "orders0_.current_status".
+  Позиция: 31
+2016-07-21 20:30:35 - MLog clients using slf4j logging.
+2016-07-21 20:30:35 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 20:30:36 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 20:30:36 - HHH000206: hibernate.properties not found
+2016-07-21 20:30:36 - HHH000021: Bytecode provider name : javassist
+2016-07-21 20:30:36 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 20:30:36 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i40xcillx7qot|1dde4cb2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i40xcillx7qot|1dde4cb2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 20:30:39 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 20:30:39 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 20:30:39 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2dd29a59
+2016-07-21 20:30:41 - Selecting the list of employees. 
+2016-07-21 20:30:41 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 20:30:41 - Find the employee in the table by the name: Vlada
+2016-07-21 20:30:41 - Selecting the list of employees. 
+2016-07-21 20:30:41 - Selecting the dish list. 
+2016-07-21 20:30:41 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-21 20:30:41 - HHH000114: Handling transient entity in delete processing
+2016-07-21 20:30:41 - Finding the dish with specific name: Pork
+2016-07-21 20:30:41 - Selecting the dish list. 
+2016-07-21 20:30:41 - Selecting the list of orders. 
+2016-07-21 20:33:32 - MLog clients using slf4j logging.
+2016-07-21 20:33:32 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 20:33:32 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 20:33:32 - HHH000206: hibernate.properties not found
+2016-07-21 20:33:32 - HHH000021: Bytecode provider name : javassist
+2016-07-21 20:33:32 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 20:33:32 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i4114nm94f8qp|1dde4cb2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i4114nm94f8qp|1dde4cb2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 20:33:35 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 20:33:36 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 20:33:36 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2dd29a59
+2016-07-21 20:33:37 - Selecting the list of employees. 
+2016-07-21 20:33:37 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 20:33:37 - Find the employee in the table by the name: Vlada
+2016-07-21 20:33:37 - Selecting the list of employees. 
+2016-07-21 20:33:37 - Selecting the dish list. 
+2016-07-21 20:33:37 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-21 20:33:37 - HHH000114: Handling transient entity in delete processing
+2016-07-21 20:33:37 - Finding the dish with specific name: Pork
+2016-07-21 20:33:37 - Selecting the dish list. 
+2016-07-21 20:33:37 - Selecting the list of orders. 
+2016-07-21 20:46:49 - MLog clients using slf4j logging.
+2016-07-21 20:46:49 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 20:46:49 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 20:46:49 - HHH000206: hibernate.properties not found
+2016-07-21 20:46:49 - HHH000021: Bytecode provider name : javassist
+2016-07-21 20:46:49 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 20:46:49 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i41i7pb40gxm4|1dde4cb2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i41i7pb40gxm4|1dde4cb2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 20:46:52 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 20:46:53 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 20:46:53 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2dd29a59
+2016-07-21 20:46:54 - Selecting the list of employees. 
+2016-07-21 20:46:54 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 20:46:54 - Find the employee in the table by the name: Vlada
+2016-07-21 20:46:54 - Selecting the list of employees. 
+2016-07-21 20:46:54 - Selecting the dish list. 
+2016-07-21 20:46:54 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-21 20:46:54 - HHH000114: Handling transient entity in delete processing
+2016-07-21 20:46:54 - Finding the dish with specific name: Pork
+2016-07-21 20:46:54 - Selecting the dish list. 
+2016-07-21 20:46:54 - Selecting the list of orders. 
+2016-07-21 20:47:20 - MLog clients using slf4j logging.
+2016-07-21 20:47:20 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 20:47:20 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 20:47:20 - HHH000206: hibernate.properties not found
+2016-07-21 20:47:20 - HHH000021: Bytecode provider name : javassist
+2016-07-21 20:47:20 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 20:47:20 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i41ivo61uvqxza|1dde4cb2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i41ivo61uvqxza|1dde4cb2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 20:47:23 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 20:47:24 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 20:47:24 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2dd29a59
+2016-07-21 20:47:25 - Selecting the list of employees. 
+2016-07-21 20:47:25 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 20:47:25 - Find the employee in the table by the name: Vlada
+2016-07-21 20:47:25 - Selecting the list of employees. 
+2016-07-21 20:47:25 - Selecting the dish list. 
+2016-07-21 20:47:25 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-21 20:47:25 - HHH000114: Handling transient entity in delete processing
+2016-07-21 20:47:25 - Finding the dish with specific name: Pork
+2016-07-21 20:47:25 - Selecting the dish list. 
+2016-07-21 20:47:25 - Selecting the list of orders. 
+2016-07-21 20:50:22 - MLog clients using slf4j logging.
+2016-07-21 20:50:22 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 20:50:22 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 20:50:22 - HHH000206: hibernate.properties not found
+2016-07-21 20:50:22 - HHH000021: Bytecode provider name : javassist
+2016-07-21 20:50:22 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 20:50:22 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i41ms001e7lchk|1dde4cb2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i41ms001e7lchk|1dde4cb2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 20:50:25 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 20:50:26 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 20:50:26 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2dd29a59
+2016-07-21 20:50:27 - Selecting the list of employees. 
+2016-07-21 20:50:27 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 20:50:27 - Find the employee in the table by the name: Vlada
+2016-07-21 20:50:27 - Selecting the list of employees. 
+2016-07-21 20:50:27 - Selecting the dish list. 
+2016-07-21 20:50:27 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-21 20:50:27 - HHH000114: Handling transient entity in delete processing
+2016-07-21 20:50:27 - Finding the dish with specific name: Pork
+2016-07-21 20:50:27 - Selecting the dish list. 
+2016-07-21 20:50:27 - Selecting the list of orders. 
+2016-07-21 20:50:27 - Find the employee in the table by the name: Dima
+2016-07-21 20:52:35 - MLog clients using slf4j logging.
+2016-07-21 20:52:35 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-21 20:52:35 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-21 20:52:35 - HHH000206: hibernate.properties not found
+2016-07-21 20:52:35 - HHH000021: Bytecode provider name : javassist
+2016-07-21 20:52:35 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-21 20:52:36 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i41pmpa1o9vt7n|1dde4cb2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i41pmpa1o9vt7n|1dde4cb2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-21 20:52:37 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-21 20:52:37 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-21 20:52:37 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2dd29a59
+2016-07-21 20:52:39 - Selecting the list of employees. 
+2016-07-21 20:52:39 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-21 20:52:39 - Find the employee in the table by the name: Vlada
+2016-07-21 20:52:39 - Selecting the list of employees. 
+2016-07-21 20:52:39 - Selecting the dish list. 
+2016-07-21 20:52:39 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-21 20:52:39 - HHH000114: Handling transient entity in delete processing
+2016-07-21 20:52:39 - Finding the dish with specific name: Pork
+2016-07-21 20:52:39 - Selecting the dish list. 
+2016-07-21 20:52:39 - Selecting the list of orders. 
+2016-07-21 20:52:39 - Find the employee in the table by the name: Vlada
+2016-07-21 20:52:39 - Finding the dish with specific name: Napoleon
+2016-07-21 20:52:39 - Finding the dish with specific name: Fries
+2016-07-21 20:52:39 - Finding the dish with specific name: Pasta

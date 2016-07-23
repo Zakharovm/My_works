@@ -1,0 +1,746 @@
+2016-07-22 19:18:21 - MLog clients using slf4j logging.
+2016-07-22 19:18:22 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-22 19:18:23 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-22 19:18:23 - HHH000206: hibernate.properties not found
+2016-07-22 19:18:23 - HHH000021: Bytecode provider name : javassist
+2016-07-22 19:18:24 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-22 19:18:25 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i5dsb7ktdvwhv|1dde4cb2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i5dsb7ktdvwhv|1dde4cb2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-22 19:18:28 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-22 19:18:29 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-22 19:18:29 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2dd29a59
+2016-07-22 19:18:32 - Selecting the list of employees. 
+2016-07-22 19:18:32 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-22 19:18:33 - Find the employee in the table by the name: Vlada
+2016-07-22 19:18:33 - Selecting the list of employees. 
+2016-07-22 19:18:33 - Selecting the dish list. 
+2016-07-22 19:18:33 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-22 19:18:33 - HHH000114: Handling transient entity in delete processing
+2016-07-22 19:18:33 - Finding the dish with specific name: Pork
+2016-07-22 19:18:33 - Selecting the dish list. 
+2016-07-22 19:18:33 - Selecting the list of orders. 
+2016-07-22 19:18:33 - Find the employee in the table by the name: Vlada
+2016-07-22 19:18:33 - Finding the dish with specific name: Napoleon
+2016-07-22 19:18:33 - Finding the dish with specific name: Fries
+2016-07-22 19:18:33 - Finding the dish with specific name: Pasta
+2016-07-22 19:18:33 - Adding the order to the table. 
+2016-07-22 19:21:37 - MLog clients using slf4j logging.
+2016-07-22 19:21:37 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-22 19:21:37 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-22 19:21:37 - HHH000206: hibernate.properties not found
+2016-07-22 19:21:37 - HHH000021: Bytecode provider name : javassist
+2016-07-22 19:21:37 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-22 19:21:37 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i5dwhwn1e1hv2y|1dde4cb2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i5dwhwn1e1hv2y|1dde4cb2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-22 19:21:40 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-22 19:21:41 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-22 19:21:41 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2dd29a59
+2016-07-22 19:21:42 - Selecting the list of employees. 
+2016-07-22 19:21:42 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-22 19:21:42 - Find the employee in the table by the name: Vlada
+2016-07-22 19:21:42 - Selecting the list of employees. 
+2016-07-22 19:21:42 - Selecting the dish list. 
+2016-07-22 19:21:42 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-22 19:21:42 - HHH000114: Handling transient entity in delete processing
+2016-07-22 19:21:42 - Finding the dish with specific name: Pork
+2016-07-22 19:21:42 - Selecting the dish list. 
+2016-07-22 19:21:42 - Find the employee in the table by the name: Vlada
+2016-07-22 19:21:42 - Finding the dish with specific name: Napoleon
+2016-07-22 19:21:42 - Finding the dish with specific name: Fries
+2016-07-22 19:21:42 - Finding the dish with specific name: Pasta
+2016-07-22 19:21:42 - Adding the order to the table. Orders{id=0, waiter=Employee{id=21, surname='Popova', name='Vlada', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}, dishes=[Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0}, Dish{id=4, name='Fries', category=Garnish, price=30.0, weight=250.0}, Dish{id=5, name='Pasta', category=Garnish, price=35.0, weight=250.0}], tableNumber=4, dateOfOrder=Fri Jul 22 19:21:42 EEST 2016, currentStatus=Open}
+2016-07-22 19:21:42 - Selecting the list of orders. 
+2016-07-22 19:24:30 - MLog clients using slf4j logging.
+2016-07-22 19:24:30 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-22 19:24:31 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-22 19:24:31 - HHH000206: hibernate.properties not found
+2016-07-22 19:24:31 - HHH000021: Bytecode provider name : javassist
+2016-07-22 19:24:31 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-22 19:24:31 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i5e07sd1d752ha|1dde4cb2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i5e07sd1d752ha|1dde4cb2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-22 19:24:34 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-22 19:24:34 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-22 19:24:34 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2dd29a59
+2016-07-22 19:24:36 - Selecting the list of employees. 
+2016-07-22 19:24:36 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-22 19:24:36 - Find the employee in the table by the name: Vlada
+2016-07-22 19:24:36 - Selecting the list of employees. 
+2016-07-22 19:24:36 - Selecting the dish list. 
+2016-07-22 19:24:36 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-22 19:24:36 - HHH000114: Handling transient entity in delete processing
+2016-07-22 19:24:36 - Finding the dish with specific name: Pork
+2016-07-22 19:24:36 - Selecting the dish list. 
+2016-07-22 19:24:36 - Find the employee in the table by the name: Vlada
+2016-07-22 19:24:36 - Finding the dish with specific name: Napoleon
+2016-07-22 19:24:36 - Finding the dish with specific name: Fries
+2016-07-22 19:24:36 - Finding the dish with specific name: Pasta
+2016-07-22 19:24:36 - Adding the order to the table. Orders{id=0, waiter=Employee{id=21, surname='Popova', name='Vlada', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}, dishes=[Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0}, Dish{id=4, name='Fries', category=Garnish, price=30.0, weight=250.0}, Dish{id=5, name='Pasta', category=Garnish, price=35.0, weight=250.0}], tableNumber=4, dateOfOrder=Fri Jul 22 19:24:36 EEST 2016, currentStatus=Open}
+2016-07-22 19:24:36 - Selecting the list of orders. 
+2016-07-22 19:24:36 - Adding the dish to the order. 
+2016-07-22 19:24:36 - Finding the order by id 7
+2016-07-22 19:24:36 - SQL Error: 0, SQLState: 42883
+2016-07-22 19:24:36 - ОШИБКА: оператор не существует: integer ~~ integer
+  Подсказка: Оператор с данными именем и типами аргументов не найден. Возможно, вам следует добавить явные приведения типов.
+  Позиция: 227
+2016-07-22 19:33:38 - MLog clients using slf4j logging.
+2016-07-22 19:33:38 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-22 19:33:39 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-22 19:33:39 - HHH000206: hibernate.properties not found
+2016-07-22 19:33:39 - HHH000021: Bytecode provider name : javassist
+2016-07-22 19:33:39 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-22 19:33:39 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i5ebykn1jjsnln|1dde4cb2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i5ebykn1jjsnln|1dde4cb2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-22 19:33:42 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-22 19:33:42 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-22 19:33:42 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2dd29a59
+2016-07-22 19:33:43 - Selecting the list of employees. 
+2016-07-22 19:33:43 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-22 19:33:43 - Find the employee in the table by the name: Vlada
+2016-07-22 19:33:43 - Selecting the list of employees. 
+2016-07-22 19:33:43 - Selecting the dish list. 
+2016-07-22 19:33:43 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-22 19:33:43 - HHH000114: Handling transient entity in delete processing
+2016-07-22 19:33:43 - Finding the dish with specific name: Pork
+2016-07-22 19:33:43 - Selecting the dish list. 
+2016-07-22 19:33:43 - Find the employee in the table by the name: Vlada
+2016-07-22 19:33:43 - Finding the dish with specific name: Napoleon
+2016-07-22 19:33:43 - Finding the dish with specific name: Fries
+2016-07-22 19:33:43 - Finding the dish with specific name: Pasta
+2016-07-22 19:33:43 - Adding the order to the table. Orders{id=0, waiter=Employee{id=21, surname='Popova', name='Vlada', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}, dishes=[Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0}, Dish{id=4, name='Fries', category=Garnish, price=30.0, weight=250.0}, Dish{id=5, name='Pasta', category=Garnish, price=35.0, weight=250.0}], tableNumber=4, dateOfOrder=Fri Jul 22 19:33:43 EEST 2016, currentStatus=Open}
+2016-07-22 19:33:44 - Selecting the list of orders. 
+2016-07-22 19:33:44 - Adding the dish to the order. 
+2016-07-22 19:33:44 - Finding the order by id 7
+2016-07-22 19:37:11 - MLog clients using slf4j logging.
+2016-07-22 19:37:11 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-22 19:37:11 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-22 19:37:11 - HHH000206: hibernate.properties not found
+2016-07-22 19:37:11 - HHH000021: Bytecode provider name : javassist
+2016-07-22 19:37:11 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-22 19:37:11 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i5egik88vynuk|1dde4cb2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i5egik88vynuk|1dde4cb2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-22 19:37:13 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-22 19:37:13 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-22 19:37:13 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2dd29a59
+2016-07-22 19:37:14 - Selecting the list of employees. 
+2016-07-22 19:37:14 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-22 19:37:14 - Find the employee in the table by the name: Vlada
+2016-07-22 19:37:14 - Selecting the list of employees. 
+2016-07-22 19:37:14 - Selecting the dish list. 
+2016-07-22 19:37:15 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-22 19:37:15 - HHH000114: Handling transient entity in delete processing
+2016-07-22 19:37:15 - Finding the dish with specific name: Pork
+2016-07-22 19:37:15 - Selecting the dish list. 
+2016-07-22 19:37:15 - Find the employee in the table by the name: Vlada
+2016-07-22 19:37:15 - Finding the dish with specific name: Napoleon
+2016-07-22 19:37:15 - Finding the dish with specific name: Fries
+2016-07-22 19:37:15 - Finding the dish with specific name: Pasta
+2016-07-22 19:37:15 - Adding the order to the table. Orders{id=0, waiter=Employee{id=21, surname='Popova', name='Vlada', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}, dishes=[Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0}, Dish{id=4, name='Fries', category=Garnish, price=30.0, weight=250.0}, Dish{id=5, name='Pasta', category=Garnish, price=35.0, weight=250.0}], tableNumber=4, dateOfOrder=Fri Jul 22 19:37:15 EEST 2016, currentStatus=Open}
+2016-07-22 19:37:15 - Selecting the list of orders. 
+2016-07-22 19:37:15 - Adding the dish to the order. 
+2016-07-22 19:37:15 - Finding the order by id 7
+2016-07-22 19:37:15 - Finding the dish with specific name: Cake
+2016-07-22 19:37:15 - Finding the dish with specific name: Pork
+2016-07-22 19:37:15 - Editing the order # 7
+2016-07-22 19:38:26 - MLog clients using slf4j logging.
+2016-07-22 19:38:26 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-22 19:38:26 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-22 19:38:26 - HHH000206: hibernate.properties not found
+2016-07-22 19:38:26 - HHH000021: Bytecode provider name : javassist
+2016-07-22 19:38:26 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-22 19:38:26 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i5ei4f6ecuupr|1dde4cb2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i5ei4f6ecuupr|1dde4cb2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-22 19:38:29 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-22 19:38:30 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-22 19:38:30 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2dd29a59
+2016-07-22 19:38:31 - Selecting the list of employees. 
+2016-07-22 19:38:31 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-22 19:38:31 - Find the employee in the table by the name: Vlada
+2016-07-22 19:38:31 - Selecting the list of employees. 
+2016-07-22 19:38:31 - Selecting the dish list. 
+2016-07-22 19:38:31 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-22 19:38:31 - HHH000114: Handling transient entity in delete processing
+2016-07-22 19:38:31 - Finding the dish with specific name: Pork
+2016-07-22 19:38:31 - Selecting the dish list. 
+2016-07-22 19:38:31 - Find the employee in the table by the name: Vlada
+2016-07-22 19:38:31 - Finding the dish with specific name: Napoleon
+2016-07-22 19:38:31 - Finding the dish with specific name: Fries
+2016-07-22 19:38:31 - Finding the dish with specific name: Pasta
+2016-07-22 19:38:31 - Adding the order to the table. Orders{id=0, waiter=Employee{id=21, surname='Popova', name='Vlada', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}, dishes=[Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0}, Dish{id=4, name='Fries', category=Garnish, price=30.0, weight=250.0}, Dish{id=5, name='Pasta', category=Garnish, price=35.0, weight=250.0}], tableNumber=4, dateOfOrder=Fri Jul 22 19:38:31 EEST 2016, currentStatus=Open}
+2016-07-22 19:38:31 - Adding the dish to the order. 
+2016-07-22 19:38:31 - Finding the order by id 6
+2016-07-22 19:38:31 - Finding the dish with specific name: Cake
+2016-07-22 19:38:31 - Finding the dish with specific name: Pork
+2016-07-22 19:38:31 - Editing the order # 6
+2016-07-22 19:38:31 - Selecting the list of orders. 
+2016-07-22 19:50:17 - MLog clients using slf4j logging.
+2016-07-22 19:50:17 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-22 19:50:17 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-22 19:50:17 - HHH000206: hibernate.properties not found
+2016-07-22 19:50:17 - HHH000021: Bytecode provider name : javassist
+2016-07-22 19:50:17 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-22 19:50:17 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i5exd29t4mf89|1dde4cb2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i5exd29t4mf89|1dde4cb2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-22 19:50:20 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-22 19:50:21 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-22 19:50:21 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2dd29a59
+2016-07-22 19:50:22 - Selecting the list of employees. 
+2016-07-22 19:50:22 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-22 19:50:22 - Find the employee in the table by the name: Vlada
+2016-07-22 19:50:22 - Selecting the list of employees. 
+2016-07-22 19:50:22 - Selecting the dish list. 
+2016-07-22 19:50:22 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-22 19:50:22 - HHH000114: Handling transient entity in delete processing
+2016-07-22 19:50:22 - Finding the dish with specific name: Pork
+2016-07-22 19:50:22 - Selecting the dish list. 
+2016-07-22 19:50:22 - Delete the dish from the order. 
+2016-07-22 19:50:22 - Finding the order by id 7
+2016-07-22 19:50:22 - Finding the dish with specific name: Cake
+2016-07-22 19:50:22 - Finding the dish with specific name: Pork
+2016-07-22 19:50:22 - Editing the order # 7
+2016-07-22 19:50:22 - Selecting the list of orders. 
+2016-07-22 20:19:41 - MLog clients using slf4j logging.
+2016-07-22 20:19:41 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-22 20:19:42 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-22 20:19:42 - HHH000206: hibernate.properties not found
+2016-07-22 20:19:42 - HHH000021: Bytecode provider name : javassist
+2016-07-22 20:19:42 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-22 20:19:42 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i5fz6ma13cof8c|1dde4cb2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i5fz6ma13cof8c|1dde4cb2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-22 20:19:45 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-22 20:19:45 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-22 20:19:45 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2dd29a59
+2016-07-22 20:19:46 - Selecting the list of employees. 
+2016-07-22 20:19:46 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-22 20:19:47 - Find the employee in the table by the name: Vlada
+2016-07-22 20:19:47 - Selecting the list of employees. 
+2016-07-22 20:19:47 - Selecting the dish list. 
+2016-07-22 20:19:47 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-22 20:19:47 - HHH000114: Handling transient entity in delete processing
+2016-07-22 20:19:47 - Finding the dish with specific name: Pork
+2016-07-22 20:19:47 - Selecting the dish list. 
+2016-07-22 20:19:47 - Delete the dish from the order. 
+2016-07-22 20:19:47 - Finding the order by id 7
+2016-07-22 20:19:47 - Finding the dish with specific name: Cake
+2016-07-22 20:19:47 - Finding the dish with specific name: Pork
+2016-07-22 20:19:47 - Editing the order # 7
+2016-07-22 20:19:47 - Finding the order by id 11
+2016-07-22 20:20:21 - MLog clients using slf4j logging.
+2016-07-22 20:20:21 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-22 20:20:22 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-22 20:20:22 - HHH000206: hibernate.properties not found
+2016-07-22 20:20:22 - HHH000021: Bytecode provider name : javassist
+2016-07-22 20:20:22 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-22 20:20:22 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i5g01ha1tdlkpv|1dde4cb2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i5g01ha1tdlkpv|1dde4cb2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-22 20:20:25 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-22 20:20:25 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-22 20:20:25 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2dd29a59
+2016-07-22 20:20:26 - Selecting the list of employees. 
+2016-07-22 20:20:26 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-22 20:20:26 - Find the employee in the table by the name: Vlada
+2016-07-22 20:20:26 - Selecting the list of employees. 
+2016-07-22 20:20:26 - Selecting the dish list. 
+2016-07-22 20:20:26 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-22 20:20:26 - HHH000114: Handling transient entity in delete processing
+2016-07-22 20:20:26 - Finding the dish with specific name: Pork
+2016-07-22 20:20:26 - Selecting the dish list. 
+2016-07-22 20:20:26 - Delete the dish from the order. 
+2016-07-22 20:20:26 - Finding the order by id 7
+2016-07-22 20:20:26 - Finding the dish with specific name: Cake
+2016-07-22 20:20:26 - Finding the dish with specific name: Pork
+2016-07-22 20:20:26 - Editing the order # 7
+2016-07-22 20:20:26 - Finding the order by id 11
+2016-07-22 20:20:26 - Deleting the order. Orders{id=11, waiter=Employee{id=21, surname='Popova', name='Vlada', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}, dishes=[Dish{id=4, name='Fries', category=Garnish, price=30.0, weight=250.0}, Dish{id=5, name='Pasta', category=Garnish, price=35.0, weight=250.0}, Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0}], tableNumber=4, dateOfOrder=2016-07-22 00:00:00.0, currentStatus=Open}
+2016-07-22 20:20:26 - Delete the order from the table. 
+2016-07-22 20:20:27 - Selecting the list of orders. 
+2016-07-22 20:33:26 - MLog clients using slf4j logging.
+2016-07-22 20:33:26 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-22 20:33:26 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-22 20:33:26 - HHH000206: hibernate.properties not found
+2016-07-22 20:33:26 - HHH000021: Bytecode provider name : javassist
+2016-07-22 20:33:26 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-22 20:33:26 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i5gguq21bwk6rp|1dde4cb2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i5gguq21bwk6rp|1dde4cb2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-22 20:33:29 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-22 20:33:30 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-22 20:33:30 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2dd29a59
+2016-07-22 20:33:31 - Selecting the list of employees. 
+2016-07-22 20:33:31 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-22 20:33:31 - Find the employee in the table by the name: Vlada
+2016-07-22 20:33:31 - Selecting the list of employees. 
+2016-07-22 20:33:31 - Selecting the dish list. 
+2016-07-22 20:33:31 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-22 20:33:31 - HHH000114: Handling transient entity in delete processing
+2016-07-22 20:33:31 - Finding the dish with specific name: Pork
+2016-07-22 20:33:31 - Selecting the dish list. 
+2016-07-22 20:33:31 - Delete the dish from the order. 
+2016-07-22 20:33:31 - Finding the order by id 7
+2016-07-22 20:33:31 - Finding the dish with specific name: Cake
+2016-07-22 20:33:31 - Finding the dish with specific name: Pork
+2016-07-22 20:33:31 - Editing the order # 7
+2016-07-22 20:33:31 - Finding the order by id 11
+2016-07-22 20:34:41 - MLog clients using slf4j logging.
+2016-07-22 20:34:41 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-22 20:34:41 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-22 20:34:41 - HHH000206: hibernate.properties not found
+2016-07-22 20:34:41 - HHH000021: Bytecode provider name : javassist
+2016-07-22 20:34:41 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-22 20:34:41 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i5gigl21sr23l0|1dde4cb2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i5gigl21sr23l0|1dde4cb2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-22 20:34:43 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-22 20:34:43 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-22 20:34:43 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2dd29a59
+2016-07-22 20:34:45 - Selecting the list of employees. 
+2016-07-22 20:34:45 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-22 20:34:46 - Find the employee in the table by the name: Vlada
+2016-07-22 20:34:46 - Selecting the list of employees. 
+2016-07-22 20:34:46 - Selecting the dish list. 
+2016-07-22 20:34:46 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-22 20:34:46 - HHH000114: Handling transient entity in delete processing
+2016-07-22 20:34:46 - Finding the dish with specific name: Pork
+2016-07-22 20:34:46 - Selecting the dish list. 
+2016-07-22 20:34:46 - Delete the dish from the order. 
+2016-07-22 20:34:46 - Finding the order by id 7
+2016-07-22 20:34:46 - Finding the dish with specific name: Cake
+2016-07-22 20:34:46 - Finding the dish with specific name: Pork
+2016-07-22 20:34:46 - Editing the order # 7
+2016-07-22 20:34:46 - Finding the order by id 10
+2016-07-22 20:34:46 - Deleting the order. Orders{id=10, waiter=Employee{id=21, surname='Popova', name='Vlada', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}, dishes=[Dish{id=4, name='Fries', category=Garnish, price=30.0, weight=250.0}, Dish{id=5, name='Pasta', category=Garnish, price=35.0, weight=250.0}, Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0}], tableNumber=4, dateOfOrder=2016-07-22 00:00:00.0, currentStatus=Open}
+2016-07-22 20:34:46 - Delete the order from the table. 
+2016-07-22 20:34:46 - Finding the order by id 1
+2016-07-22 20:34:46 - The order was closed. 
+2016-07-22 20:34:46 - [Error]: This order has already been closed. 
+2016-07-22 20:34:46 - Finding the order by id 3
+2016-07-22 20:34:46 - [Error]: This order has already been closed. 
+2016-07-22 20:34:46 - Selecting the list of orders. 
+2016-07-22 20:39:38 - MLog clients using slf4j logging.
+2016-07-22 20:39:38 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-22 20:39:39 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-22 20:39:39 - HHH000206: hibernate.properties not found
+2016-07-22 20:39:39 - HHH000021: Bytecode provider name : javassist
+2016-07-22 20:39:39 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-22 20:39:39 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i5gou5411bj5ds|1dde4cb2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i5gou5411bj5ds|1dde4cb2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-22 20:39:40 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-22 20:39:41 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-22 20:39:41 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2dd29a59
+2016-07-22 20:39:42 - Selecting the list of employees. 
+2016-07-22 20:39:42 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-22 20:39:42 - Find the employee in the table by the name: Vlada
+2016-07-22 20:39:42 - Selecting the list of employees. 
+2016-07-22 20:39:42 - Selecting the dish list. 
+2016-07-22 20:39:42 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-22 20:39:42 - HHH000114: Handling transient entity in delete processing
+2016-07-22 20:39:42 - Finding the dish with specific name: Pork
+2016-07-22 20:39:42 - Selecting the dish list. 
+2016-07-22 20:39:42 - Find the employee in the table by the name: Vlada
+2016-07-22 20:39:42 - Finding the dish with specific name: Napoleon
+2016-07-22 20:39:42 - Finding the dish with specific name: Fries
+2016-07-22 20:39:42 - Finding the dish with specific name: Pasta
+2016-07-22 20:39:42 - Adding the order to the table. Orders{id=0, waiter=Employee{id=21, surname='Popova', name='Vlada', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}, dishes=[Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0}, Dish{id=4, name='Fries', category=Garnish, price=30.0, weight=250.0}, Dish{id=5, name='Pasta', category=Garnish, price=35.0, weight=250.0}], tableNumber=4, dateOfOrder=Fri Jul 22 20:39:42 EEST 2016, currentStatus=Open}
+2016-07-22 20:39:42 - Adding the dishes to the order. 
+2016-07-22 20:39:42 - Finding the order by id 6
+2016-07-22 20:39:42 - Finding the dish with specific name: Cake
+2016-07-22 20:39:42 - Finding the dish with specific name: Pork
+2016-07-22 20:39:42 - Editing the order # 6
+2016-07-22 20:39:42 - SQL Error: 0, SQLState: 23505
+2016-07-22 20:39:42 - ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "dish_to_order_pkey"
+  Подробности: Ключ "(dish_id, order_id)=(11, 6)" уже существует.
+2016-07-22 20:39:42 - HHH000010: On release of batch it still contained JDBC statements
+2016-07-22 20:39:42 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2016-07-22 20:42:10 - MLog clients using slf4j logging.
+2016-07-22 20:42:10 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-22 20:42:11 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-22 20:42:11 - HHH000206: hibernate.properties not found
+2016-07-22 20:42:11 - HHH000021: Bytecode provider name : javassist
+2016-07-22 20:42:11 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-22 20:42:11 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i5gs3fh1emk2bw|1dde4cb2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i5gs3fh1emk2bw|1dde4cb2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-22 20:42:14 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-22 20:42:14 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-22 20:42:14 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2dd29a59
+2016-07-22 20:42:15 - Selecting the list of employees. 
+2016-07-22 20:42:15 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-22 20:42:16 - Find the employee in the table by the name: Vlada
+2016-07-22 20:42:16 - Selecting the list of employees. 
+2016-07-22 20:42:16 - Selecting the dish list. 
+2016-07-22 20:42:16 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-22 20:42:16 - HHH000114: Handling transient entity in delete processing
+2016-07-22 20:42:16 - Finding the dish with specific name: Pork
+2016-07-22 20:42:16 - Selecting the dish list. 
+2016-07-22 20:42:16 - Find the employee in the table by the name: Vlada
+2016-07-22 20:42:16 - Finding the dish with specific name: Napoleon
+2016-07-22 20:42:16 - Finding the dish with specific name: Fries
+2016-07-22 20:42:16 - Finding the dish with specific name: Pasta
+2016-07-22 20:42:16 - Adding the order to the table. Orders{id=0, waiter=Employee{id=21, surname='Popova', name='Vlada', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}, dishes=[Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0}, Dish{id=4, name='Fries', category=Garnish, price=30.0, weight=250.0}, Dish{id=5, name='Pasta', category=Garnish, price=35.0, weight=250.0}], tableNumber=4, dateOfOrder=Fri Jul 22 20:42:16 EEST 2016, currentStatus=Open}
+2016-07-22 20:42:16 - Adding the dishes to the order. 
+2016-07-22 20:42:16 - Finding the order by id 10
+2016-07-22 20:42:16 - Finding the dish with specific name: Cake
+2016-07-22 20:42:16 - Finding the dish with specific name: Pork
+2016-07-22 20:42:16 - Editing the order # 10
+2016-07-22 20:42:16 - Delete the dish from the order. 
+2016-07-22 20:42:16 - Finding the order by id 7
+2016-07-22 20:42:16 - Finding the dish with specific name: Cake
+2016-07-22 20:42:16 - Finding the dish with specific name: Pork
+2016-07-22 20:42:16 - Editing the order # 7
+2016-07-22 20:42:16 - Finding the order by id 10
+2016-07-22 20:42:16 - Delete the order from the table. Orders{id=10, waiter=Employee{id=21, surname='Popova', name='Vlada', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}, dishes=[Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0}, Dish{id=4, name='Fries', category=Garnish, price=30.0, weight=250.0}, Dish{id=5, name='Pasta', category=Garnish, price=35.0, weight=250.0}, Dish{id=11, name='Cake', category=Dessert, price=45.0, weight=250.0}, Dish{id=8, name='Pork', category=Garnish, price=40.0, weight=250.0}], tableNumber=4, dateOfOrder=2016-07-22 00:00:00.0, currentStatus=Open}
+2016-07-22 20:42:16 - Finding the order by id 1
+2016-07-22 20:42:16 - [Error]: This order has already been closed. 
+2016-07-22 20:42:16 - Finding the order by id 3
+2016-07-22 20:42:16 - [Error]: This order has already been closed. 
+2016-07-22 20:42:16 - Selecting the list of orders. 
+2016-07-22 22:08:17 - MLog clients using slf4j logging.
+2016-07-22 22:08:18 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-22 22:08:18 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-22 22:08:18 - HHH000206: hibernate.properties not found
+2016-07-22 22:08:18 - HHH000021: Bytecode provider name : javassist
+2016-07-22 22:08:18 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-22 22:08:18 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i5juuft1ylxyt1|20ce78ec, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i5juuft1ylxyt1|20ce78ec, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-22 22:08:20 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-22 22:08:20 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-22 22:08:20 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@40dff0b7
+2016-07-22 22:10:39 - MLog clients using slf4j logging.
+2016-07-22 22:10:39 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-22 22:10:39 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-22 22:10:39 - HHH000206: hibernate.properties not found
+2016-07-22 22:10:39 - HHH000021: Bytecode provider name : javassist
+2016-07-22 22:10:39 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-22 22:10:39 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i5jxvj0146z818|20ce78ec, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i5jxvj0146z818|20ce78ec, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-22 22:10:44 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-22 22:10:44 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-22 22:10:44 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@40dff0b7
+2016-07-22 22:10:45 - Selecting the list of employees. 
+2016-07-22 22:10:45 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-22 22:10:46 - Find the employee in the table by the name: Vlada
+2016-07-22 22:10:46 - Selecting the list of employees. 
+2016-07-22 22:10:46 - Selecting the dish list. 
+2016-07-22 22:10:46 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-22 22:10:46 - HHH000114: Handling transient entity in delete processing
+2016-07-22 22:10:46 - Finding the dish with specific name: Pork
+2016-07-22 22:10:46 - Selecting the dish list. 
+2016-07-22 22:10:46 - Find the employee in the table by the name: Vlada
+2016-07-22 22:10:46 - Finding the dish with specific name: Napoleon
+2016-07-22 22:10:46 - Finding the dish with specific name: Fries
+2016-07-22 22:10:46 - Finding the dish with specific name: Pasta
+2016-07-22 22:10:46 - Adding the order to the table. Orders{id=0, waiter=Employee{id=21, surname='Popova', name='Vlada', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}, dishes=[Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0}, Dish{id=4, name='Fries', category=Garnish, price=30.0, weight=250.0}, Dish{id=5, name='Pasta', category=Garnish, price=35.0, weight=250.0}], tableNumber=4, dateOfOrder=Fri Jul 22 22:10:46 EEST 2016, currentStatus=Open}
+2016-07-22 22:10:46 - Adding the dishes to the order. 
+2016-07-22 22:10:46 - Finding the order by id 10
+2016-07-22 22:12:23 - MLog clients using slf4j logging.
+2016-07-22 22:12:23 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-22 22:12:24 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-22 22:12:24 - HHH000206: hibernate.properties not found
+2016-07-22 22:12:24 - HHH000021: Bytecode provider name : javassist
+2016-07-22 22:12:24 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-22 22:12:24 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i5k04265rcnyc|20ce78ec, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i5k04265rcnyc|20ce78ec, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-22 22:12:26 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-22 22:12:26 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-22 22:12:26 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@40dff0b7
+2016-07-22 22:12:29 - Selecting the list of employees. 
+2016-07-22 22:12:29 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-22 22:12:29 - Find the employee in the table by the name: Vlada
+2016-07-22 22:12:29 - Selecting the list of employees. 
+2016-07-22 22:12:29 - Selecting the dish list. 
+2016-07-22 22:12:29 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-22 22:12:29 - HHH000114: Handling transient entity in delete processing
+2016-07-22 22:12:29 - Finding the dish with specific name: Pork
+2016-07-22 22:12:29 - Selecting the dish list. 
+2016-07-22 22:12:29 - Find the employee in the table by the name: Vlada
+2016-07-22 22:12:29 - Finding the dish with specific name: Napoleon
+2016-07-22 22:12:29 - Finding the dish with specific name: Fries
+2016-07-22 22:12:29 - Finding the dish with specific name: Pasta
+2016-07-22 22:12:29 - Adding the order to the table. Orders{id=0, waiter=Employee{id=21, surname='Popova', name='Vlada', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}, dishes=[Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0}, Dish{id=4, name='Fries', category=Garnish, price=30.0, weight=250.0}, Dish{id=5, name='Pasta', category=Garnish, price=35.0, weight=250.0}], tableNumber=4, dateOfOrder=Fri Jul 22 22:12:29 EEST 2016, currentStatus=Open}
+2016-07-22 22:12:29 - Adding the dishes to the order. 
+2016-07-22 22:12:29 - Finding the order by id 10
+2016-07-22 22:13:01 - MLog clients using slf4j logging.
+2016-07-22 22:13:01 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-22 22:13:02 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-22 22:13:02 - HHH000206: hibernate.properties not found
+2016-07-22 22:13:02 - HHH000021: Bytecode provider name : javassist
+2016-07-22 22:13:02 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-22 22:13:02 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i5k0xh2ze2evg|20ce78ec, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i5k0xh2ze2evg|20ce78ec, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-22 22:13:06 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-22 22:13:07 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-22 22:13:07 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@40dff0b7
+2016-07-22 22:13:08 - Selecting the list of employees. 
+2016-07-22 22:13:08 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-22 22:13:08 - Find the employee in the table by the name: Vlada
+2016-07-22 22:13:08 - Selecting the list of employees. 
+2016-07-22 22:13:08 - Selecting the dish list. 
+2016-07-22 22:13:08 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-22 22:13:08 - HHH000114: Handling transient entity in delete processing
+2016-07-22 22:13:08 - Finding the dish with specific name: Pork
+2016-07-22 22:13:08 - Selecting the dish list. 
+2016-07-22 22:13:08 - Find the employee in the table by the name: Vlada
+2016-07-22 22:13:08 - Finding the dish with specific name: Napoleon
+2016-07-22 22:13:08 - Finding the dish with specific name: Fries
+2016-07-22 22:13:08 - Finding the dish with specific name: Pasta
+2016-07-22 22:13:08 - Adding the order to the table. Orders{id=0, waiter=Employee{id=21, surname='Popova', name='Vlada', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}, dishes=[Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0}, Dish{id=4, name='Fries', category=Garnish, price=30.0, weight=250.0}, Dish{id=5, name='Pasta', category=Garnish, price=35.0, weight=250.0}], tableNumber=4, dateOfOrder=Fri Jul 22 22:13:08 EEST 2016, currentStatus=Open}
+2016-07-22 22:13:08 - Adding the dishes to the order. 
+2016-07-22 22:13:08 - Finding the order by id 12
+2016-07-22 22:13:08 - Finding the dish with specific name: Cake
+2016-07-22 22:13:08 - Finding the dish with specific name: Pork
+2016-07-22 22:13:08 - Editing the order # 12
+2016-07-22 22:13:08 - Delete the dish from the order. 
+2016-07-22 22:13:08 - Finding the order by id 7
+2016-07-22 22:13:08 - Finding the dish with specific name: Cake
+2016-07-22 22:13:08 - Finding the dish with specific name: Pork
+2016-07-22 22:13:08 - Editing the order # 7
+2016-07-22 22:13:08 - Finding the order by id 1
+2016-07-22 22:13:08 - [Error]: This order has already been closed. 
+2016-07-22 22:13:08 - Finding the order by id 3
+2016-07-22 22:13:08 - [Error]: This order has already been closed. 
+2016-07-22 22:13:08 - Selecting the list of orders. 
+2016-07-22 22:13:08 - Find the employee in the table by the name: Aleksandr
+2016-07-22 22:13:08 - Finding the dish with specific name: Napoleon
+2016-07-22 22:13:08 - Finding the order by id 12
+2016-07-22 22:13:08 - Adding the prepared dish to the table. PreparedDishes{id=0, cook=Employee{id=4, surname='Ivanov', name='Aleksandr', dateOfBirth='24-10-1980', phoneNumber='063-151-22-44', position='Cook', salary=8000.0}, dish=Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0}, order=Orders{id=12, waiter=Employee{id=21, surname='Popova', name='Vlada', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}, dishes=[Dish{id=4, name='Fries', category=Garnish, price=30.0, weight=250.0}, Dish{id=5, name='Pasta', category=Garnish, price=35.0, weight=250.0}, Dish{id=8, name='Pork', category=Garnish, price=40.0, weight=250.0}, Dish{id=11, name='Cake', category=Dessert, price=45.0, weight=250.0}, Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0}], tableNumber=4, dateOfOrder=2016-07-22 00:00:00.0, currentStatus=Open}, date=Fri Jul 22 22:13:08 EEST 2016}
+2016-07-22 22:13:08 - SQL Error: 0, SQLState: 42703
+2016-07-22 22:13:08 - ОШИБКА: столбец "date" в таблице "prepared_dishes" не существует
+  Позиция: 43
+2016-07-22 22:13:08 - HHH000010: On release of batch it still contained JDBC statements
+2016-07-22 22:13:08 - HHH000346: Error during managed flush [org.hibernate.exception.SQLGrammarException: could not execute statement]
+2016-07-22 22:16:57 - MLog clients using slf4j logging.
+2016-07-22 22:16:57 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-22 22:16:58 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-22 22:16:58 - HHH000206: hibernate.properties not found
+2016-07-22 22:16:58 - HHH000021: Bytecode provider name : javassist
+2016-07-22 22:16:58 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-22 22:16:58 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i5k5zjlm3grnj|20ce78ec, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i5k5zjlm3grnj|20ce78ec, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-22 22:17:01 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-22 22:17:01 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-22 22:17:01 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@40dff0b7
+2016-07-22 22:17:02 - Selecting the list of employees. 
+2016-07-22 22:17:03 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-22 22:17:03 - Find the employee in the table by the name: Vlada
+2016-07-22 22:17:03 - Selecting the list of employees. 
+2016-07-22 22:17:03 - Selecting the dish list. 
+2016-07-22 22:17:03 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-22 22:17:03 - HHH000114: Handling transient entity in delete processing
+2016-07-22 22:17:03 - Finding the dish with specific name: Pork
+2016-07-22 22:17:03 - Selecting the dish list. 
+2016-07-22 22:17:03 - Find the employee in the table by the name: Vlada
+2016-07-22 22:17:03 - Finding the dish with specific name: Napoleon
+2016-07-22 22:17:03 - Finding the dish with specific name: Fries
+2016-07-22 22:17:03 - Finding the dish with specific name: Pasta
+2016-07-22 22:17:03 - Adding the order to the table. Orders{id=0, waiter=Employee{id=21, surname='Popova', name='Vlada', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}, dishes=[Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0}, Dish{id=4, name='Fries', category=Garnish, price=30.0, weight=250.0}, Dish{id=5, name='Pasta', category=Garnish, price=35.0, weight=250.0}], tableNumber=4, dateOfOrder=Fri Jul 22 22:17:03 EEST 2016, currentStatus=Open}
+2016-07-22 22:17:03 - Adding the dishes to the order. 
+2016-07-22 22:17:03 - Finding the order by id 12
+2016-07-22 22:17:03 - Finding the dish with specific name: Cake
+2016-07-22 22:17:03 - Finding the dish with specific name: Pork
+2016-07-22 22:17:03 - Editing the order # 12
+2016-07-22 22:17:03 - SQL Error: 0, SQLState: 23505
+2016-07-22 22:17:03 - ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "order_to_dish_pkey"
+  Подробности: Ключ "(order_id, dish_id)=(12, 11)" уже существует.
+2016-07-22 22:17:03 - HHH000010: On release of batch it still contained JDBC statements
+2016-07-22 22:17:03 - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2016-07-22 22:20:26 - MLog clients using slf4j logging.
+2016-07-22 22:20:26 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-22 22:20:26 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-22 22:20:26 - HHH000206: hibernate.properties not found
+2016-07-22 22:20:26 - HHH000021: Bytecode provider name : javassist
+2016-07-22 22:20:26 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-22 22:20:26 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i5kagfg1qpfmje|20ce78ec, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i5kagfg1qpfmje|20ce78ec, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-22 22:20:28 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-22 22:20:28 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-22 22:20:28 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@40dff0b7
+2016-07-22 22:20:30 - Selecting the list of employees. 
+2016-07-22 22:20:30 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-22 22:20:30 - Find the employee in the table by the name: Vlada
+2016-07-22 22:20:30 - Selecting the list of employees. 
+2016-07-22 22:20:30 - Selecting the dish list. 
+2016-07-22 22:20:30 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-22 22:20:30 - HHH000114: Handling transient entity in delete processing
+2016-07-22 22:20:30 - Finding the dish with specific name: Pork
+2016-07-22 22:20:30 - Selecting the dish list. 
+2016-07-22 22:20:30 - Find the employee in the table by the name: Vlada
+2016-07-22 22:20:30 - Finding the dish with specific name: Napoleon
+2016-07-22 22:20:30 - Finding the dish with specific name: Fries
+2016-07-22 22:20:30 - Finding the dish with specific name: Pasta
+2016-07-22 22:20:30 - Adding the order to the table. Orders{id=0, waiter=Employee{id=21, surname='Popova', name='Vlada', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}, dishes=[Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0}, Dish{id=4, name='Fries', category=Garnish, price=30.0, weight=250.0}, Dish{id=5, name='Pasta', category=Garnish, price=35.0, weight=250.0}], tableNumber=4, dateOfOrder=Fri Jul 22 22:20:30 EEST 2016, currentStatus=Open}
+2016-07-22 22:20:30 - Delete the dish from the order. 
+2016-07-22 22:20:30 - Finding the order by id 7
+2016-07-22 22:20:30 - Finding the dish with specific name: Cake
+2016-07-22 22:20:30 - Finding the dish with specific name: Pork
+2016-07-22 22:20:30 - Editing the order # 7
+2016-07-22 22:20:30 - Finding the order by id 1
+2016-07-22 22:20:30 - [Error]: This order has already been closed. 
+2016-07-22 22:20:30 - Finding the order by id 3
+2016-07-22 22:20:30 - [Error]: This order has already been closed. 
+2016-07-22 22:20:30 - Selecting the list of orders. 
+2016-07-22 22:20:30 - Find the employee in the table by the name: Aleksandr
+2016-07-22 22:20:30 - Finding the dish with specific name: Napoleon
+2016-07-22 22:20:30 - Finding the order by id 12
+2016-07-22 22:20:30 - Adding the prepared dish to the table. PreparedDishes{id=0, cook=Employee{id=4, surname='Ivanov', name='Aleksandr', dateOfBirth='24-10-1980', phoneNumber='063-151-22-44', position='Cook', salary=8000.0}, dish=Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0}, order=Orders{id=12, waiter=Employee{id=21, surname='Popova', name='Vlada', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}, dishes=[Dish{id=4, name='Fries', category=Garnish, price=30.0, weight=250.0}, Dish{id=5, name='Pasta', category=Garnish, price=35.0, weight=250.0}, Dish{id=8, name='Pork', category=Garnish, price=40.0, weight=250.0}, Dish{id=11, name='Cake', category=Dessert, price=45.0, weight=250.0}, Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0}], tableNumber=4, dateOfOrder=2016-07-22 00:00:00.0, currentStatus=Open}, date=Fri Jul 22 22:20:30 EEST 2016}
+2016-07-22 22:20:30 - Selecting the list of prepared dishes. 
+2016-07-22 22:23:01 - MLog clients using slf4j logging.
+2016-07-22 22:23:02 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-22 22:23:02 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-22 22:23:02 - HHH000206: hibernate.properties not found
+2016-07-22 22:23:02 - HHH000021: Bytecode provider name : javassist
+2016-07-22 22:23:02 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-22 22:23:02 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i5kdskjs5jsli|20ce78ec, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i5kdskjs5jsli|20ce78ec, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-22 22:23:05 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-22 22:23:05 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-22 22:23:05 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@40dff0b7
+2016-07-22 22:23:06 - Selecting the list of employees. 
+2016-07-22 22:23:06 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-22 22:23:07 - Find the employee in the table by the name: Vlada
+2016-07-22 22:23:07 - Selecting the list of employees. 
+2016-07-22 22:23:07 - Selecting the dish list. 
+2016-07-22 22:23:07 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-22 22:23:07 - HHH000114: Handling transient entity in delete processing
+2016-07-22 22:23:07 - Finding the dish with specific name: Pork
+2016-07-22 22:23:07 - Selecting the dish list. 
+2016-07-22 22:23:07 - Find the employee in the table by the name: Vlada
+2016-07-22 22:23:07 - Finding the dish with specific name: Napoleon
+2016-07-22 22:23:07 - Finding the dish with specific name: Fries
+2016-07-22 22:23:07 - Finding the dish with specific name: Pasta
+2016-07-22 22:23:07 - Adding the order to the table. Orders{id=0, waiter=Employee{id=21, surname='Popova', name='Vlada', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}, dishes=[Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0}, Dish{id=4, name='Fries', category=Garnish, price=30.0, weight=250.0}, Dish{id=5, name='Pasta', category=Garnish, price=35.0, weight=250.0}], tableNumber=4, dateOfOrder=Fri Jul 22 22:23:07 EEST 2016, currentStatus=Open}
+2016-07-22 22:23:07 - Delete the dish from the order. 
+2016-07-22 22:23:07 - Finding the order by id 7
+2016-07-22 22:23:07 - Finding the dish with specific name: Cake
+2016-07-22 22:23:07 - Finding the dish with specific name: Pork
+2016-07-22 22:23:07 - Editing the order # 7
+2016-07-22 22:23:07 - Finding the order by id 1
+2016-07-22 22:23:07 - [Error]: This order has already been closed. 
+2016-07-22 22:23:07 - Finding the order by id 3
+2016-07-22 22:23:07 - [Error]: This order has already been closed. 
+2016-07-22 22:23:07 - Selecting the list of orders. 
+2016-07-22 22:23:07 - Find the employee in the table by the name: Aleksandr
+2016-07-22 22:23:07 - Finding the dish with specific name: Napoleon
+2016-07-22 22:23:07 - Finding the order by id 12
+2016-07-22 22:23:07 - Adding the prepared dish to the table. PreparedDishes{id=0, cook=Employee{id=4, surname='Ivanov', name='Aleksandr', dateOfBirth='24-10-1980', phoneNumber='063-151-22-44', position='Cook', salary=8000.0}, dish=Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0}, order=Orders{id=12, waiter=Employee{id=21, surname='Popova', name='Vlada', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}, dishes=[Dish{id=4, name='Fries', category=Garnish, price=30.0, weight=250.0}, Dish{id=5, name='Pasta', category=Garnish, price=35.0, weight=250.0}, Dish{id=8, name='Pork', category=Garnish, price=40.0, weight=250.0}, Dish{id=11, name='Cake', category=Dessert, price=45.0, weight=250.0}, Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0}], tableNumber=4, dateOfOrder=2016-07-22 00:00:00.0, currentStatus=Open}, date=Fri Jul 22 22:23:07 EEST 2016}
+2016-07-22 22:23:07 - Selecting the list of prepared dishes. 
+2016-07-22 23:40:20 - MLog clients using slf4j logging.
+2016-07-22 23:40:20 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-22 23:40:21 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-22 23:40:21 - HHH000206: hibernate.properties not found
+2016-07-22 23:40:21 - HHH000021: Bytecode provider name : javassist
+2016-07-22 23:40:21 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-22 23:40:21 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i5n57qt1kqsy1e|56620197, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i5n57qt1kqsy1e|56620197, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-22 23:40:24 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-22 23:40:24 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-22 23:40:24 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1253e7cb
+2016-07-22 23:40:26 - Selecting the list of employees. 
+2016-07-22 23:40:26 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-22 23:40:26 - Find the employee in the table by the name: Vlada
+2016-07-22 23:40:26 - Selecting the list of employees. 
+2016-07-22 23:40:26 - Selecting the dish list. 
+2016-07-22 23:40:26 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-22 23:40:26 - HHH000114: Handling transient entity in delete processing
+2016-07-22 23:40:26 - Finding the dish by specific name: Pork
+2016-07-22 23:40:26 - Selecting the dish list. 
+2016-07-22 23:40:26 - Find the employee in the table by the name: Vlada
+2016-07-22 23:40:26 - Finding the dish by specific name: Napoleon
+2016-07-22 23:40:26 - Finding the dish by specific name: Fries
+2016-07-22 23:40:26 - Finding the dish by specific name: Pasta
+2016-07-22 23:40:26 - Adding the order to the table. Orders{id=0, waiter=Employee{id=21, surname='Popova', name='Vlada', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}, dishes=[Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0}, Dish{id=4, name='Fries', category=Garnish, price=30.0, weight=250.0}, Dish{id=5, name='Pasta', category=Garnish, price=35.0, weight=250.0}], tableNumber=4, dateOfOrder=Fri Jul 22 23:40:26 EEST 2016, currentStatus=Open}
+2016-07-22 23:40:26 - Delete the dish from the order. 
+2016-07-22 23:40:26 - Finding the order by id 7
+2016-07-22 23:40:26 - Finding the dish by specific name: Cake
+2016-07-22 23:40:26 - Finding the dish by specific name: Pork
+2016-07-22 23:40:26 - Editing the order # 7
+2016-07-22 23:40:26 - Finding the order by id 1
+2016-07-22 23:40:26 - [Error]: This order has already been closed. 
+2016-07-22 23:40:26 - Finding the order by id 3
+2016-07-22 23:40:26 - [Error]: This order has already been closed. 
+2016-07-22 23:40:26 - Selecting the list of orders. 
+2016-07-22 23:40:26 - Find the employee in the table by the name: Aleksandr
+2016-07-22 23:40:26 - Finding the dish by specific name: Napoleon
+2016-07-22 23:40:26 - Finding the order by id 12
+2016-07-22 23:40:26 - Adding the prepared dish to the table. PreparedDishes{id=0, cook=Employee{id=4, surname='Ivanov', name='Aleksandr', dateOfBirth='24-10-1980', phoneNumber='063-151-22-44', position='Cook', salary=8000.0}, dish=Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0}, order=Orders{id=12, waiter=Employee{id=21, surname='Popova', name='Vlada', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}, dishes=[Dish{id=4, name='Fries', category=Garnish, price=30.0, weight=250.0}, Dish{id=5, name='Pasta', category=Garnish, price=35.0, weight=250.0}, Dish{id=8, name='Pork', category=Garnish, price=40.0, weight=250.0}, Dish{id=11, name='Cake', category=Dessert, price=45.0, weight=250.0}, Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0}], tableNumber=4, dateOfOrder=2016-07-22 00:00:00.0, currentStatus=Open}, date=Fri Jul 22 23:40:26 EEST 2016}
+2016-07-22 23:40:26 - Selecting the list of prepared dishes. 
+2016-07-22 23:40:27 - Finding the dish by specific name: Black Tea
+2016-07-22 23:40:27 - Finding the dish by specific name: Coffee
+2016-07-22 23:40:27 - Adding the prepared dish to the table. databases.model.Menu@7487b142
+2016-07-22 23:40:27 - Adding the dishes to the menu. 
+2016-07-22 23:40:27 - Finding the menu by specific name: Hot Drinks
+2016-07-22 23:40:27 - Finding the dish by specific name: Green Tea
+2016-07-22 23:40:27 - Editing the menu 'Hot Drinks'. 
+2016-07-22 23:40:27 - Delete the dishes from the menu. 
+2016-07-22 23:40:27 - Finding the menu by specific name: HotDrinks
+2016-07-22 23:53:51 - MLog clients using slf4j logging.
+2016-07-22 23:53:51 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-22 23:53:52 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-22 23:53:52 - HHH000206: hibernate.properties not found
+2016-07-22 23:53:52 - HHH000021: Bytecode provider name : javassist
+2016-07-22 23:53:52 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-22 23:53:52 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i5nmlh2iwukfm|55b7a4e0, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i5nmlh2iwukfm|55b7a4e0, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-22 23:53:57 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-22 23:53:57 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-22 23:53:57 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@61c9c3fd
+2016-07-22 23:53:59 - Selecting the list of employees. 
+2016-07-22 23:53:59 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-22 23:53:59 - Find the employee in the table by the name: Vlada
+2016-07-22 23:53:59 - Selecting the list of employees. 
+2016-07-22 23:53:59 - Selecting the dish list. 
+2016-07-22 23:53:59 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-22 23:53:59 - HHH000114: Handling transient entity in delete processing
+2016-07-22 23:53:59 - Finding the dish by specific name: Pork
+2016-07-22 23:53:59 - Selecting the dish list. 
+2016-07-22 23:53:59 - Find the employee in the table by the name: Vlada
+2016-07-22 23:53:59 - Finding the dish by specific name: Napoleon
+2016-07-22 23:53:59 - Finding the dish by specific name: Fries
+2016-07-22 23:53:59 - Finding the dish by specific name: Pasta
+2016-07-22 23:54:00 - Adding the order to the table. Orders{id=0, waiter=Employee{id=21, surname='Popova', name='Vlada', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}, dishes=[Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0}, Dish{id=4, name='Fries', category=Garnish, price=30.0, weight=250.0}, Dish{id=5, name='Pasta', category=Garnish, price=35.0, weight=250.0}], tableNumber=4, dateOfOrder=Fri Jul 22 23:53:59 EEST 2016, currentStatus=Open}
+2016-07-22 23:54:00 - Delete the dish from the order. 
+2016-07-22 23:54:00 - Finding the order by id 7
+2016-07-22 23:54:00 - Finding the dish by specific name: Cake
+2016-07-22 23:54:00 - Finding the dish by specific name: Pork
+2016-07-22 23:54:00 - Editing the order # 7
+2016-07-22 23:54:00 - Finding the order by id 1
+2016-07-22 23:54:00 - [Error]: This order has already been closed. 
+2016-07-22 23:54:00 - Finding the order by id 3
+2016-07-22 23:54:00 - [Error]: This order has already been closed. 
+2016-07-22 23:54:00 - Selecting the list of orders. 
+2016-07-22 23:54:00 - Find the employee in the table by the name: Aleksandr
+2016-07-22 23:54:00 - Finding the dish by specific name: Napoleon
+2016-07-22 23:54:00 - Finding the order by id 12
+2016-07-22 23:54:00 - Adding the prepared dish to the table. PreparedDishes{id=0, cook=Employee{id=4, surname='Ivanov', name='Aleksandr', dateOfBirth='24-10-1980', phoneNumber='063-151-22-44', position='Cook', salary=8000.0}, dish=Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0}, order=Orders{id=12, waiter=Employee{id=21, surname='Popova', name='Vlada', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}, dishes=[Dish{id=4, name='Fries', category=Garnish, price=30.0, weight=250.0}, Dish{id=5, name='Pasta', category=Garnish, price=35.0, weight=250.0}, Dish{id=8, name='Pork', category=Garnish, price=40.0, weight=250.0}, Dish{id=11, name='Cake', category=Dessert, price=45.0, weight=250.0}, Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0}], tableNumber=4, dateOfOrder=2016-07-22 00:00:00.0, currentStatus=Open}, date=Fri Jul 22 23:54:00 EEST 2016}
+2016-07-22 23:54:00 - Selecting the list of prepared dishes. 
+2016-07-22 23:54:00 - Finding the dish by specific name: Fries
+2016-07-22 23:54:00 - Finding the dish by specific name: Pasta
+2016-07-22 23:54:00 - Adding the menu to the table. Menu{id=0, name='Spring_morning', dishes=[Dish{id=4, name='Fries', category=Garnish, price=30.0, weight=250.0}, Dish{id=5, name='Pasta', category=Garnish, price=35.0, weight=250.0}]}
+2016-07-22 23:54:00 - Adding the dishes to the menu. 
+2016-07-22 23:54:00 - Finding the menu by specific name: Spring_morning
+2016-07-22 23:57:30 - MLog clients using slf4j logging.
+2016-07-22 23:57:30 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-22 23:57:31 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-22 23:57:31 - HHH000206: hibernate.properties not found
+2016-07-22 23:57:31 - HHH000021: Bytecode provider name : javassist
+2016-07-22 23:57:31 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-22 23:57:31 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9i5nrajzocsb6o|55b7a4e0, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9i5nrajzocsb6o|55b7a4e0, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-22 23:57:36 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-22 23:57:36 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-22 23:57:36 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@61c9c3fd
+2016-07-22 23:57:38 - Selecting the list of employees. 
+2016-07-22 23:57:38 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-22 23:57:38 - Find the employee in the table by the name: Vlada
+2016-07-22 23:57:38 - Selecting the list of employees. 
+2016-07-22 23:57:38 - Selecting the dish list. 
+2016-07-22 23:57:38 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0}
+2016-07-22 23:57:38 - HHH000114: Handling transient entity in delete processing
+2016-07-22 23:57:38 - Finding the dish by specific name: Pork
+2016-07-22 23:57:38 - Selecting the dish list. 
+2016-07-22 23:57:38 - Find the employee in the table by the name: Vlada
+2016-07-22 23:57:38 - Finding the dish by specific name: Napoleon
+2016-07-22 23:57:38 - Finding the dish by specific name: Fries
+2016-07-22 23:57:38 - Finding the dish by specific name: Pasta
+2016-07-22 23:57:38 - Adding the order to the table. Orders{id=0, waiter=Employee{id=21, surname='Popova', name='Vlada', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}, dishes=[Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0}, Dish{id=4, name='Fries', category=Garnish, price=30.0, weight=250.0}, Dish{id=5, name='Pasta', category=Garnish, price=35.0, weight=250.0}], tableNumber=4, dateOfOrder=Fri Jul 22 23:57:38 EEST 2016, currentStatus=Open}
+2016-07-22 23:57:38 - Delete the dish from the order. 
+2016-07-22 23:57:38 - Finding the order by id 7
+2016-07-22 23:57:38 - Finding the dish by specific name: Cake
+2016-07-22 23:57:38 - Finding the dish by specific name: Pork
+2016-07-22 23:57:38 - Editing the order # 7
+2016-07-22 23:57:38 - Finding the order by id 1
+2016-07-22 23:57:38 - [Error]: This order has already been closed. 
+2016-07-22 23:57:38 - Finding the order by id 3
+2016-07-22 23:57:38 - [Error]: This order has already been closed. 
+2016-07-22 23:57:38 - Selecting the list of orders. 
+2016-07-22 23:57:39 - Find the employee in the table by the name: Aleksandr
+2016-07-22 23:57:39 - Finding the dish by specific name: Napoleon
+2016-07-22 23:57:39 - Finding the order by id 12
+2016-07-22 23:57:39 - Adding the prepared dish to the table. PreparedDishes{id=0, cook=Employee{id=4, surname='Ivanov', name='Aleksandr', dateOfBirth='24-10-1980', phoneNumber='063-151-22-44', position='Cook', salary=8000.0}, dish=Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0}, order=Orders{id=12, waiter=Employee{id=21, surname='Popova', name='Vlada', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}, dishes=[Dish{id=4, name='Fries', category=Garnish, price=30.0, weight=250.0}, Dish{id=5, name='Pasta', category=Garnish, price=35.0, weight=250.0}, Dish{id=8, name='Pork', category=Garnish, price=40.0, weight=250.0}, Dish{id=11, name='Cake', category=Dessert, price=45.0, weight=250.0}, Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0}], tableNumber=4, dateOfOrder=2016-07-22 00:00:00.0, currentStatus=Open}, date=Fri Jul 22 23:57:39 EEST 2016}
+2016-07-22 23:57:39 - Selecting the list of prepared dishes. 
+2016-07-22 23:57:39 - Finding the dish by specific name: Fries
+2016-07-22 23:57:39 - Finding the dish by specific name: Pasta
+2016-07-22 23:57:39 - Adding the menu to the table. Menu{id=0, name='Summer_dinner', dishes=[Dish{id=4, name='Fries', category=Garnish, price=30.0, weight=250.0}, Dish{id=5, name='Pasta', category=Garnish, price=35.0, weight=250.0}]}
+2016-07-22 23:57:39 - Adding the dishes to the menu. 
+2016-07-22 23:57:39 - Finding the menu by specific name: Spring_morning
+2016-07-22 23:57:39 - Finding the dish by specific name: Cake
+2016-07-22 23:57:39 - Editing the menu 'Spring_morning'. 
+2016-07-22 23:57:39 - Delete the dishes from the menu. 
+2016-07-22 23:57:39 - Finding the menu by specific name: Spring_morning
+2016-07-22 23:57:39 - Finding the dish by specific name: Cake
+2016-07-22 23:57:39 - Editing the menu 'Spring_morning'. 
+2016-07-22 23:57:39 - Finding the menu by specific name: Spring_dinner
+2016-07-22 23:57:39 - Delete the menu from the table. Menu{id=3, name='Spring_dinner', dishes=[]}
+2016-07-22 23:57:39 - Selecting the list of Menu. 
