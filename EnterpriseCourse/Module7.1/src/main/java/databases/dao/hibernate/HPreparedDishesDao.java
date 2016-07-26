@@ -28,6 +28,15 @@ public class HPreparedDishesDao implements PreparedDishesDao {
         return sessionFactory.getCurrentSession().createQuery("SELECT pd FROM PreparedDishes pd ORDER BY id").list();
     }
 
+    @Override
+    public PreparedDishes findByName(String name) {
+        LOGGER.info("Finding the prepared dish by specific name: " + name);
+        return (PreparedDishes) sessionFactory.getCurrentSession()
+                .createQuery("SELECT pd FROM PreparedDishes pd WHERE pd.name like :name")
+                .setParameter("name", name)
+                .uniqueResult();
+    }
+
     public void setSessionFactory(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }

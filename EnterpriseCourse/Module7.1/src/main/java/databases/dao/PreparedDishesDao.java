@@ -9,4 +9,6 @@ public interface PreparedDishesDao {
     void save(PreparedDishes preparedDishes);
 
     List<PreparedDishes> findAll();
+
+    PreparedDishes findByName(String name);
 }

@@ -2,7 +2,6 @@ package databases.dao.hibernate;
 
 import databases.dao.OrdersDao;
 import databases.exceptions.ClosedOrderException;
-import databases.model.Dish;
 import databases.model.Orders;
 import databases.model.Status;
 import org.hibernate.SessionFactory;
