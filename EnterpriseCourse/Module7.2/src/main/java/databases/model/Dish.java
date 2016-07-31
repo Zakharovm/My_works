@@ -3,6 +3,8 @@ package databases.model;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.HashMap;
+import java.util.Map;
 
 @Entity
 @Table(name = "Dish")
@@ -26,6 +28,16 @@ public class Dish {
 
     @Column(name = "weight")
     private Float weight;
+
+    @ElementCollection(fetch = FetchType.EAGER)
+    @CollectionTable(name = "dish_composition")
+    @MapKeyJoinColumn(name = "ingredient_id")
+    @Column(name = "amount")
+    private Map<Ingredient, Float> composition;
+
+    public Dish() {
+        this.composition = new HashMap<Ingredient, Float>();
+    }
 
     public int getId() {
         return id;
@@ -51,53 +63,51 @@ public class Dish {
         this.category = category;
     }
 
-    public float getPrice() {
+    public Float getPrice() {
         return price;
     }
 
-    public void setPrice(float price) {
+    public void setPrice(Float price) {
         this.price = price;
     }
 
-    public float getWeight() {
+    public Float getWeight() {
         return weight;
     }
 
-    public void setWeight(float weight) {
+    public void setWeight(Float weight) {
         this.weight = weight;
+    }
+
+    public Map<Ingredient, Float> getComposition() {
+        return composition;
+    }
+
+    public void setComposition(Map<Ingredient, Float> composition) {
+        this.composition = composition;
+    }
+
+    public void setIngredientAmount(Ingredient ingredient, Float amount) {
+        composition.put(ingredient, amount);
     }
 
     @Override
     public String toString() {
-        return "Dish{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", category=" + category +
-                ", price=" + price +
-                ", weight=" + weight +
-                '}';
+        StringBuilder stringBuilder = new StringBuilder("Dish {");
+        stringBuilder.append("id=");
+        stringBuilder.append(id);
+        stringBuilder.append(", name=");
+        stringBuilder.append(name);
+        stringBuilder.append(", category=");
+        stringBuilder.append(category);
+        stringBuilder.append(", price=");
+        stringBuilder.append(price);
+        stringBuilder.append(", weight=");
+        stringBuilder.append(weight);
+        stringBuilder.append(", composition={");
+        composition.forEach((k,v)->stringBuilder.append(k + ", amount=" + v + "}"));
+        stringBuilder.append("}");
+        return stringBuilder.toString();
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        Dish dish = (Dish) o;
-
-        if (name != null ? !name.equals(dish.name) : dish.name != null) return false;
-        if (category != dish.category) return false;
-        if (price != null ? !price.equals(dish.price) : dish.price != null) return false;
-        return weight != null ? weight.equals(dish.weight) : dish.weight == null;
-
-    }
-
-    @Override
-    public int hashCode() {
-        int result = name != null ? name.hashCode() : 0;
-        result = 31 * result + (category != null ? category.hashCode() : 0);
-        result = 31 * result + (price != null ? price.hashCode() : 0);
-        result = 31 * result + (weight != null ? weight.hashCode() : 0);
-        return result;
-    }
 }

@@ -1,5 +1,7 @@
 package databases.model;
 
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -16,10 +18,11 @@ public class Stock {
 
     @OneToOne
     @JoinColumn(name = "ingredient_id")
+    @Fetch(FetchMode.JOIN)
     private Ingredient ingredient;
 
     @Column(name = "quantity")
-    private int quantity;
+    private Float quantity;
 
 
     public int getId() {
@@ -38,11 +41,11 @@ public class Stock {
         this.ingredient = ingredient;
     }
 
-    public int getQuantity() {
+    public Float getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(int quantity) {
+    public void setQuantity(Float quantity) {
         this.quantity = quantity;
     }
 

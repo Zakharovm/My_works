@@ -7,6 +7,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "employee")
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public class Employee {
 
     @Id

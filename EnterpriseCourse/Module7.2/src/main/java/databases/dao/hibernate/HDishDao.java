@@ -44,7 +44,7 @@ public class HDishDao implements DishDao {
     public List<Dish> findAll() {
         List<Dish> dishList;
         LOGGER.info("Selecting the dish list. ");
-        dishList = sessionFactory.getCurrentSession().createQuery("SELECT d FROM Dish d").list();
+        dishList = sessionFactory.getCurrentSession().createQuery("SELECT d FROM Dish d ORDER BY id").list();
 
         return dishList;
     }

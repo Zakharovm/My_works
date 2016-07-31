@@ -7,6 +7,7 @@ import databases.exceptions.ClosedOrderException;
 import databases.model.Dish;
 import databases.model.Orders;
 import databases.model.Status;
+import databases.model.Waiter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.transaction.annotation.Transactional;
@@ -37,7 +38,7 @@ public class OrdersController {
 
     private Orders getOrder(String waiterName, List<String> dishes, int tableNumber, Date dateOfOrder) {
         Orders order = new Orders();
-        order.setWaiter(employeeDao.findByName(waiterName));
+        order.setWaiter( (Waiter) employeeDao.findByName(waiterName));
         order.setDishes(createDishes(dishes));
         order.setTableNumber(tableNumber);
         order.setDateOfOrder(dateOfOrder);

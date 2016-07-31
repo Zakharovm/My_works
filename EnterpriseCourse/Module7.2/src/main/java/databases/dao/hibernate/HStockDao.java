@@ -2,6 +2,7 @@ package databases.dao.hibernate;
 
 import databases.dao.IngredientDao;
 import databases.dao.StockDao;
+import databases.model.Ingredient;
 import databases.model.Stock;
 import org.hibernate.SessionFactory;
 import org.slf4j.Logger;
@@ -41,18 +42,19 @@ public class HStockDao implements StockDao {
 
     @Override
     @Transactional
+    public Stock findByIngredient(Ingredient ingredient) {
+        LOGGER.info("Loading the ingredient at the stock of ingredient_id: ");
+        return (Stock) sessionFactory.getCurrentSession().createQuery("SELECT s FROM Stock s WHERE s.ingredient = :ingredient").setParameter("ingredient", ingredient).uniqueResult();
+    }
+
+    @Override
+    @Transactional
     public Stock findByName(String name) {
-        LOGGER.info("Finding the ingredient by specific name: " + name);
-        List<Stock> ingredientsInStock = findAll();
-        Stock stock = new Stock();
-        for (Stock ingredient : ingredientsInStock) {
-            if (ingredientDao.findByName(name).equals(ingredient.getIngredient())) {
-                stock = ingredient;
-                break;
-            }
-        }
-        LOGGER.info("Found: " + stock.toString());
-        return stock;
+        LOGGER.info("Finding the ingredient by specific name in the stock: " + name);
+        Ingredient ingredient = ingredientDao.findByName(name);
+        Stock result = findByIngredient(ingredient);
+        LOGGER.info("Found: " + result.toString());
+        return result;
     }
 
 
@@ -66,8 +68,8 @@ public class HStockDao implements StockDao {
     @Override
     @Transactional
     public List<Stock> findPaucity() {
-        LOGGER.info("Selecting the list of ingredients that are almost ended ( < 10). ");
-        return sessionFactory.getCurrentSession().createQuery("SELECT s FROM Stock s WHERE s.quantity < 10").list();
+        LOGGER.info("Selecting the list of ingredients that are almost ended ( < 20000.0). ");
+        return sessionFactory.getCurrentSession().createQuery("SELECT s FROM Stock s WHERE s.quantity < 20000.0  ORDER BY id").list();
     }
 
     public void setSessionFactory(SessionFactory sessionFactory) {

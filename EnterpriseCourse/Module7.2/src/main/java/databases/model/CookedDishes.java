@@ -6,8 +6,8 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(name = "Prepared_dishes")
-public class PreparedDishes {
+@Table(name = "cooked_dishes")
+public class CookedDishes {
 
     @Id
     @GeneratedValue(generator = "increment")
@@ -17,7 +17,7 @@ public class PreparedDishes {
 
     @ManyToOne
     @JoinColumn(name = "employee_id")
-    private Employee cook;
+    private Cook cook;
 
     @OneToOne
     @JoinColumn(name = "dish_id")
@@ -39,11 +39,11 @@ public class PreparedDishes {
         this.id = id;
     }
 
-    public Employee getCook() {
+    public Cook getCook() {
         return cook;
     }
 
-    public void setCook(Employee cook) {
+    public void setCook(Cook cook) {
         this.cook = cook;
     }
 
@@ -73,9 +73,8 @@ public class PreparedDishes {
 
     @Override
     public String toString() {
-        return "PreparedDishes{" +
+        return "CookedDishes{" +
                 "id=" + id +
-                ", cook=" + cook +
                 ", dish=" + dish +
                 ", order=" + order +
                 ", date=" + date +

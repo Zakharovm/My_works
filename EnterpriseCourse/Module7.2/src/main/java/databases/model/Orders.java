@@ -1,5 +1,7 @@
 package databases.model;
 
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -18,14 +20,15 @@ public class Orders {
 
     @ManyToOne
     @JoinColumn(name = "employee_id")
-    private Employee waiter;
+    private Waiter waiter;
 
-    @ManyToMany()
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
             name = "order_to_dish",
             joinColumns = @JoinColumn(name = "order_id"),
             inverseJoinColumns = @JoinColumn(name = "dish_id")
     )
+    @Fetch(value = FetchMode.SUBSELECT)
     private List<Dish> dishes;
 
     @Column(name = "table_number")
@@ -46,11 +49,11 @@ public class Orders {
         this.id = id;
     }
 
-    public Employee getWaiter() {
+    public Waiter getWaiter() {
         return waiter;
     }
 
-    public void setWaiter(Employee waiter) {
+    public void setWaiter(Waiter waiter) {
         this.waiter = waiter;
     }
 
@@ -90,7 +93,6 @@ public class Orders {
     public String toString() {
         return "Orders{" +
                 "id=" + id +
-                ", waiter=" + waiter +
                 ", dishes=" + dishes +
                 ", tableNumber=" + tableNumber +
                 ", dateOfOrder=" + dateOfOrder +

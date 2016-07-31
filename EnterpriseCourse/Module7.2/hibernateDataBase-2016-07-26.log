@@ -1,0 +1,1000 @@
+2016-07-26 21:59:45 - MLog clients using slf4j logging.
+2016-07-26 21:59:45 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-26 21:59:46 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-26 21:59:46 - HHH000206: hibernate.properties not found
+2016-07-26 21:59:46 - HHH000021: Bytecode provider name : javassist
+2016-07-26 21:59:46 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-26 21:59:47 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9ib9b9ry4njbia|5f058f00, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9ib9b9ry4njbia|5f058f00, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-26 21:59:50 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-26 21:59:50 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-26 21:59:50 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2c7b5824
+2016-07-26 21:59:52 - Selecting the list of employees. 
+2016-07-26 21:59:52 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-26 21:59:52 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ order by employee0_.id
+2016-07-26 21:59:53 - Find the employee in the table by the name: Vlada
+2016-07-26 21:59:53 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ where employee0_.name like ?
+2016-07-26 21:59:53 - Selecting the list of employees. 
+2016-07-26 21:59:53 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ order by employee0_.id
+2016-07-26 21:59:53 - Selecting the dish list. 
+2016-07-26 21:59:53 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_
+2016-07-26 21:59:53 - Adding the dish to table. Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0, ingredients=null}
+2016-07-26 21:59:53 - select max(id) from Dish
+2016-07-26 21:59:53 - Adding the dish to table. Dish{id=0, name='Plov', category=Garnish, price=30.0, weight=200.0, ingredients=null}
+2016-07-26 21:59:53 - insert into Dish (category, name, price, weight, id) values (?, ?, ?, ?, ?)
+2016-07-26 21:59:53 - insert into Dish (category, name, price, weight, id) values (?, ?, ?, ?, ?)
+2016-07-26 21:59:53 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0, ingredients=null}
+2016-07-26 21:59:53 - HHH000114: Handling transient entity in delete processing
+2016-07-26 21:59:53 - Finding the dish by specific name: Pork
+2016-07-26 21:59:53 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 22:03:19 - MLog clients using slf4j logging.
+2016-07-26 22:03:19 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-26 22:03:19 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-26 22:03:19 - HHH000206: hibernate.properties not found
+2016-07-26 22:03:19 - HHH000021: Bytecode provider name : javassist
+2016-07-26 22:03:19 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-26 22:03:19 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9ib9fuhf1t9wyj5|5f058f00, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9ib9fuhf1t9wyj5|5f058f00, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-26 22:03:21 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-26 22:03:21 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-26 22:03:21 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2c7b5824
+2016-07-26 22:06:43 - MLog clients using slf4j logging.
+2016-07-26 22:06:43 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-26 22:06:44 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-26 22:06:44 - HHH000206: hibernate.properties not found
+2016-07-26 22:06:44 - HHH000021: Bytecode provider name : javassist
+2016-07-26 22:06:44 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-26 22:06:44 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9ib9k8hx1qvscn1|5f058f00, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9ib9k8hx1qvscn1|5f058f00, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-26 22:06:48 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-26 22:06:49 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-26 22:06:49 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2c7b5824
+2016-07-26 22:11:26 - MLog clients using slf4j logging.
+2016-07-26 22:11:26 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-26 22:11:27 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-26 22:11:27 - HHH000206: hibernate.properties not found
+2016-07-26 22:11:27 - HHH000021: Bytecode provider name : javassist
+2016-07-26 22:11:27 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-26 22:11:27 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9ib9qan913l1aur|72057ecf, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9ib9qan913l1aur|72057ecf, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-26 22:11:31 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-26 22:11:32 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-26 22:11:32 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5cdd09b1
+2016-07-26 22:14:42 - MLog clients using slf4j logging.
+2016-07-26 22:14:42 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-26 22:14:42 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-26 22:14:42 - HHH000206: hibernate.properties not found
+2016-07-26 22:14:42 - HHH000021: Bytecode provider name : javassist
+2016-07-26 22:14:42 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-26 22:14:43 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9ib9uhqt1fwl4vp|5f058f00, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9ib9uhqt1fwl4vp|5f058f00, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-26 22:14:46 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-26 22:14:47 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-26 22:14:47 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2c7b5824
+2016-07-26 22:14:48 - Selecting the list of employees. 
+2016-07-26 22:14:48 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-26 22:14:48 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ order by employee0_.id
+2016-07-26 22:14:48 - Find the employee in the table by the name: Vlada
+2016-07-26 22:14:48 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ where employee0_.name like ?
+2016-07-26 22:14:49 - Selecting the list of employees. 
+2016-07-26 22:14:49 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ order by employee0_.id
+2016-07-26 22:14:49 - Selecting the dish list. 
+2016-07-26 22:14:49 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_
+2016-07-26 22:14:49 - select ingredient0_.dish_id as dish_id1_1_1_, ingredient0_.ingredient_id as ingredie2_1_1_, ingredient1_.id as id1_3_0_, ingredient1_.name as name2_3_0_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id in (select dish0_.id from Dish dish0_)
+2016-07-26 22:14:49 - Adding the dish to table. Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0, ingredients=null}
+2016-07-26 22:14:49 - select max(id) from Dish
+2016-07-26 22:14:49 - Adding the dish to table. Dish{id=0, name='Plov', category=Garnish, price=30.0, weight=200.0, ingredients=null}
+2016-07-26 22:14:49 - insert into Dish (category, name, price, weight, id) values (?, ?, ?, ?, ?)
+2016-07-26 22:14:49 - insert into Dish (category, name, price, weight, id) values (?, ?, ?, ?, ?)
+2016-07-26 22:14:49 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0, ingredients=null}
+2016-07-26 22:14:49 - HHH000114: Handling transient entity in delete processing
+2016-07-26 22:14:49 - Finding the dish by specific name: Pork
+2016-07-26 22:14:49 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 22:14:49 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 22:14:49 - Selecting the dish list. 
+2016-07-26 22:14:49 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_
+2016-07-26 22:14:49 - select ingredient0_.dish_id as dish_id1_1_1_, ingredient0_.ingredient_id as ingredie2_1_1_, ingredient1_.id as id1_3_0_, ingredient1_.name as name2_3_0_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id in (select dish0_.id from Dish dish0_)
+2016-07-26 22:14:49 - Find the employee in the table by the name: Vlada
+2016-07-26 22:14:49 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ where employee0_.name like ?
+2016-07-26 22:14:49 - Finding the dish by specific name: Napoleon
+2016-07-26 22:14:49 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 22:14:49 - select ingredient0_.dish_id as dish_id1_1_1_, ingredient0_.ingredient_id as ingredie2_1_1_, ingredient1_.id as id1_3_0_, ingredient1_.name as name2_3_0_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id in (select dish0_.id from Dish dish0_ where dish0_.name like ?)
+2016-07-26 22:20:03 - MLog clients using slf4j logging.
+2016-07-26 22:20:03 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-26 22:20:03 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-26 22:20:03 - HHH000206: hibernate.properties not found
+2016-07-26 22:20:03 - HHH000021: Bytecode provider name : javassist
+2016-07-26 22:20:03 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-26 22:20:03 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9iba1d7v1tufx3w|5f058f00, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9iba1d7v1tufx3w|5f058f00, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-26 22:20:07 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-26 22:20:08 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-26 22:20:08 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2c7b5824
+2016-07-26 22:20:09 - Selecting the list of employees. 
+2016-07-26 22:20:09 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-26 22:20:10 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ order by employee0_.id
+2016-07-26 22:20:10 - Find the employee in the table by the name: Vlada
+2016-07-26 22:20:10 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ where employee0_.name like ?
+2016-07-26 22:20:10 - Selecting the list of employees. 
+2016-07-26 22:20:10 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ order by employee0_.id
+2016-07-26 22:20:10 - Selecting the dish list. 
+2016-07-26 22:20:10 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_
+2016-07-26 22:20:10 - select ingredient0_.dish_id as dish_id1_1_1_, ingredient0_.ingredient_id as ingredie2_1_1_, ingredient1_.id as id1_3_0_, ingredient1_.name as name2_3_0_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id in (select dish0_.id from Dish dish0_)
+2016-07-26 22:20:10 - Adding the dish to table. Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0, ingredients=null}
+2016-07-26 22:20:10 - select max(id) from Dish
+2016-07-26 22:20:10 - Adding the dish to table. Dish{id=0, name='Plov', category=Garnish, price=30.0, weight=200.0, ingredients=null}
+2016-07-26 22:20:10 - insert into Dish (category, name, price, weight, id) values (?, ?, ?, ?, ?)
+2016-07-26 22:20:10 - insert into Dish (category, name, price, weight, id) values (?, ?, ?, ?, ?)
+2016-07-26 22:20:10 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0, ingredients=null}
+2016-07-26 22:20:10 - HHH000114: Handling transient entity in delete processing
+2016-07-26 22:20:10 - Finding the dish by specific name: Pork
+2016-07-26 22:20:10 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 22:20:10 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 22:20:10 - Selecting the dish list. 
+2016-07-26 22:20:10 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_
+2016-07-26 22:20:10 - select ingredient0_.dish_id as dish_id1_1_1_, ingredient0_.ingredient_id as ingredie2_1_1_, ingredient1_.id as id1_3_0_, ingredient1_.name as name2_3_0_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id in (select dish0_.id from Dish dish0_)
+2016-07-26 22:20:10 - Find the employee in the table by the name: Vlada
+2016-07-26 22:20:10 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ where employee0_.name like ?
+2016-07-26 22:20:10 - Finding the dish by specific name: Napoleon
+2016-07-26 22:20:10 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 22:20:10 - select ingredient0_.dish_id as dish_id1_1_1_, ingredient0_.ingredient_id as ingredie2_1_1_, ingredient1_.id as id1_3_0_, ingredient1_.name as name2_3_0_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id in (select dish0_.id from Dish dish0_ where dish0_.name like ?)
+2016-07-26 22:25:05 - MLog clients using slf4j logging.
+2016-07-26 22:25:05 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-26 22:25:05 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-26 22:25:05 - HHH000206: hibernate.properties not found
+2016-07-26 22:25:05 - HHH000021: Bytecode provider name : javassist
+2016-07-26 22:25:05 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-26 22:25:06 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9iba7uingjjs6d|5f058f00, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9iba7uingjjs6d|5f058f00, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-26 22:25:10 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-26 22:25:10 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-26 22:25:10 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2c7b5824
+2016-07-26 22:25:12 - Selecting the list of employees. 
+2016-07-26 22:25:12 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-26 22:25:12 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ order by employee0_.id
+2016-07-26 22:25:12 - Find the employee in the table by the name: Vlada
+2016-07-26 22:25:12 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ where employee0_.name like ?
+2016-07-26 22:25:12 - Selecting the list of employees. 
+2016-07-26 22:25:12 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ order by employee0_.id
+2016-07-26 22:25:12 - Adding the dish to table. Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0, ingredients=null}
+2016-07-26 22:25:12 - select max(id) from Dish
+2016-07-26 22:25:12 - insert into Dish (category, name, price, weight, id) values (?, ?, ?, ?, ?)
+2016-07-26 22:25:12 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0, ingredients=null}
+2016-07-26 22:25:12 - HHH000114: Handling transient entity in delete processing
+2016-07-26 22:25:12 - Finding the dish by specific name: Pork
+2016-07-26 22:25:12 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 22:25:12 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 22:25:12 - Selecting the dish list. 
+2016-07-26 22:25:12 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_
+2016-07-26 22:25:12 - select ingredient0_.dish_id as dish_id1_1_1_, ingredient0_.ingredient_id as ingredie2_1_1_, ingredient1_.id as id1_3_0_, ingredient1_.name as name2_3_0_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id in (select dish0_.id from Dish dish0_)
+2016-07-26 22:25:12 - Find the employee in the table by the name: Vlada
+2016-07-26 22:25:12 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ where employee0_.name like ?
+2016-07-26 22:25:12 - Finding the dish by specific name: Napoleon
+2016-07-26 22:25:12 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 22:25:12 - select ingredient0_.dish_id as dish_id1_1_1_, ingredient0_.ingredient_id as ingredie2_1_1_, ingredient1_.id as id1_3_0_, ingredient1_.name as name2_3_0_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id in (select dish0_.id from Dish dish0_ where dish0_.name like ?)
+2016-07-26 22:29:03 - MLog clients using slf4j logging.
+2016-07-26 22:29:03 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-26 22:29:04 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-26 22:29:04 - HHH000206: hibernate.properties not found
+2016-07-26 22:29:04 - HHH000021: Bytecode provider name : javassist
+2016-07-26 22:29:04 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-26 22:29:04 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9ibacy991sszaoo|5f058f00, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9ibacy991sszaoo|5f058f00, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-26 22:29:08 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-26 22:29:08 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-26 22:29:08 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2c7b5824
+2016-07-26 22:29:10 - Selecting the list of employees. 
+2016-07-26 22:29:10 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-26 22:29:10 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ order by employee0_.id
+2016-07-26 22:29:10 - Find the employee in the table by the name: Vlada
+2016-07-26 22:29:10 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ where employee0_.name like ?
+2016-07-26 22:29:10 - Selecting the list of employees. 
+2016-07-26 22:29:10 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ order by employee0_.id
+2016-07-26 22:29:10 - Finding the dish by specific name: Pork
+2016-07-26 22:29:10 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 22:29:10 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 22:29:10 - Selecting the dish list. 
+2016-07-26 22:29:10 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_
+2016-07-26 22:29:10 - select ingredient0_.dish_id as dish_id1_1_1_, ingredient0_.ingredient_id as ingredie2_1_1_, ingredient1_.id as id1_3_0_, ingredient1_.name as name2_3_0_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id in (select dish0_.id from Dish dish0_)
+2016-07-26 22:29:10 - Find the employee in the table by the name: Vlada
+2016-07-26 22:29:10 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ where employee0_.name like ?
+2016-07-26 22:29:10 - Finding the dish by specific name: Napoleon
+2016-07-26 22:29:10 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 22:29:10 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 22:29:10 - Finding the dish by specific name: Fries
+2016-07-26 22:29:10 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 22:29:10 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 22:29:10 - Finding the dish by specific name: Pasta
+2016-07-26 22:29:10 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 22:29:10 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 22:29:10 - Adding the order to the table. Orders{id=0, waiter=Employee{id=21, surname='Popova', name='Vlada', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}, dishes=[Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0, ingredients=[]}, Dish{id=4, name='Fries', category=Garnish, price=30.0, weight=250.0, ingredients=[]}, Dish{id=5, name='Pasta', category=Garnish, price=35.0, weight=250.0, ingredients=[]}], tableNumber=4, dateOfOrder=Tue Jul 26 22:29:10 EEST 2016, currentStatus=Open}
+2016-07-26 22:29:10 - select max(id) from orders
+2016-07-26 22:29:10 - insert into orders (current_status, date_of_order, table_number, employee_id, id) values (?, ?, ?, ?, ?)
+2016-07-26 22:29:10 - insert into order_to_dish (order_id, dish_id) values (?, ?)
+2016-07-26 22:29:10 - insert into order_to_dish (order_id, dish_id) values (?, ?)
+2016-07-26 22:29:10 - insert into order_to_dish (order_id, dish_id) values (?, ?)
+2016-07-26 22:29:10 - Delete the dish from the order. 
+2016-07-26 22:29:10 - Finding the order by id 7
+2016-07-26 22:29:10 - select orders0_.id as id1_7_, orders0_.current_status as current_2_7_, orders0_.date_of_order as date_of_3_7_, orders0_.table_number as table_nu4_7_, orders0_.employee_id as employee5_7_ from orders orders0_ where orders0_.id=?
+2016-07-26 22:29:10 - select employee0_.id as id1_2_0_, employee0_.date_of_birth as date_of_2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-26 22:29:10 - select dishes0_.order_id as order_id1_6_0_, dishes0_.dish_id as dish_id2_6_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from order_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.order_id=?
+2016-07-26 22:29:10 - Finding the dish by specific name: Cake
+2016-07-26 22:29:10 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 22:29:10 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 22:29:10 - Finding the dish by specific name: Pork
+2016-07-26 22:29:10 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 22:29:10 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 22:29:10 - Editing the order # 7
+2016-07-26 22:29:10 - Finding the order by id 1
+2016-07-26 22:29:10 - select orders0_.id as id1_7_, orders0_.current_status as current_2_7_, orders0_.date_of_order as date_of_3_7_, orders0_.table_number as table_nu4_7_, orders0_.employee_id as employee5_7_ from orders orders0_ where orders0_.id=?
+2016-07-26 22:29:10 - select employee0_.id as id1_2_0_, employee0_.date_of_birth as date_of_2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-26 22:29:10 - select dishes0_.order_id as order_id1_6_0_, dishes0_.dish_id as dish_id2_6_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from order_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.order_id=?
+2016-07-26 22:29:10 - [Error]: This order has already been closed. 
+2016-07-26 22:29:10 - Finding the order by id 3
+2016-07-26 22:29:10 - select orders0_.id as id1_7_, orders0_.current_status as current_2_7_, orders0_.date_of_order as date_of_3_7_, orders0_.table_number as table_nu4_7_, orders0_.employee_id as employee5_7_ from orders orders0_ where orders0_.id=?
+2016-07-26 22:29:10 - select employee0_.id as id1_2_0_, employee0_.date_of_birth as date_of_2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-26 22:29:10 - select dishes0_.order_id as order_id1_6_0_, dishes0_.dish_id as dish_id2_6_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from order_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.order_id=?
+2016-07-26 22:29:10 - [Error]: This order has already been closed. 
+2016-07-26 22:29:10 - Selecting the list of orders. 
+2016-07-26 22:29:10 - select orders0_.id as id1_7_, orders0_.current_status as current_2_7_, orders0_.date_of_order as date_of_3_7_, orders0_.table_number as table_nu4_7_, orders0_.employee_id as employee5_7_ from orders orders0_ order by orders0_.id
+2016-07-26 22:29:10 - select employee0_.id as id1_2_0_, employee0_.date_of_birth as date_of_2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-26 22:29:10 - select employee0_.id as id1_2_0_, employee0_.date_of_birth as date_of_2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-26 22:29:10 - select employee0_.id as id1_2_0_, employee0_.date_of_birth as date_of_2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-26 22:29:10 - select employee0_.id as id1_2_0_, employee0_.date_of_birth as date_of_2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-26 22:29:10 - select dishes0_.order_id as order_id1_6_1_, dishes0_.dish_id as dish_id2_6_1_, dish1_.id as id1_0_0_, dish1_.category as category2_0_0_, dish1_.name as name3_0_0_, dish1_.price as price4_0_0_, dish1_.weight as weight5_0_0_ from order_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.order_id in (select orders0_.id from orders orders0_ )
+2016-07-26 22:29:10 - select ingredient0_.dish_id as dish_id1_1_1_, ingredient0_.ingredient_id as ingredie2_1_1_, ingredient1_.id as id1_3_0_, ingredient1_.name as name2_3_0_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id in (select dish1_.id from order_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.order_id in (select orders0_.id from orders orders0_ ))
+2016-07-26 22:29:10 - Find the employee in the table by the name: Aleksandr
+2016-07-26 22:29:10 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ where employee0_.name like ?
+2016-07-26 22:29:10 - Finding the dish by specific name: Napoleon
+2016-07-26 22:29:10 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 22:29:10 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 22:29:10 - Finding the order by id 12
+2016-07-26 22:29:10 - select orders0_.id as id1_7_, orders0_.current_status as current_2_7_, orders0_.date_of_order as date_of_3_7_, orders0_.table_number as table_nu4_7_, orders0_.employee_id as employee5_7_ from orders orders0_ where orders0_.id=?
+2016-07-26 22:29:10 - select employee0_.id as id1_2_0_, employee0_.date_of_birth as date_of_2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-26 22:29:10 - select dishes0_.order_id as order_id1_6_0_, dishes0_.dish_id as dish_id2_6_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from order_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.order_id=?
+2016-07-26 22:29:10 - Adding the prepared dish to the table. PreparedDishes{id=0, cook=Employee{id=4, surname='Ivanov', name='Aleksandr', dateOfBirth='24-10-1980', phoneNumber='063-151-22-44', position='Cook', salary=8000.0}, dish=Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0, ingredients=[]}, order=Orders{id=12, waiter=Employee{id=21, surname='Popova', name='Vlada', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}, dishes=[], tableNumber=4, dateOfOrder=2016-07-22 00:00:00.0, currentStatus=Open}, date=Tue Jul 26 22:29:10 EEST 2016}
+2016-07-26 22:29:10 - select max(id) from Prepared_dishes
+2016-07-26 22:29:10 - insert into Prepared_dishes (employee_id, date_of_prep, dish_id, order_id, id) values (?, ?, ?, ?, ?)
+2016-07-26 22:29:10 - Selecting the list of prepared dishes. 
+2016-07-26 22:29:10 - select prepareddi0_.id as id1_8_, prepareddi0_.employee_id as employee3_8_, prepareddi0_.date_of_prep as date_of_2_8_, prepareddi0_.dish_id as dish_id4_8_, prepareddi0_.order_id as order_id5_8_ from Prepared_dishes prepareddi0_ order by prepareddi0_.id
+2016-07-26 22:29:10 - select employee0_.id as id1_2_0_, employee0_.date_of_birth as date_of_2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-26 22:29:10 - select dish0_.id as id1_0_0_, dish0_.category as category2_0_0_, dish0_.name as name3_0_0_, dish0_.price as price4_0_0_, dish0_.weight as weight5_0_0_ from Dish dish0_ where dish0_.id=?
+2016-07-26 22:29:10 - select orders0_.id as id1_7_0_, orders0_.current_status as current_2_7_0_, orders0_.date_of_order as date_of_3_7_0_, orders0_.table_number as table_nu4_7_0_, orders0_.employee_id as employee5_7_0_, employee1_.id as id1_2_1_, employee1_.date_of_birth as date_of_2_2_1_, employee1_.name as name3_2_1_, employee1_.phone_number as phone_nu4_2_1_, employee1_.position as position5_2_1_, employee1_.salary as salary6_2_1_, employee1_.surname as surname7_2_1_ from orders orders0_ left outer join employee employee1_ on orders0_.employee_id=employee1_.id where orders0_.id=?
+2016-07-26 22:29:10 - select employee0_.id as id1_2_0_, employee0_.date_of_birth as date_of_2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-26 22:29:10 - select dish0_.id as id1_0_0_, dish0_.category as category2_0_0_, dish0_.name as name3_0_0_, dish0_.price as price4_0_0_, dish0_.weight as weight5_0_0_ from Dish dish0_ where dish0_.id=?
+2016-07-26 22:29:10 - select orders0_.id as id1_7_0_, orders0_.current_status as current_2_7_0_, orders0_.date_of_order as date_of_3_7_0_, orders0_.table_number as table_nu4_7_0_, orders0_.employee_id as employee5_7_0_, employee1_.id as id1_2_1_, employee1_.date_of_birth as date_of_2_2_1_, employee1_.name as name3_2_1_, employee1_.phone_number as phone_nu4_2_1_, employee1_.position as position5_2_1_, employee1_.salary as salary6_2_1_, employee1_.surname as surname7_2_1_ from orders orders0_ left outer join employee employee1_ on orders0_.employee_id=employee1_.id where orders0_.id=?
+2016-07-26 22:29:10 - select dish0_.id as id1_0_0_, dish0_.category as category2_0_0_, dish0_.name as name3_0_0_, dish0_.price as price4_0_0_, dish0_.weight as weight5_0_0_ from Dish dish0_ where dish0_.id=?
+2016-07-26 22:29:10 - select dish0_.id as id1_0_0_, dish0_.category as category2_0_0_, dish0_.name as name3_0_0_, dish0_.price as price4_0_0_, dish0_.weight as weight5_0_0_ from Dish dish0_ where dish0_.id=?
+2016-07-26 22:29:10 - select dish0_.id as id1_0_0_, dish0_.category as category2_0_0_, dish0_.name as name3_0_0_, dish0_.price as price4_0_0_, dish0_.weight as weight5_0_0_ from Dish dish0_ where dish0_.id=?
+2016-07-26 22:29:10 - select orders0_.id as id1_7_0_, orders0_.current_status as current_2_7_0_, orders0_.date_of_order as date_of_3_7_0_, orders0_.table_number as table_nu4_7_0_, orders0_.employee_id as employee5_7_0_, employee1_.id as id1_2_1_, employee1_.date_of_birth as date_of_2_2_1_, employee1_.name as name3_2_1_, employee1_.phone_number as phone_nu4_2_1_, employee1_.position as position5_2_1_, employee1_.salary as salary6_2_1_, employee1_.surname as surname7_2_1_ from orders orders0_ left outer join employee employee1_ on orders0_.employee_id=employee1_.id where orders0_.id=?
+2016-07-26 22:29:10 - select dish0_.id as id1_0_0_, dish0_.category as category2_0_0_, dish0_.name as name3_0_0_, dish0_.price as price4_0_0_, dish0_.weight as weight5_0_0_ from Dish dish0_ where dish0_.id=?
+2016-07-26 22:29:10 - select dish0_.id as id1_0_0_, dish0_.category as category2_0_0_, dish0_.name as name3_0_0_, dish0_.price as price4_0_0_, dish0_.weight as weight5_0_0_ from Dish dish0_ where dish0_.id=?
+2016-07-26 22:29:10 - select orders0_.id as id1_7_0_, orders0_.current_status as current_2_7_0_, orders0_.date_of_order as date_of_3_7_0_, orders0_.table_number as table_nu4_7_0_, orders0_.employee_id as employee5_7_0_, employee1_.id as id1_2_1_, employee1_.date_of_birth as date_of_2_2_1_, employee1_.name as name3_2_1_, employee1_.phone_number as phone_nu4_2_1_, employee1_.position as position5_2_1_, employee1_.salary as salary6_2_1_, employee1_.surname as surname7_2_1_ from orders orders0_ left outer join employee employee1_ on orders0_.employee_id=employee1_.id where orders0_.id=?
+2016-07-26 22:29:10 - select dishes0_.order_id as order_id1_6_0_, dishes0_.dish_id as dish_id2_6_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from order_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.order_id=?
+2016-07-26 22:29:10 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 22:29:10 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 22:29:10 - select dishes0_.order_id as order_id1_6_0_, dishes0_.dish_id as dish_id2_6_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from order_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.order_id=?
+2016-07-26 22:29:10 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 22:29:10 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 22:29:10 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 22:29:10 - select dishes0_.order_id as order_id1_6_0_, dishes0_.dish_id as dish_id2_6_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from order_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.order_id=?
+2016-07-26 22:29:10 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 22:29:10 - select dishes0_.order_id as order_id1_6_0_, dishes0_.dish_id as dish_id2_6_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from order_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.order_id=?
+2016-07-26 22:29:10 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 22:29:10 - Finding the dish by specific name: Fries
+2016-07-26 22:29:10 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 22:29:10 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 22:29:10 - Finding the dish by specific name: Pasta
+2016-07-26 22:29:10 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 22:29:10 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 22:29:10 - Adding the menu to the table. Menu{id=0, name='Summer_dinner', dishes=[Dish{id=4, name='Fries', category=Garnish, price=30.0, weight=250.0, ingredients=[]}, Dish{id=5, name='Pasta', category=Garnish, price=35.0, weight=250.0, ingredients=[]}]}
+2016-07-26 22:29:10 - select max(id) from Menu
+2016-07-26 22:29:10 - insert into Menu (name, id) values (?, ?)
+2016-07-26 22:29:10 - insert into menu_to_dish (menu_id, dish_id) values (?, ?)
+2016-07-26 22:29:10 - insert into menu_to_dish (menu_id, dish_id) values (?, ?)
+2016-07-26 22:29:10 - Adding the dishes to the menu. 
+2016-07-26 22:29:10 - Finding the menu by specific name: Spring_morning
+2016-07-26 22:29:10 - select menu0_.id as id1_4_, menu0_.name as name2_4_ from Menu menu0_ where menu0_.name like ?
+2016-07-26 22:29:10 - Finding the dish by specific name: Cake
+2016-07-26 22:29:10 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 22:29:10 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 22:29:10 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 22:29:10 - Editing the menu 'Spring_morning'. 
+2016-07-26 22:29:10 - insert into menu_to_dish (menu_id, dish_id) values (?, ?)
+2016-07-26 22:29:10 - Delete the dishes from the menu. 
+2016-07-26 22:29:10 - Finding the menu by specific name: Spring_morning
+2016-07-26 22:29:10 - select menu0_.id as id1_4_, menu0_.name as name2_4_ from Menu menu0_ where menu0_.name like ?
+2016-07-26 22:29:10 - Finding the dish by specific name: Cake
+2016-07-26 22:29:10 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 22:29:10 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 22:29:10 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 22:29:10 - Editing the menu 'Spring_morning'. 
+2016-07-26 22:29:10 - delete from menu_to_dish where menu_id=?
+2016-07-26 22:29:10 - Selecting the list of Menu. 
+2016-07-26 22:29:10 - select menu0_.id as id1_4_, menu0_.name as name2_4_ from Menu menu0_ order by menu0_.id
+2016-07-26 22:29:10 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 22:29:10 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 22:29:10 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 22:29:10 - select ingredient0_.dish_id as dish_id1_1_1_, ingredient0_.ingredient_id as ingredie2_1_1_, ingredient1_.id as id1_3_0_, ingredient1_.name as name2_3_0_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id in (select dish1_.id from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?)
+2016-07-26 22:29:10 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 22:29:10 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 22:29:10 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 22:29:10 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 22:29:10 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 22:29:10 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 22:29:10 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 22:29:10 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 22:29:10 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 22:29:10 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 22:29:10 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 22:29:10 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 22:29:10 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 22:29:10 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 22:29:10 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 22:29:10 - Finding the ingredient by specific name: Potato
+2016-07-26 22:29:10 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 22:29:10 - Adding the ingredient to the stock. Stock{id=0, ingredient=Ingredient{id=10, name='Potato'}, quantity=25}
+2016-07-26 22:29:10 - select max(id) from Stock
+2016-07-26 22:29:11 - insert into Stock (ingredient_id, quantity, id) values (?, ?, ?)
+2016-07-26 22:29:11 - Finding the ingredient by specific name: Potato
+2016-07-26 22:29:11 - Selecting the list of ingredients. 
+2016-07-26 22:29:11 - select stock0_.id as id1_9_, stock0_.ingredient_id as ingredie3_9_, stock0_.quantity as quantity2_9_ from Stock stock0_ order by stock0_.id
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - Finding the ingredient by specific name: Potato
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 22:29:11 - Finding the ingredient by specific name: Potato
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 22:29:11 - Finding the ingredient by specific name: Potato
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 22:29:11 - Finding the ingredient by specific name: Potato
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 22:29:11 - Finding the ingredient by specific name: Potato
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 22:29:11 - Finding the ingredient by specific name: Potato
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 22:29:11 - Finding the ingredient by specific name: Potato
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 22:29:11 - Finding the ingredient by specific name: Potato
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 22:29:11 - Finding the ingredient by specific name: Potato
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 22:29:11 - Finding the ingredient by specific name: Potato
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 22:29:11 - Found: Stock{id=10, ingredient=Ingredient{id=10, name='Potato'}, quantity=25}
+2016-07-26 22:29:11 - Delete the ingredient from the stock. Stock{id=10, ingredient=Ingredient{id=10, name='Potato'}, quantity=25}
+2016-07-26 22:29:11 - delete from Stock where id=?
+2016-07-26 22:29:11 - Finding the ingredient by specific name: Tomato
+2016-07-26 22:29:11 - Selecting the list of ingredients. 
+2016-07-26 22:29:11 - select stock0_.id as id1_9_, stock0_.ingredient_id as ingredie3_9_, stock0_.quantity as quantity2_9_ from Stock stock0_ order by stock0_.id
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - Finding the ingredient by specific name: Tomato
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 22:29:11 - Found: Stock{id=1, ingredient=Ingredient{id=1, name='Tomato'}, quantity=5}
+2016-07-26 22:29:11 - Finding the ingredient by specific name: Cabbage
+2016-07-26 22:29:11 - Selecting the list of ingredients. 
+2016-07-26 22:29:11 - select stock0_.id as id1_9_, stock0_.ingredient_id as ingredie3_9_, stock0_.quantity as quantity2_9_ from Stock stock0_ order by stock0_.id
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - Finding the ingredient by specific name: Cabbage
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 22:29:11 - Finding the ingredient by specific name: Cabbage
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 22:29:11 - Found: Stock{id=2, ingredient=Ingredient{id=2, name='Cabbage'}, quantity=50}
+2016-07-26 22:29:11 - The quantity of Ingredient{id=2, name='Cabbage'} was changed to 50
+2016-07-26 22:29:11 - Update the ingredient information. Stock{id=2, ingredient=Ingredient{id=2, name='Cabbage'}, quantity=50}
+2016-07-26 22:29:11 - Selecting the list of ingredients. 
+2016-07-26 22:29:11 - select stock0_.id as id1_9_, stock0_.ingredient_id as ingredie3_9_, stock0_.quantity as quantity2_9_ from Stock stock0_ order by stock0_.id
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 22:29:11 - Selecting the list of ingredients that are almost ended ( < 10). 
+2016-07-26 22:29:11 - select stock0_.id as id1_9_, stock0_.ingredient_id as ingredie3_9_, stock0_.quantity as quantity2_9_ from Stock stock0_ where stock0_.quantity<10
+2016-07-26 22:58:06 - MLog clients using slf4j logging.
+2016-07-26 22:58:06 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-26 22:58:06 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-26 22:58:06 - HHH000206: hibernate.properties not found
+2016-07-26 22:58:06 - HHH000021: Bytecode provider name : javassist
+2016-07-26 22:58:07 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-26 22:58:07 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9ibbeb2o20ujs2|5f058f00, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9ibbeb2o20ujs2|5f058f00, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-26 22:58:08 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-26 22:58:09 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-26 22:58:09 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2c7b5824
+2016-07-26 22:58:10 - Selecting the list of employees. 
+2016-07-26 22:58:10 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-26 22:58:11 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ order by employee0_.id
+2016-07-26 22:58:11 - Find the employee in the table by the name: Vlada
+2016-07-26 22:58:11 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ where employee0_.name like ?
+2016-07-26 22:58:11 - Selecting the list of employees. 
+2016-07-26 22:58:11 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ order by employee0_.id
+2016-07-26 23:17:41 - MLog clients using slf4j logging.
+2016-07-26 23:17:41 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-26 23:17:42 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-26 23:17:42 - HHH000206: hibernate.properties not found
+2016-07-26 23:17:42 - HHH000021: Bytecode provider name : javassist
+2016-07-26 23:17:42 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-26 23:17:42 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9ibc3hsd1haw8cx|192d43ce, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9ibc3hsd1haw8cx|192d43ce, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-26 23:17:46 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-26 23:17:46 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-26 23:17:46 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@302a07d
+2016-07-26 23:17:48 - Selecting the list of employees. 
+2016-07-26 23:17:48 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-26 23:17:48 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ order by employee0_.id
+2016-07-26 23:17:48 - Find the employee in the table by the name: Vlada
+2016-07-26 23:17:48 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ where employee0_.name like ?
+2016-07-26 23:17:48 - Selecting the list of employees. 
+2016-07-26 23:17:48 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ order by employee0_.id
+2016-07-26 23:17:48 - Finding the ingredient by specific name: Milk
+2016-07-26 23:17:48 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:17:48 - Finding the ingredient by specific name: Sugar
+2016-07-26 23:17:48 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:17:48 - Adding the dish to table. Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0, ingredients=[Ingredient{id=8, name='Milk'}, Ingredient{id=13, name='Sugar'}]}
+2016-07-26 23:17:48 - select max(id) from Dish
+2016-07-26 23:17:48 - insert into Dish (category, name, price, weight, id) values (?, ?, ?, ?, ?)
+2016-07-26 23:17:48 - insert into dish_to_ingredient (dish_id, ingredient_id) values (?, ?)
+2016-07-26 23:17:48 - insert into dish_to_ingredient (dish_id, ingredient_id) values (?, ?)
+2016-07-26 23:17:48 - Finding the ingredient by specific name: Milk
+2016-07-26 23:17:48 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:17:48 - Finding the ingredient by specific name: Sugar
+2016-07-26 23:17:48 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:17:48 - Delete the dish from the table: Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0, ingredients=[Ingredient{id=8, name='Milk'}, Ingredient{id=13, name='Sugar'}]}
+2016-07-26 23:17:48 - HHH000114: Handling transient entity in delete processing
+2016-07-26 23:17:48 - Finding the dish by specific name: Pork
+2016-07-26 23:17:48 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 23:17:48 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:17:48 - Selecting the dish list. 
+2016-07-26 23:17:48 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_
+2016-07-26 23:17:48 - select ingredient0_.dish_id as dish_id1_1_1_, ingredient0_.ingredient_id as ingredie2_1_1_, ingredient1_.id as id1_3_0_, ingredient1_.name as name2_3_0_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id in (select dish0_.id from Dish dish0_)
+2016-07-26 23:17:48 - Find the employee in the table by the name: Vlada
+2016-07-26 23:17:48 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ where employee0_.name like ?
+2016-07-26 23:17:48 - Finding the dish by specific name: Napoleon
+2016-07-26 23:17:48 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 23:17:48 - select ingredient0_.dish_id as dish_id1_1_1_, ingredient0_.ingredient_id as ingredie2_1_1_, ingredient1_.id as id1_3_0_, ingredient1_.name as name2_3_0_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id in (select dish0_.id from Dish dish0_ where dish0_.name like ?)
+2016-07-26 23:21:51 - MLog clients using slf4j logging.
+2016-07-26 23:21:51 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-26 23:21:51 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-26 23:21:51 - HHH000206: hibernate.properties not found
+2016-07-26 23:21:51 - HHH000021: Bytecode provider name : javassist
+2016-07-26 23:21:51 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-26 23:21:52 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9ibc8uj2wfiqc2|192d43ce, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9ibc8uj2wfiqc2|192d43ce, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-26 23:21:53 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-26 23:21:53 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-26 23:21:53 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@302a07d
+2016-07-26 23:21:55 - Selecting the list of employees. 
+2016-07-26 23:21:55 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-26 23:21:55 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ order by employee0_.id
+2016-07-26 23:21:55 - Find the employee in the table by the name: Vlada
+2016-07-26 23:21:55 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ where employee0_.name like ?
+2016-07-26 23:21:55 - Selecting the list of employees. 
+2016-07-26 23:21:55 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ order by employee0_.id
+2016-07-26 23:21:55 - Finding the ingredient by specific name: Milk
+2016-07-26 23:21:55 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:21:55 - Finding the ingredient by specific name: Sugar
+2016-07-26 23:21:55 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:21:55 - Adding the dish to table. Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0, ingredients=[Ingredient{id=8, name='Milk'}, Ingredient{id=13, name='Sugar'}]}
+2016-07-26 23:21:55 - select max(id) from Dish
+2016-07-26 23:21:55 - insert into Dish (category, name, price, weight, id) values (?, ?, ?, ?, ?)
+2016-07-26 23:21:55 - insert into dish_to_ingredient (dish_id, ingredient_id) values (?, ?)
+2016-07-26 23:21:55 - insert into dish_to_ingredient (dish_id, ingredient_id) values (?, ?)
+2016-07-26 23:21:55 - Finding the ingredient by specific name: Milk
+2016-07-26 23:21:55 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:21:55 - Finding the ingredient by specific name: Sugar
+2016-07-26 23:21:55 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:21:55 - Delete the dish from the table: Dish{id=14, name='Napoleon', category=Dessert, price=50.0, weight=300.0, ingredients=[Ingredient{id=8, name='Milk'}, Ingredient{id=13, name='Sugar'}]}
+2016-07-26 23:21:55 - delete from dish_to_ingredient where dish_id=?
+2016-07-26 23:21:55 - delete from Dish where id=?
+2016-07-26 23:21:55 - Finding the dish by specific name: Pork
+2016-07-26 23:21:55 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 23:21:55 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:21:55 - Selecting the dish list. 
+2016-07-26 23:21:55 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_
+2016-07-26 23:21:55 - select ingredient0_.dish_id as dish_id1_1_1_, ingredient0_.ingredient_id as ingredie2_1_1_, ingredient1_.id as id1_3_0_, ingredient1_.name as name2_3_0_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id in (select dish0_.id from Dish dish0_)
+2016-07-26 23:21:55 - Find the employee in the table by the name: Vlada
+2016-07-26 23:21:55 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ where employee0_.name like ?
+2016-07-26 23:21:55 - Finding the dish by specific name: Napoleon
+2016-07-26 23:21:55 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 23:21:55 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:21:55 - Finding the dish by specific name: Fries
+2016-07-26 23:21:55 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 23:21:55 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:21:55 - Finding the dish by specific name: Pasta
+2016-07-26 23:21:55 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 23:21:55 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:21:55 - Adding the order to the table. Orders{id=0, waiter=Employee{id=21, surname='Popova', name='Vlada', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}, dishes=[Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0, ingredients=[]}, Dish{id=4, name='Fries', category=Garnish, price=30.0, weight=250.0, ingredients=[]}, Dish{id=5, name='Pasta', category=Garnish, price=35.0, weight=250.0, ingredients=[]}], tableNumber=4, dateOfOrder=Tue Jul 26 23:21:55 EEST 2016, currentStatus=Open}
+2016-07-26 23:21:55 - select max(id) from orders
+2016-07-26 23:21:55 - insert into orders (current_status, date_of_order, table_number, employee_id, id) values (?, ?, ?, ?, ?)
+2016-07-26 23:21:55 - insert into order_to_dish (order_id, dish_id) values (?, ?)
+2016-07-26 23:21:55 - insert into order_to_dish (order_id, dish_id) values (?, ?)
+2016-07-26 23:21:55 - insert into order_to_dish (order_id, dish_id) values (?, ?)
+2016-07-26 23:21:55 - Delete the dish from the order. 
+2016-07-26 23:21:55 - Finding the order by id 7
+2016-07-26 23:21:55 - select orders0_.id as id1_7_, orders0_.current_status as current_2_7_, orders0_.date_of_order as date_of_3_7_, orders0_.table_number as table_nu4_7_, orders0_.employee_id as employee5_7_ from orders orders0_ where orders0_.id=?
+2016-07-26 23:21:55 - select employee0_.id as id1_2_0_, employee0_.date_of_birth as date_of_2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-26 23:21:55 - select dishes0_.order_id as order_id1_6_0_, dishes0_.dish_id as dish_id2_6_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from order_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.order_id=?
+2016-07-26 23:21:55 - Finding the dish by specific name: Cake
+2016-07-26 23:21:55 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 23:21:55 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:21:55 - Finding the dish by specific name: Pork
+2016-07-26 23:21:55 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 23:21:55 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:21:55 - Editing the order # 7
+2016-07-26 23:21:55 - Finding the order by id 1
+2016-07-26 23:21:55 - select orders0_.id as id1_7_, orders0_.current_status as current_2_7_, orders0_.date_of_order as date_of_3_7_, orders0_.table_number as table_nu4_7_, orders0_.employee_id as employee5_7_ from orders orders0_ where orders0_.id=?
+2016-07-26 23:21:55 - select employee0_.id as id1_2_0_, employee0_.date_of_birth as date_of_2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-26 23:21:55 - select dishes0_.order_id as order_id1_6_0_, dishes0_.dish_id as dish_id2_6_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from order_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.order_id=?
+2016-07-26 23:21:55 - [Error]: This order has already been closed. 
+2016-07-26 23:21:55 - Finding the order by id 3
+2016-07-26 23:21:55 - select orders0_.id as id1_7_, orders0_.current_status as current_2_7_, orders0_.date_of_order as date_of_3_7_, orders0_.table_number as table_nu4_7_, orders0_.employee_id as employee5_7_ from orders orders0_ where orders0_.id=?
+2016-07-26 23:21:55 - select employee0_.id as id1_2_0_, employee0_.date_of_birth as date_of_2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-26 23:21:55 - select dishes0_.order_id as order_id1_6_0_, dishes0_.dish_id as dish_id2_6_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from order_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.order_id=?
+2016-07-26 23:21:55 - [Error]: This order has already been closed. 
+2016-07-26 23:21:55 - Selecting the list of orders. 
+2016-07-26 23:21:55 - select orders0_.id as id1_7_, orders0_.current_status as current_2_7_, orders0_.date_of_order as date_of_3_7_, orders0_.table_number as table_nu4_7_, orders0_.employee_id as employee5_7_ from orders orders0_ order by orders0_.id
+2016-07-26 23:21:55 - select employee0_.id as id1_2_0_, employee0_.date_of_birth as date_of_2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-26 23:21:55 - select employee0_.id as id1_2_0_, employee0_.date_of_birth as date_of_2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-26 23:21:55 - select employee0_.id as id1_2_0_, employee0_.date_of_birth as date_of_2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-26 23:21:55 - select employee0_.id as id1_2_0_, employee0_.date_of_birth as date_of_2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-26 23:21:55 - select dishes0_.order_id as order_id1_6_1_, dishes0_.dish_id as dish_id2_6_1_, dish1_.id as id1_0_0_, dish1_.category as category2_0_0_, dish1_.name as name3_0_0_, dish1_.price as price4_0_0_, dish1_.weight as weight5_0_0_ from order_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.order_id in (select orders0_.id from orders orders0_ )
+2016-07-26 23:21:55 - select ingredient0_.dish_id as dish_id1_1_1_, ingredient0_.ingredient_id as ingredie2_1_1_, ingredient1_.id as id1_3_0_, ingredient1_.name as name2_3_0_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id in (select dish1_.id from order_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.order_id in (select orders0_.id from orders orders0_ ))
+2016-07-26 23:21:55 - Find the employee in the table by the name: Aleksandr
+2016-07-26 23:21:55 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ where employee0_.name like ?
+2016-07-26 23:21:55 - Finding the dish by specific name: Napoleon
+2016-07-26 23:21:55 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 23:21:55 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:21:55 - Finding the order by id 12
+2016-07-26 23:21:55 - select orders0_.id as id1_7_, orders0_.current_status as current_2_7_, orders0_.date_of_order as date_of_3_7_, orders0_.table_number as table_nu4_7_, orders0_.employee_id as employee5_7_ from orders orders0_ where orders0_.id=?
+2016-07-26 23:21:55 - select employee0_.id as id1_2_0_, employee0_.date_of_birth as date_of_2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-26 23:21:55 - select dishes0_.order_id as order_id1_6_0_, dishes0_.dish_id as dish_id2_6_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from order_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.order_id=?
+2016-07-26 23:21:55 - Adding the prepared dish to the table. PreparedDishes{id=0, cook=Employee{id=4, surname='Ivanov', name='Aleksandr', dateOfBirth='24-10-1980', phoneNumber='063-151-22-44', position='Cook', salary=8000.0}, dish=Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0, ingredients=[]}, order=Orders{id=12, waiter=Employee{id=21, surname='Popova', name='Vlada', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}, dishes=[], tableNumber=4, dateOfOrder=2016-07-22 00:00:00.0, currentStatus=Open}, date=Tue Jul 26 23:21:55 EEST 2016}
+2016-07-26 23:21:55 - select max(id) from Prepared_dishes
+2016-07-26 23:21:55 - insert into Prepared_dishes (employee_id, date_of_prep, dish_id, order_id, id) values (?, ?, ?, ?, ?)
+2016-07-26 23:21:55 - Selecting the list of prepared dishes. 
+2016-07-26 23:21:55 - select prepareddi0_.id as id1_8_, prepareddi0_.employee_id as employee3_8_, prepareddi0_.date_of_prep as date_of_2_8_, prepareddi0_.dish_id as dish_id4_8_, prepareddi0_.order_id as order_id5_8_ from Prepared_dishes prepareddi0_ order by prepareddi0_.id
+2016-07-26 23:21:55 - select employee0_.id as id1_2_0_, employee0_.date_of_birth as date_of_2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-26 23:21:55 - select dish0_.id as id1_0_0_, dish0_.category as category2_0_0_, dish0_.name as name3_0_0_, dish0_.price as price4_0_0_, dish0_.weight as weight5_0_0_ from Dish dish0_ where dish0_.id=?
+2016-07-26 23:21:55 - select orders0_.id as id1_7_0_, orders0_.current_status as current_2_7_0_, orders0_.date_of_order as date_of_3_7_0_, orders0_.table_number as table_nu4_7_0_, orders0_.employee_id as employee5_7_0_, employee1_.id as id1_2_1_, employee1_.date_of_birth as date_of_2_2_1_, employee1_.name as name3_2_1_, employee1_.phone_number as phone_nu4_2_1_, employee1_.position as position5_2_1_, employee1_.salary as salary6_2_1_, employee1_.surname as surname7_2_1_ from orders orders0_ left outer join employee employee1_ on orders0_.employee_id=employee1_.id where orders0_.id=?
+2016-07-26 23:21:56 - select employee0_.id as id1_2_0_, employee0_.date_of_birth as date_of_2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-26 23:21:56 - select dish0_.id as id1_0_0_, dish0_.category as category2_0_0_, dish0_.name as name3_0_0_, dish0_.price as price4_0_0_, dish0_.weight as weight5_0_0_ from Dish dish0_ where dish0_.id=?
+2016-07-26 23:21:56 - select orders0_.id as id1_7_0_, orders0_.current_status as current_2_7_0_, orders0_.date_of_order as date_of_3_7_0_, orders0_.table_number as table_nu4_7_0_, orders0_.employee_id as employee5_7_0_, employee1_.id as id1_2_1_, employee1_.date_of_birth as date_of_2_2_1_, employee1_.name as name3_2_1_, employee1_.phone_number as phone_nu4_2_1_, employee1_.position as position5_2_1_, employee1_.salary as salary6_2_1_, employee1_.surname as surname7_2_1_ from orders orders0_ left outer join employee employee1_ on orders0_.employee_id=employee1_.id where orders0_.id=?
+2016-07-26 23:21:56 - select dish0_.id as id1_0_0_, dish0_.category as category2_0_0_, dish0_.name as name3_0_0_, dish0_.price as price4_0_0_, dish0_.weight as weight5_0_0_ from Dish dish0_ where dish0_.id=?
+2016-07-26 23:21:56 - select dish0_.id as id1_0_0_, dish0_.category as category2_0_0_, dish0_.name as name3_0_0_, dish0_.price as price4_0_0_, dish0_.weight as weight5_0_0_ from Dish dish0_ where dish0_.id=?
+2016-07-26 23:21:56 - select dish0_.id as id1_0_0_, dish0_.category as category2_0_0_, dish0_.name as name3_0_0_, dish0_.price as price4_0_0_, dish0_.weight as weight5_0_0_ from Dish dish0_ where dish0_.id=?
+2016-07-26 23:21:56 - select orders0_.id as id1_7_0_, orders0_.current_status as current_2_7_0_, orders0_.date_of_order as date_of_3_7_0_, orders0_.table_number as table_nu4_7_0_, orders0_.employee_id as employee5_7_0_, employee1_.id as id1_2_1_, employee1_.date_of_birth as date_of_2_2_1_, employee1_.name as name3_2_1_, employee1_.phone_number as phone_nu4_2_1_, employee1_.position as position5_2_1_, employee1_.salary as salary6_2_1_, employee1_.surname as surname7_2_1_ from orders orders0_ left outer join employee employee1_ on orders0_.employee_id=employee1_.id where orders0_.id=?
+2016-07-26 23:21:56 - select dish0_.id as id1_0_0_, dish0_.category as category2_0_0_, dish0_.name as name3_0_0_, dish0_.price as price4_0_0_, dish0_.weight as weight5_0_0_ from Dish dish0_ where dish0_.id=?
+2016-07-26 23:21:56 - select dish0_.id as id1_0_0_, dish0_.category as category2_0_0_, dish0_.name as name3_0_0_, dish0_.price as price4_0_0_, dish0_.weight as weight5_0_0_ from Dish dish0_ where dish0_.id=?
+2016-07-26 23:21:56 - select orders0_.id as id1_7_0_, orders0_.current_status as current_2_7_0_, orders0_.date_of_order as date_of_3_7_0_, orders0_.table_number as table_nu4_7_0_, orders0_.employee_id as employee5_7_0_, employee1_.id as id1_2_1_, employee1_.date_of_birth as date_of_2_2_1_, employee1_.name as name3_2_1_, employee1_.phone_number as phone_nu4_2_1_, employee1_.position as position5_2_1_, employee1_.salary as salary6_2_1_, employee1_.surname as surname7_2_1_ from orders orders0_ left outer join employee employee1_ on orders0_.employee_id=employee1_.id where orders0_.id=?
+2016-07-26 23:21:56 - select dishes0_.order_id as order_id1_6_0_, dishes0_.dish_id as dish_id2_6_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from order_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.order_id=?
+2016-07-26 23:21:56 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:21:56 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:21:56 - select dishes0_.order_id as order_id1_6_0_, dishes0_.dish_id as dish_id2_6_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from order_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.order_id=?
+2016-07-26 23:21:56 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:21:56 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:21:56 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:21:56 - select dishes0_.order_id as order_id1_6_0_, dishes0_.dish_id as dish_id2_6_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from order_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.order_id=?
+2016-07-26 23:21:56 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:21:56 - select dishes0_.order_id as order_id1_6_0_, dishes0_.dish_id as dish_id2_6_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from order_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.order_id=?
+2016-07-26 23:21:56 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:21:56 - Finding the dish by specific name: Fries
+2016-07-26 23:21:56 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 23:21:56 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:21:56 - Finding the dish by specific name: Pasta
+2016-07-26 23:21:56 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 23:21:56 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:21:56 - Adding the menu to the table. Menu{id=0, name='Summer_dinner', dishes=[Dish{id=4, name='Fries', category=Garnish, price=30.0, weight=250.0, ingredients=[]}, Dish{id=5, name='Pasta', category=Garnish, price=35.0, weight=250.0, ingredients=[]}]}
+2016-07-26 23:21:56 - select max(id) from Menu
+2016-07-26 23:21:56 - insert into Menu (name, id) values (?, ?)
+2016-07-26 23:21:56 - insert into menu_to_dish (menu_id, dish_id) values (?, ?)
+2016-07-26 23:21:56 - insert into menu_to_dish (menu_id, dish_id) values (?, ?)
+2016-07-26 23:21:56 - Adding the dishes to the menu. 
+2016-07-26 23:21:56 - Finding the menu by specific name: Spring_morning
+2016-07-26 23:21:56 - select menu0_.id as id1_4_, menu0_.name as name2_4_ from Menu menu0_ where menu0_.name like ?
+2016-07-26 23:21:56 - Finding the dish by specific name: Cake
+2016-07-26 23:21:56 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 23:21:56 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:21:56 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:21:56 - Editing the menu 'Spring_morning'. 
+2016-07-26 23:21:56 - insert into menu_to_dish (menu_id, dish_id) values (?, ?)
+2016-07-26 23:21:56 - Delete the dishes from the menu. 
+2016-07-26 23:21:56 - Finding the menu by specific name: Spring_morning
+2016-07-26 23:21:56 - select menu0_.id as id1_4_, menu0_.name as name2_4_ from Menu menu0_ where menu0_.name like ?
+2016-07-26 23:21:56 - Finding the dish by specific name: Cake
+2016-07-26 23:21:56 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 23:21:56 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:21:56 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:21:56 - Editing the menu 'Spring_morning'. 
+2016-07-26 23:21:56 - delete from menu_to_dish where menu_id=?
+2016-07-26 23:21:56 - Selecting the list of Menu. 
+2016-07-26 23:21:56 - select menu0_.id as id1_4_, menu0_.name as name2_4_ from Menu menu0_ order by menu0_.id
+2016-07-26 23:21:56 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:21:56 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:21:56 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:21:56 - select ingredient0_.dish_id as dish_id1_1_1_, ingredient0_.ingredient_id as ingredie2_1_1_, ingredient1_.id as id1_3_0_, ingredient1_.name as name2_3_0_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id in (select dish1_.id from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?)
+2016-07-26 23:21:56 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:21:56 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:21:56 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:21:56 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:21:56 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:21:56 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:21:56 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:21:56 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:21:56 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:21:56 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:21:56 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:21:56 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:21:56 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:21:56 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:21:56 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:21:56 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:21:56 - Finding the ingredient by specific name: Potato
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:21:56 - Adding the ingredient to the stock. Stock{id=0, ingredient=Ingredient{id=10, name='Potato'}, quantity=25}
+2016-07-26 23:21:56 - select max(id) from Stock
+2016-07-26 23:21:56 - insert into Stock (ingredient_id, quantity, id) values (?, ?, ?)
+2016-07-26 23:21:56 - Finding the ingredient by specific name: Potato
+2016-07-26 23:21:56 - Selecting the list of ingredients. 
+2016-07-26 23:21:56 - select stock0_.id as id1_9_, stock0_.ingredient_id as ingredie3_9_, stock0_.quantity as quantity2_9_ from Stock stock0_ order by stock0_.id
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - Finding the ingredient by specific name: Potato
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:21:56 - Finding the ingredient by specific name: Potato
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:21:56 - Finding the ingredient by specific name: Potato
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:21:56 - Finding the ingredient by specific name: Potato
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:21:56 - Finding the ingredient by specific name: Potato
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:21:56 - Finding the ingredient by specific name: Potato
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:21:56 - Finding the ingredient by specific name: Potato
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:21:56 - Finding the ingredient by specific name: Potato
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:21:56 - Finding the ingredient by specific name: Potato
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:21:56 - Finding the ingredient by specific name: Potato
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:21:56 - Found: Stock{id=10, ingredient=Ingredient{id=10, name='Potato'}, quantity=25}
+2016-07-26 23:21:56 - Delete the ingredient from the stock. Stock{id=10, ingredient=Ingredient{id=10, name='Potato'}, quantity=25}
+2016-07-26 23:21:56 - delete from Stock where id=?
+2016-07-26 23:21:56 - Finding the ingredient by specific name: Tomato
+2016-07-26 23:21:56 - Selecting the list of ingredients. 
+2016-07-26 23:21:56 - select stock0_.id as id1_9_, stock0_.ingredient_id as ingredie3_9_, stock0_.quantity as quantity2_9_ from Stock stock0_ order by stock0_.id
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - Finding the ingredient by specific name: Tomato
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:21:56 - Found: Stock{id=1, ingredient=Ingredient{id=1, name='Tomato'}, quantity=5}
+2016-07-26 23:21:56 - Finding the ingredient by specific name: Cabbage
+2016-07-26 23:21:56 - Selecting the list of ingredients. 
+2016-07-26 23:21:56 - select stock0_.id as id1_9_, stock0_.ingredient_id as ingredie3_9_, stock0_.quantity as quantity2_9_ from Stock stock0_ order by stock0_.id
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - Finding the ingredient by specific name: Cabbage
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:21:56 - Finding the ingredient by specific name: Cabbage
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:21:56 - Found: Stock{id=2, ingredient=Ingredient{id=2, name='Cabbage'}, quantity=50}
+2016-07-26 23:21:56 - The quantity of Ingredient{id=2, name='Cabbage'} was changed to 50
+2016-07-26 23:21:56 - Update the ingredient information. Stock{id=2, ingredient=Ingredient{id=2, name='Cabbage'}, quantity=50}
+2016-07-26 23:21:56 - Selecting the list of ingredients. 
+2016-07-26 23:21:56 - select stock0_.id as id1_9_, stock0_.ingredient_id as ingredie3_9_, stock0_.quantity as quantity2_9_ from Stock stock0_ order by stock0_.id
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:21:56 - Selecting the list of ingredients that are almost ended ( < 10). 
+2016-07-26 23:21:56 - select stock0_.id as id1_9_, stock0_.ingredient_id as ingredie3_9_, stock0_.quantity as quantity2_9_ from Stock stock0_ where stock0_.quantity<10
+2016-07-26 23:22:20 - MLog clients using slf4j logging.
+2016-07-26 23:22:20 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2016-07-26 23:22:20 - HHH000412: Hibernate Core {5.2.1.Final}
+2016-07-26 23:22:20 - HHH000206: hibernate.properties not found
+2016-07-26 23:22:20 - HHH000021: Bytecode provider name : javassist
+2016-07-26 23:22:20 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-07-26 23:22:21 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yu9ibc9gzg1i5buvh|192d43ce, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yu9ibc9gzg1i5buvh|192d43ce, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/restaurant, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2016-07-26 23:22:22 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2016-07-26 23:22:23 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-07-26 23:22:23 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@302a07d
+2016-07-26 23:22:24 - Selecting the list of employees. 
+2016-07-26 23:22:24 - HHH000397: Using ASTQueryTranslatorFactory
+2016-07-26 23:22:24 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ order by employee0_.id
+2016-07-26 23:22:24 - Find the employee in the table by the name: Vlada
+2016-07-26 23:22:24 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ where employee0_.name like ?
+2016-07-26 23:22:24 - Selecting the list of employees. 
+2016-07-26 23:22:24 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ order by employee0_.id
+2016-07-26 23:22:24 - Finding the ingredient by specific name: Milk
+2016-07-26 23:22:24 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:22:24 - Finding the ingredient by specific name: Sugar
+2016-07-26 23:22:24 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:22:24 - Adding the dish to table. Dish{id=0, name='Napoleon', category=Dessert, price=50.0, weight=300.0, ingredients=[Ingredient{id=8, name='Milk'}, Ingredient{id=13, name='Sugar'}]}
+2016-07-26 23:22:24 - select max(id) from Dish
+2016-07-26 23:22:24 - insert into Dish (category, name, price, weight, id) values (?, ?, ?, ?, ?)
+2016-07-26 23:22:24 - insert into dish_to_ingredient (dish_id, ingredient_id) values (?, ?)
+2016-07-26 23:22:24 - insert into dish_to_ingredient (dish_id, ingredient_id) values (?, ?)
+2016-07-26 23:22:24 - Finding the ingredient by specific name: Milk
+2016-07-26 23:22:24 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:22:24 - Finding the ingredient by specific name: Sugar
+2016-07-26 23:22:24 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:22:24 - Delete the dish from the table: Dish{id=14, name='Napoleon', category=Dessert, price=50.0, weight=300.0, ingredients=[Ingredient{id=8, name='Milk'}, Ingredient{id=13, name='Sugar'}]}
+2016-07-26 23:22:24 - delete from dish_to_ingredient where dish_id=?
+2016-07-26 23:22:24 - delete from Dish where id=?
+2016-07-26 23:22:24 - Finding the dish by specific name: Pork
+2016-07-26 23:22:24 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 23:22:24 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:22:24 - Selecting the dish list. 
+2016-07-26 23:22:24 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_
+2016-07-26 23:22:24 - select ingredient0_.dish_id as dish_id1_1_1_, ingredient0_.ingredient_id as ingredie2_1_1_, ingredient1_.id as id1_3_0_, ingredient1_.name as name2_3_0_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id in (select dish0_.id from Dish dish0_)
+2016-07-26 23:22:24 - Find the employee in the table by the name: Vlada
+2016-07-26 23:22:24 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ where employee0_.name like ?
+2016-07-26 23:22:24 - Finding the dish by specific name: Napoleon
+2016-07-26 23:22:24 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 23:22:24 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:22:24 - Finding the dish by specific name: Fries
+2016-07-26 23:22:25 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 23:22:25 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:22:25 - Finding the dish by specific name: Pasta
+2016-07-26 23:22:25 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 23:22:25 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:22:25 - Adding the order to the table. Orders{id=0, waiter=Employee{id=21, surname='Popova', name='Vlada', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}, dishes=[Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0, ingredients=[]}, Dish{id=4, name='Fries', category=Garnish, price=30.0, weight=250.0, ingredients=[]}, Dish{id=5, name='Pasta', category=Garnish, price=35.0, weight=250.0, ingredients=[]}], tableNumber=4, dateOfOrder=Tue Jul 26 23:22:24 EEST 2016, currentStatus=Open}
+2016-07-26 23:22:25 - select max(id) from orders
+2016-07-26 23:22:25 - insert into orders (current_status, date_of_order, table_number, employee_id, id) values (?, ?, ?, ?, ?)
+2016-07-26 23:22:25 - insert into order_to_dish (order_id, dish_id) values (?, ?)
+2016-07-26 23:22:25 - insert into order_to_dish (order_id, dish_id) values (?, ?)
+2016-07-26 23:22:25 - insert into order_to_dish (order_id, dish_id) values (?, ?)
+2016-07-26 23:22:25 - Delete the dish from the order. 
+2016-07-26 23:22:25 - Finding the order by id 7
+2016-07-26 23:22:25 - select orders0_.id as id1_7_, orders0_.current_status as current_2_7_, orders0_.date_of_order as date_of_3_7_, orders0_.table_number as table_nu4_7_, orders0_.employee_id as employee5_7_ from orders orders0_ where orders0_.id=?
+2016-07-26 23:22:25 - select employee0_.id as id1_2_0_, employee0_.date_of_birth as date_of_2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-26 23:22:25 - select dishes0_.order_id as order_id1_6_0_, dishes0_.dish_id as dish_id2_6_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from order_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.order_id=?
+2016-07-26 23:22:25 - Finding the dish by specific name: Cake
+2016-07-26 23:22:25 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 23:22:25 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:22:25 - Finding the dish by specific name: Pork
+2016-07-26 23:22:25 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 23:22:25 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:22:25 - Editing the order # 7
+2016-07-26 23:22:25 - Finding the order by id 1
+2016-07-26 23:22:25 - select orders0_.id as id1_7_, orders0_.current_status as current_2_7_, orders0_.date_of_order as date_of_3_7_, orders0_.table_number as table_nu4_7_, orders0_.employee_id as employee5_7_ from orders orders0_ where orders0_.id=?
+2016-07-26 23:22:25 - select employee0_.id as id1_2_0_, employee0_.date_of_birth as date_of_2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-26 23:22:25 - select dishes0_.order_id as order_id1_6_0_, dishes0_.dish_id as dish_id2_6_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from order_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.order_id=?
+2016-07-26 23:22:25 - [Error]: This order has already been closed. 
+2016-07-26 23:22:25 - Finding the order by id 3
+2016-07-26 23:22:25 - select orders0_.id as id1_7_, orders0_.current_status as current_2_7_, orders0_.date_of_order as date_of_3_7_, orders0_.table_number as table_nu4_7_, orders0_.employee_id as employee5_7_ from orders orders0_ where orders0_.id=?
+2016-07-26 23:22:25 - select employee0_.id as id1_2_0_, employee0_.date_of_birth as date_of_2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-26 23:22:25 - select dishes0_.order_id as order_id1_6_0_, dishes0_.dish_id as dish_id2_6_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from order_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.order_id=?
+2016-07-26 23:22:25 - [Error]: This order has already been closed. 
+2016-07-26 23:22:25 - Selecting the list of orders. 
+2016-07-26 23:22:25 - select orders0_.id as id1_7_, orders0_.current_status as current_2_7_, orders0_.date_of_order as date_of_3_7_, orders0_.table_number as table_nu4_7_, orders0_.employee_id as employee5_7_ from orders orders0_ order by orders0_.id
+2016-07-26 23:22:25 - select employee0_.id as id1_2_0_, employee0_.date_of_birth as date_of_2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-26 23:22:25 - select employee0_.id as id1_2_0_, employee0_.date_of_birth as date_of_2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-26 23:22:25 - select employee0_.id as id1_2_0_, employee0_.date_of_birth as date_of_2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-26 23:22:25 - select employee0_.id as id1_2_0_, employee0_.date_of_birth as date_of_2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-26 23:22:25 - select dishes0_.order_id as order_id1_6_1_, dishes0_.dish_id as dish_id2_6_1_, dish1_.id as id1_0_0_, dish1_.category as category2_0_0_, dish1_.name as name3_0_0_, dish1_.price as price4_0_0_, dish1_.weight as weight5_0_0_ from order_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.order_id in (select orders0_.id from orders orders0_ )
+2016-07-26 23:22:25 - select ingredient0_.dish_id as dish_id1_1_1_, ingredient0_.ingredient_id as ingredie2_1_1_, ingredient1_.id as id1_3_0_, ingredient1_.name as name2_3_0_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id in (select dish1_.id from order_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.order_id in (select orders0_.id from orders orders0_ ))
+2016-07-26 23:22:25 - Find the employee in the table by the name: Aleksandr
+2016-07-26 23:22:25 - select employee0_.id as id1_2_, employee0_.date_of_birth as date_of_2_2_, employee0_.name as name3_2_, employee0_.phone_number as phone_nu4_2_, employee0_.position as position5_2_, employee0_.salary as salary6_2_, employee0_.surname as surname7_2_ from employee employee0_ where employee0_.name like ?
+2016-07-26 23:22:25 - Finding the dish by specific name: Napoleon
+2016-07-26 23:22:25 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 23:22:25 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:22:25 - Finding the order by id 12
+2016-07-26 23:22:25 - select orders0_.id as id1_7_, orders0_.current_status as current_2_7_, orders0_.date_of_order as date_of_3_7_, orders0_.table_number as table_nu4_7_, orders0_.employee_id as employee5_7_ from orders orders0_ where orders0_.id=?
+2016-07-26 23:22:25 - select employee0_.id as id1_2_0_, employee0_.date_of_birth as date_of_2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-26 23:22:25 - select dishes0_.order_id as order_id1_6_0_, dishes0_.dish_id as dish_id2_6_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from order_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.order_id=?
+2016-07-26 23:22:25 - Adding the prepared dish to the table. PreparedDishes{id=0, cook=Employee{id=4, surname='Ivanov', name='Aleksandr', dateOfBirth='24-10-1980', phoneNumber='063-151-22-44', position='Cook', salary=8000.0}, dish=Dish{id=12, name='Napoleon', category=Dessert, price=50.0, weight=300.0, ingredients=[]}, order=Orders{id=12, waiter=Employee{id=21, surname='Popova', name='Vlada', dateOfBirth='25-01-1965', phoneNumber='053-123-42-53', position='Waiter', salary=4000.0}, dishes=[], tableNumber=4, dateOfOrder=2016-07-22 00:00:00.0, currentStatus=Open}, date=Tue Jul 26 23:22:25 EEST 2016}
+2016-07-26 23:22:25 - select max(id) from Prepared_dishes
+2016-07-26 23:22:25 - insert into Prepared_dishes (employee_id, date_of_prep, dish_id, order_id, id) values (?, ?, ?, ?, ?)
+2016-07-26 23:22:25 - Selecting the list of prepared dishes. 
+2016-07-26 23:22:25 - select prepareddi0_.id as id1_8_, prepareddi0_.employee_id as employee3_8_, prepareddi0_.date_of_prep as date_of_2_8_, prepareddi0_.dish_id as dish_id4_8_, prepareddi0_.order_id as order_id5_8_ from Prepared_dishes prepareddi0_ order by prepareddi0_.id
+2016-07-26 23:22:25 - select employee0_.id as id1_2_0_, employee0_.date_of_birth as date_of_2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-26 23:22:25 - select dish0_.id as id1_0_0_, dish0_.category as category2_0_0_, dish0_.name as name3_0_0_, dish0_.price as price4_0_0_, dish0_.weight as weight5_0_0_ from Dish dish0_ where dish0_.id=?
+2016-07-26 23:22:25 - select orders0_.id as id1_7_0_, orders0_.current_status as current_2_7_0_, orders0_.date_of_order as date_of_3_7_0_, orders0_.table_number as table_nu4_7_0_, orders0_.employee_id as employee5_7_0_, employee1_.id as id1_2_1_, employee1_.date_of_birth as date_of_2_2_1_, employee1_.name as name3_2_1_, employee1_.phone_number as phone_nu4_2_1_, employee1_.position as position5_2_1_, employee1_.salary as salary6_2_1_, employee1_.surname as surname7_2_1_ from orders orders0_ left outer join employee employee1_ on orders0_.employee_id=employee1_.id where orders0_.id=?
+2016-07-26 23:22:25 - select employee0_.id as id1_2_0_, employee0_.date_of_birth as date_of_2_2_0_, employee0_.name as name3_2_0_, employee0_.phone_number as phone_nu4_2_0_, employee0_.position as position5_2_0_, employee0_.salary as salary6_2_0_, employee0_.surname as surname7_2_0_ from employee employee0_ where employee0_.id=?
+2016-07-26 23:22:25 - select dish0_.id as id1_0_0_, dish0_.category as category2_0_0_, dish0_.name as name3_0_0_, dish0_.price as price4_0_0_, dish0_.weight as weight5_0_0_ from Dish dish0_ where dish0_.id=?
+2016-07-26 23:22:25 - select orders0_.id as id1_7_0_, orders0_.current_status as current_2_7_0_, orders0_.date_of_order as date_of_3_7_0_, orders0_.table_number as table_nu4_7_0_, orders0_.employee_id as employee5_7_0_, employee1_.id as id1_2_1_, employee1_.date_of_birth as date_of_2_2_1_, employee1_.name as name3_2_1_, employee1_.phone_number as phone_nu4_2_1_, employee1_.position as position5_2_1_, employee1_.salary as salary6_2_1_, employee1_.surname as surname7_2_1_ from orders orders0_ left outer join employee employee1_ on orders0_.employee_id=employee1_.id where orders0_.id=?
+2016-07-26 23:22:25 - select dish0_.id as id1_0_0_, dish0_.category as category2_0_0_, dish0_.name as name3_0_0_, dish0_.price as price4_0_0_, dish0_.weight as weight5_0_0_ from Dish dish0_ where dish0_.id=?
+2016-07-26 23:22:25 - select dish0_.id as id1_0_0_, dish0_.category as category2_0_0_, dish0_.name as name3_0_0_, dish0_.price as price4_0_0_, dish0_.weight as weight5_0_0_ from Dish dish0_ where dish0_.id=?
+2016-07-26 23:22:25 - select dish0_.id as id1_0_0_, dish0_.category as category2_0_0_, dish0_.name as name3_0_0_, dish0_.price as price4_0_0_, dish0_.weight as weight5_0_0_ from Dish dish0_ where dish0_.id=?
+2016-07-26 23:22:25 - select orders0_.id as id1_7_0_, orders0_.current_status as current_2_7_0_, orders0_.date_of_order as date_of_3_7_0_, orders0_.table_number as table_nu4_7_0_, orders0_.employee_id as employee5_7_0_, employee1_.id as id1_2_1_, employee1_.date_of_birth as date_of_2_2_1_, employee1_.name as name3_2_1_, employee1_.phone_number as phone_nu4_2_1_, employee1_.position as position5_2_1_, employee1_.salary as salary6_2_1_, employee1_.surname as surname7_2_1_ from orders orders0_ left outer join employee employee1_ on orders0_.employee_id=employee1_.id where orders0_.id=?
+2016-07-26 23:22:25 - select dish0_.id as id1_0_0_, dish0_.category as category2_0_0_, dish0_.name as name3_0_0_, dish0_.price as price4_0_0_, dish0_.weight as weight5_0_0_ from Dish dish0_ where dish0_.id=?
+2016-07-26 23:22:25 - select dish0_.id as id1_0_0_, dish0_.category as category2_0_0_, dish0_.name as name3_0_0_, dish0_.price as price4_0_0_, dish0_.weight as weight5_0_0_ from Dish dish0_ where dish0_.id=?
+2016-07-26 23:22:25 - select orders0_.id as id1_7_0_, orders0_.current_status as current_2_7_0_, orders0_.date_of_order as date_of_3_7_0_, orders0_.table_number as table_nu4_7_0_, orders0_.employee_id as employee5_7_0_, employee1_.id as id1_2_1_, employee1_.date_of_birth as date_of_2_2_1_, employee1_.name as name3_2_1_, employee1_.phone_number as phone_nu4_2_1_, employee1_.position as position5_2_1_, employee1_.salary as salary6_2_1_, employee1_.surname as surname7_2_1_ from orders orders0_ left outer join employee employee1_ on orders0_.employee_id=employee1_.id where orders0_.id=?
+2016-07-26 23:22:25 - select dishes0_.order_id as order_id1_6_0_, dishes0_.dish_id as dish_id2_6_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from order_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.order_id=?
+2016-07-26 23:22:25 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:22:25 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:22:25 - select dishes0_.order_id as order_id1_6_0_, dishes0_.dish_id as dish_id2_6_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from order_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.order_id=?
+2016-07-26 23:22:25 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:22:25 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:22:25 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:22:25 - select dishes0_.order_id as order_id1_6_0_, dishes0_.dish_id as dish_id2_6_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from order_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.order_id=?
+2016-07-26 23:22:25 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:22:25 - select dishes0_.order_id as order_id1_6_0_, dishes0_.dish_id as dish_id2_6_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from order_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.order_id=?
+2016-07-26 23:22:25 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:22:25 - Finding the dish by specific name: Fries
+2016-07-26 23:22:25 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 23:22:25 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:22:25 - Finding the dish by specific name: Pasta
+2016-07-26 23:22:25 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 23:22:25 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:22:25 - Adding the menu to the table. Menu{id=0, name='Summer_dinner', dishes=[Dish{id=4, name='Fries', category=Garnish, price=30.0, weight=250.0, ingredients=[]}, Dish{id=5, name='Pasta', category=Garnish, price=35.0, weight=250.0, ingredients=[]}]}
+2016-07-26 23:22:25 - select max(id) from Menu
+2016-07-26 23:22:25 - insert into Menu (name, id) values (?, ?)
+2016-07-26 23:22:25 - insert into menu_to_dish (menu_id, dish_id) values (?, ?)
+2016-07-26 23:22:25 - insert into menu_to_dish (menu_id, dish_id) values (?, ?)
+2016-07-26 23:22:25 - Adding the dishes to the menu. 
+2016-07-26 23:22:25 - Finding the menu by specific name: Spring_morning
+2016-07-26 23:22:25 - select menu0_.id as id1_4_, menu0_.name as name2_4_ from Menu menu0_ where menu0_.name like ?
+2016-07-26 23:22:25 - Finding the dish by specific name: Cake
+2016-07-26 23:22:25 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 23:22:25 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:22:25 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:22:25 - Editing the menu 'Spring_morning'. 
+2016-07-26 23:22:25 - insert into menu_to_dish (menu_id, dish_id) values (?, ?)
+2016-07-26 23:22:25 - Delete the dishes from the menu. 
+2016-07-26 23:22:25 - Finding the menu by specific name: Spring_morning
+2016-07-26 23:22:25 - select menu0_.id as id1_4_, menu0_.name as name2_4_ from Menu menu0_ where menu0_.name like ?
+2016-07-26 23:22:25 - Finding the dish by specific name: Cake
+2016-07-26 23:22:25 - select dish0_.id as id1_0_, dish0_.category as category2_0_, dish0_.name as name3_0_, dish0_.price as price4_0_, dish0_.weight as weight5_0_ from Dish dish0_ where dish0_.name like ?
+2016-07-26 23:22:25 - select ingredient0_.dish_id as dish_id1_1_0_, ingredient0_.ingredient_id as ingredie2_1_0_, ingredient1_.id as id1_3_1_, ingredient1_.name as name2_3_1_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id=?
+2016-07-26 23:22:25 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:22:25 - Editing the menu 'Spring_morning'. 
+2016-07-26 23:22:25 - delete from menu_to_dish where menu_id=?
+2016-07-26 23:22:25 - Selecting the list of Menu. 
+2016-07-26 23:22:25 - select menu0_.id as id1_4_, menu0_.name as name2_4_ from Menu menu0_ order by menu0_.id
+2016-07-26 23:22:25 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:22:25 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:22:25 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:22:25 - select ingredient0_.dish_id as dish_id1_1_1_, ingredient0_.ingredient_id as ingredie2_1_1_, ingredient1_.id as id1_3_0_, ingredient1_.name as name2_3_0_ from dish_to_ingredient ingredient0_ inner join Ingredient ingredient1_ on ingredient0_.ingredient_id=ingredient1_.id where ingredient0_.dish_id in (select dish1_.id from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?)
+2016-07-26 23:22:25 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:22:25 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:22:25 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:22:25 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:22:25 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:22:25 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:22:25 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:22:25 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:22:25 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:22:25 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:22:25 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:22:25 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:22:25 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:22:25 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:22:25 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:22:25 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:22:25 - select dishes0_.menu_id as menu_id1_5_0_, dishes0_.dish_id as dish_id2_5_0_, dish1_.id as id1_0_1_, dish1_.category as category2_0_1_, dish1_.name as name3_0_1_, dish1_.price as price4_0_1_, dish1_.weight as weight5_0_1_ from menu_to_dish dishes0_ inner join Dish dish1_ on dishes0_.dish_id=dish1_.id where dishes0_.menu_id=?
+2016-07-26 23:22:25 - Finding the ingredient by specific name: Potato
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:22:25 - Adding the ingredient to the stock. Stock{id=0, ingredient=Ingredient{id=10, name='Potato'}, quantity=25}
+2016-07-26 23:22:25 - select max(id) from Stock
+2016-07-26 23:22:25 - insert into Stock (ingredient_id, quantity, id) values (?, ?, ?)
+2016-07-26 23:22:25 - Finding the ingredient by specific name: Potato
+2016-07-26 23:22:25 - Selecting the list of ingredients. 
+2016-07-26 23:22:25 - select stock0_.id as id1_9_, stock0_.ingredient_id as ingredie3_9_, stock0_.quantity as quantity2_9_ from Stock stock0_ order by stock0_.id
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - Finding the ingredient by specific name: Potato
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:22:25 - Finding the ingredient by specific name: Potato
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:22:25 - Finding the ingredient by specific name: Potato
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:22:25 - Finding the ingredient by specific name: Potato
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:22:25 - Finding the ingredient by specific name: Potato
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:22:25 - Finding the ingredient by specific name: Potato
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:22:25 - Finding the ingredient by specific name: Potato
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:22:25 - Finding the ingredient by specific name: Potato
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:22:25 - Finding the ingredient by specific name: Potato
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:22:25 - Finding the ingredient by specific name: Potato
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:22:25 - Found: Stock{id=10, ingredient=Ingredient{id=10, name='Potato'}, quantity=25}
+2016-07-26 23:22:25 - Delete the ingredient from the stock. Stock{id=10, ingredient=Ingredient{id=10, name='Potato'}, quantity=25}
+2016-07-26 23:22:25 - delete from Stock where id=?
+2016-07-26 23:22:25 - Finding the ingredient by specific name: Tomato
+2016-07-26 23:22:25 - Selecting the list of ingredients. 
+2016-07-26 23:22:25 - select stock0_.id as id1_9_, stock0_.ingredient_id as ingredie3_9_, stock0_.quantity as quantity2_9_ from Stock stock0_ order by stock0_.id
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - Finding the ingredient by specific name: Tomato
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:22:25 - Found: Stock{id=1, ingredient=Ingredient{id=1, name='Tomato'}, quantity=5}
+2016-07-26 23:22:25 - Finding the ingredient by specific name: Cabbage
+2016-07-26 23:22:25 - Selecting the list of ingredients. 
+2016-07-26 23:22:25 - select stock0_.id as id1_9_, stock0_.ingredient_id as ingredie3_9_, stock0_.quantity as quantity2_9_ from Stock stock0_ order by stock0_.id
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - Finding the ingredient by specific name: Cabbage
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:22:25 - Finding the ingredient by specific name: Cabbage
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_, ingredient0_.name as name2_3_ from Ingredient ingredient0_ where ingredient0_.name like ?
+2016-07-26 23:22:25 - Found: Stock{id=2, ingredient=Ingredient{id=2, name='Cabbage'}, quantity=50}
+2016-07-26 23:22:25 - The quantity of Ingredient{id=2, name='Cabbage'} was changed to 50
+2016-07-26 23:22:25 - Update the ingredient information. Stock{id=2, ingredient=Ingredient{id=2, name='Cabbage'}, quantity=50}
+2016-07-26 23:22:25 - Selecting the list of ingredients. 
+2016-07-26 23:22:25 - select stock0_.id as id1_9_, stock0_.ingredient_id as ingredie3_9_, stock0_.quantity as quantity2_9_ from Stock stock0_ order by stock0_.id
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - select ingredient0_.id as id1_3_0_, ingredient0_.name as name2_3_0_ from Ingredient ingredient0_ where ingredient0_.id=?
+2016-07-26 23:22:25 - Selecting the list of ingredients that are almost ended ( < 10). 
+2016-07-26 23:22:25 - select stock0_.id as id1_9_, stock0_.ingredient_id as ingredie3_9_, stock0_.quantity as quantity2_9_ from Stock stock0_ where stock0_.quantity<10

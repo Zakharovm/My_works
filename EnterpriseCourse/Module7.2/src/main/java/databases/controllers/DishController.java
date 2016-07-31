@@ -1,69 +1,80 @@
 package databases.controllers;
 
 import databases.dao.DishDao;
+import databases.dao.IngredientDao;
 import databases.model.Category;
 import databases.model.Dish;
+import databases.model.Ingredient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.HashSet;
+import java.util.HashMap;
 import java.util.List;
-import java.util.Set;
+import java.util.Map;
 
 public class DishController {
 
     private DishDao dishDao;
+    private IngredientDao ingredientDao;
 
     private static final Logger LOGGER = LoggerFactory.getLogger(DishController.class);
 
     @Transactional
-    public void createDish() {
-        Set<Dish> allDishes = new HashSet<>(dishDao.findAll());
+    public void createDish(String dishName, Map<String, Float> ingredientDoses) {
 
-        Dish dish = getDish("Napoleon", Category.Dessert, 50.0F, 300.0F);
+        Dish dish = getDish(dishName, Category.Garnish, 30.0F, 250.0F, ingredientDoses);
 
-        if (!allDishes.contains(dish)) {
-            dishDao.save(dish);
-        }
-
-        Dish dish1 = getDish("Plov", Category.Garnish, 30.0F, 200.0F);
-
-        if (!allDishes.contains(dish1)) {
-            dishDao.save(dish1);
-        }
-
+        dishDao.save(dish);
     }
 
-    private Dish getDish(String name, Category category, float price, float weight) {
+    private Dish getDish(String dishName, Category category, Float price, Float weight, Map<String, Float> ingredientDoses) {
         Dish dish = new Dish();
-        dish.setName(name);
+        dish.setName(dishName);
         dish.setCategory(category);
         dish.setPrice(price);
         dish.setWeight(weight);
+        dish.setComposition(createComposition(ingredientDoses));
         return dish;
     }
 
-    @Transactional
-    public void deleteDish() {
-        Dish dish = getDish("Napoleon", Category.Dessert, 50.0F, 300.0F);
+    private Map<Ingredient, Float> createComposition(Map<String, Float> ingredientDoses) {
+        Map<Ingredient, Float> result = new HashMap<>();
+        ingredientDoses.forEach( (key, value) -> {
+            Ingredient ingredient = ingredientDao.findByName(key);
+            result.put(ingredient, value);
+        });
 
+        return result;
+    }
+
+
+    @Transactional
+    public void deleteDish(String name, Map<String, Float> ingredientDoses) {
+        Dish dish = getDish(name, Category.Garnish, 30.0F, 250.0F, ingredientDoses);
+        dish.setId(14);
         dishDao.delete(dish);
     }
 
     @Transactional
     public List<Dish> getAllDishes() {
 
-       return dishDao.findAll();
+        return dishDao.findAll();
     }
 
     @Transactional
     public Dish findDish() {
-        return dishDao.findByName("Pork");
+        return dishDao.findByName("Skewers of pork");
     }
 
 
     public void setDishDao(DishDao dishDao) {
         this.dishDao = dishDao;
     }
+
+    public void setIngredientDao(IngredientDao ingredientDao) {
+        this.ingredientDao = ingredientDao;
+    }
+
+
 }

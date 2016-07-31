@@ -1,5 +1,6 @@
 package databases.dao;
 
+import databases.model.Ingredient;
 import databases.model.Stock;
 
 import java.util.List;
@@ -18,4 +19,5 @@ public interface StockDao {
 
     List<Stock> findPaucity();
 
+    Stock findByIngredient(Ingredient ingredient);
 }

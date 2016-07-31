@@ -17,7 +17,7 @@ public class StockController {
     private static final Logger LOGGER = LoggerFactory.getLogger(StockController.class);
 
     @Transactional
-    public void addIngredient(String ingredientName, int quantity) {
+    public void addIngredient(String ingredientName, Float quantity) {
         Stock stock = getIngredientForStock(ingredientName, quantity);
 
         stockDao.save(stock);
@@ -26,10 +26,12 @@ public class StockController {
     @Transactional
     public void deleteIngredient(String ingredientName) {
         Stock stock = stockDao.findByName(ingredientName);
+
         stockDao.delete(stock);
+
     }
 
-    private Stock getIngredientForStock(String name, int quantity) {
+    private Stock getIngredientForStock(String name, Float quantity) {
         Stock stock = new Stock();
         stock.setIngredient(ingredientDao.findByName(name));
         stock.setQuantity(quantity);
@@ -37,7 +39,7 @@ public class StockController {
     }
 
     @Transactional
-    public void changeQuantity(String ingredientName, int newQuantity) {
+    public void changeQuantity(String ingredientName, Float newQuantity) {
         Stock stock = stockDao.findByName(ingredientName);
         stock.setQuantity(newQuantity);
         LOGGER.info("The quantity of " + stock.getIngredient() + " was changed to " + newQuantity);
@@ -47,7 +49,7 @@ public class StockController {
 
     @Transactional
     public void findIngredient(String name) {
-        System.out.println(stockDao.findByName(name));
+        stockDao.findByName(name);
     }
 
     @Transactional

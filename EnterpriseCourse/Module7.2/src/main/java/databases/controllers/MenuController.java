@@ -27,7 +27,7 @@ public class MenuController {
 
     @Transactional
     public void deleteMenu() {
-        Menu menu = menuDao.findByName("Spring_dinner");
+        Menu menu = menuDao.findByName("Summer_dinner");
         menuDao.delete(menu);
     }
 
