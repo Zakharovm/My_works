@@ -1,0 +1,75 @@
+body {
+    background-color: white;
+}
+
+label {
+    float: left;
+    padding-right: 10px;
+    font: bold italic 24px Palatino Linotype, sans-serif;
+    color: #000000;
+}
+
+.field {
+    padding: 10px;
+    clear: both;
+    text-align: right;
+    line-height: 25px;
+}
+
+
+h1 {
+    font: bold italic 40px "Lucida Fax";
+    color: #000000;
+    text-align: center;
+}
+
+table {
+    width: 80%;
+    border: 1px solid grey;
+    background-color: #e3e3e3;
+    border-collapse: collapse;
+    font: 20px Palatino Linotype, sans-serif;
+    border-radius: 15px;
+}
+
+td, th, tr {
+    margin: auto;
+    border: 1px solid #000000;
+    padding: 3px 5px 3px 5px;
+    text-align: center;
+}
+
+.name {
+    text-align: left;
+}
+
+th {
+    font-size: 24px;
+    background-color: #3399FF;
+    font-style: italic;
+}
+
+.submit {
+    font: bold italic 20px Palatino Linotype, sans-serif;
+    border-radius: 10px;
+    background-color: #3399FF;
+    border-collapse: collapse;
+    color: black;
+    margin: 10px;
+}
+
+.text {
+    width: 80%;
+    font-size: 18px;
+    padding: 6px 0 4px 10px;
+    border: 1px solid #cecece;
+    background: #F6F6f6;
+    border-radius: 8px;
+}
+
+form {
+    border-top: solid 1px;
+    width: 50%;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
