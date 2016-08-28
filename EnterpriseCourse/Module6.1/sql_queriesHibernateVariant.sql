@@ -19,7 +19,7 @@ CREATE TABLE EMPLOYEE (
 
 INSERT INTO EMPLOYEE VALUES (1, 'Peskova', 'Lena', '25-01-1965', '053-123-42-53', 'Cook', 4000.0, 'Waiter');	
 INSERT INTO EMPLOYEE VALUES (2, 'Popova', 'Vlada', '25-01-1965', '053-123-42-53', 'Waiter', 4000.0, 'Waiter');
-INSERT INTO EMPLOYEE VALUES (3, 'Zakharov', 'Maksym', '24-02-1994', '063-111-56-89', 'Administrator', 15000.0);
+INSERT INTO EMPLOYEE VALUES (3, 'Zakharov', 'Maksym', '24-02-1994', '063-111-56-89', 'Administrator', 15000.0, 'Administrator');
 
 
 --------------------------------------------------	
@@ -33,11 +33,11 @@ CREATE TABLE DISH (
 INSERT INTO DISH VALUES (1, 'Caesar Salad', 'Salad', 50.0, 250.0);	
 INSERT INTO DISH VALUES (2, 'Greece Salad', 'Salad', 40.0, 250.0);
 INSERT INTO DISH VALUES (3, 'Vegetable Salad', 'Salad', 45.0, 300.0);
-INSERT INTO DISH VALUES (4, 'Fries', 'Garnish', 30.0, 250.0);
-INSERT INTO DISH VALUES (5, 'Pasta', 'Garnish', 35.0, 250.0);
-INSERT INTO DISH VALUES (6, 'Medallions', 'Garnish', 60.0, 300.0);
-INSERT INTO DISH VALUES (7, 'Fried chicken', 'Garnish', 50.0, 300.0);
-INSERT INTO DISH VALUES (8, 'Skewers of pork', 'Garnish', 40.0, 250.0);
+INSERT INTO DISH VALUES (4, 'Fries', 'Side_Dish', 30.0, 250.0);
+INSERT INTO DISH VALUES (5, 'Pasta', 'Side_Dish', 35.0, 250.0);
+INSERT INTO DISH VALUES (6, 'Medallions', 'Side_Dish', 60.0, 300.0);
+INSERT INTO DISH VALUES (7, 'Fried chicken', 'Side_Dish', 50.0, 300.0);
+INSERT INTO DISH VALUES (8, 'Skewers of pork', 'Side_Dish', 40.0, 250.0);
 INSERT INTO DISH VALUES (9, 'Chocolate ice cream', 'Dessert', 30.0, 250.0);
 INSERT INTO DISH VALUES (10, 'Tiramisu', 'Dessert', 50.0, 200.0);
 INSERT INTO DISH VALUES (11, 'Cake', 'Dessert', 45.0, 250.0);

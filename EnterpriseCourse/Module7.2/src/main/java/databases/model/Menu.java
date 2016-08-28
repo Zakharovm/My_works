@@ -20,7 +20,7 @@ public class Menu {
     @Column(name = "name")
     private String name;
 
-    @ManyToMany()
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
             name = "menu_to_dish",
             joinColumns = @JoinColumn(name = "menu_id"),

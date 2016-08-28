@@ -76,8 +76,8 @@ public class Main {
         List<String> dishes4 = new ArrayList<>();
         dishes4.add("Cake");
 
-        menuController.addDishes(dishes4, "Spring_morning");
-        menuController.deleteDishes(dishes4, "Spring_morning");
+        menuController.addDishes(dishes4, "Summer_morning");
+        menuController.deleteDishes(dishes4, "Summer_morning");
         //menuController.deleteMenu();
         menuController.printMenus();
 
@@ -87,6 +87,7 @@ public class Main {
         //stockController.changeQuantity("Cabbage", 50000.0F);
         stockController.printStock();
 
+        System.out.println(menuController.getDishesFromMenu("Spring_morning"));
 
     }
 

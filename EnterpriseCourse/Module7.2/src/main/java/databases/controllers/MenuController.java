@@ -77,6 +77,12 @@ public class MenuController {
         menuDao.editMenu(menu);
     }
 
+    @Transactional
+    public List<Dish> getDishesFromMenu(String menuName) {
+        LOGGER.info("Get dishes of menu: " + menuName);
+        return menuDao.findAllDishes(menuName);
+    }
+
 
     @Transactional
     public void printMenus() {

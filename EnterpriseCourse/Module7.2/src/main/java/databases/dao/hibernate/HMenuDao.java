@@ -1,6 +1,7 @@
 package databases.dao.hibernate;
 
 import databases.dao.MenuDao;
+import databases.model.Dish;
 import databases.model.Menu;
 import org.hibernate.SessionFactory;
 import org.slf4j.Logger;
@@ -43,6 +44,17 @@ public class HMenuDao implements MenuDao {
                 .createQuery("SELECT m FROM Menu m WHERE m.name like :name")
                 .setParameter("name", name)
                 .uniqueResult();
+    }
+
+    @Override
+    @Transactional
+    public List<Dish> findAllDishes(String menuName) {
+        List<Dish> result;
+        Menu menu = findByName(menuName);
+        result = menu.getDishes();
+
+        LOGGER.info("Selecting the list of dishes in the Menu. ");
+        return result;
     }
 
     @Override

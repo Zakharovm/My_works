@@ -23,7 +23,7 @@ public class DishController {
     @Transactional
     public void createDish(String dishName, Map<String, Float> ingredientDoses) {
 
-        Dish dish = getDish(dishName, Category.Garnish, 30.0F, 250.0F, ingredientDoses);
+        Dish dish = getDish(dishName, Category.Side_Dish, 30.0F, 250.0F, ingredientDoses);
 
         dishDao.save(dish);
     }
@@ -51,7 +51,7 @@ public class DishController {
 
     @Transactional
     public void deleteDish(String name, Map<String, Float> ingredientDoses) {
-        Dish dish = getDish(name, Category.Garnish, 30.0F, 250.0F, ingredientDoses);
+        Dish dish = getDish(name, Category.Side_Dish, 30.0F, 250.0F, ingredientDoses);
         dish.setId(14);
         dishDao.delete(dish);
     }
