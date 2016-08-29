@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   					   http://www.springframework.org/schema/beans/spring-beans.xsd
+	   					   http://www.springframework.org/schema/tx
+	   					   http://www.springframework.org/schema/tx/spring-tx.xsd"
+       default-autowire="byName">
+
+
+    <bean id="employeeService" class="spring.mvc.service.EmployeeService"/>
+    <bean id="menuService" class="spring.mvc.service.MenuService"/>
+
+
+
+    <bean id="employeeDao" class="spring.mvc.dao.hibernate.HEmployeeDao"/>
+    <bean id="dishDao" class="spring.mvc.dao.hibernate.HDishDao"/>
+    <bean id="ordersDao" class="spring.mvc.dao.hibernate.HOrdersDao"/>
+    <bean id="cookedDishesDao" class="spring.mvc.dao.hibernate.HCookedDishesDao"/>
+    <bean id="menuDao" class="spring.mvc.dao.hibernate.HMenuDao"/>
+    <bean id="ingredientDao" class="spring.mvc.dao.hibernate.HIngredientDao"/>
+    <bean id="stockDao" class="spring.mvc.dao.hibernate.HStockDao"/>
+    <bean id="dishCompositionDao" class="spring.mvc.dao.hibernate.HDishCompositionDao"/>
+
+</beans>
