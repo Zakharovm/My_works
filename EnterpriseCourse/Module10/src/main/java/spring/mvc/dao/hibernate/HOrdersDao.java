@@ -63,7 +63,7 @@ public class HOrdersDao implements OrdersDao {
     @Transactional
     public List<Orders> getOrders(Status status) {
         LOGGER.info("Selecting the list of " + status + " orders. ");
-        return sessionFactory.getCurrentSession().createQuery("SELECT o FROM Orders o ORDER BY id, WHERE o.currentStatus like :currentStatus").setParameter("currentStatus", status).list();
+        return sessionFactory.getCurrentSession().createQuery("SELECT o FROM Orders o WHERE o.currentStatus like :currentStatus").setParameter("currentStatus", status).list();
     }
 
     @Override

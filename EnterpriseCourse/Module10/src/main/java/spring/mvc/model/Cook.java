@@ -1,5 +1,6 @@
 package spring.mvc.model;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
@@ -14,6 +15,7 @@ public class Cook extends Employee {
     @OneToMany
     @JoinColumn(name = "employee_id")
     @Fetch(FetchMode.JOIN)
+    @JsonManagedReference
     private List<CookedDishes> cookedDishes;
 
     public List<CookedDishes> getCookedDishes() {

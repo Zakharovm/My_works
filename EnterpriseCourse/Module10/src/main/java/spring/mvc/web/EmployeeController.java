@@ -27,19 +27,19 @@ public class EmployeeController {
         return employeeService.getEmployeeById(id);
     }
 
-    @RequestMapping(value = "/employee/{name}", method = RequestMethod.GET)
+    @RequestMapping(value = "/employee/name={name}", method = RequestMethod.GET)
     public Employee employeeName(@PathVariable String name) {
 
         return employeeService.getEmployeeByName(name);
     }
 
-    @RequestMapping(value = "/employee/{surname}", method = RequestMethod.GET)
+    @RequestMapping(value = "/employee/surname={surname}", method = RequestMethod.GET)
     public Employee employeeSurname(@PathVariable String surname) {
 
         return employeeService.getEmployeeBySurname(surname);
     }
 
-    @RequestMapping(value = "/employee/{name}_{surname}", method = RequestMethod.GET)
+    @RequestMapping(value = "/employee/name={name}/surname={surname}", method = RequestMethod.GET)
     public Employee employeeSurname(@PathVariable String name, @PathVariable String surname) {
 
         return employeeService.getEmployeeByNameSurname(name, surname);

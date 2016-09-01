@@ -13,8 +13,6 @@
     <bean id="menuService" class="spring.mvc.service.MenuService"/>
     <bean id="orderService" class="spring.mvc.service.OrderService"/>
 
-    <bean id="main" class="spring.mvc.Main"/>
-
     <bean id="employeeDao" class="spring.mvc.dao.hibernate.HEmployeeDao"/>
     <bean id="dishDao" class="spring.mvc.dao.hibernate.HDishDao"/>
     <bean id="ordersDao" class="spring.mvc.dao.hibernate.HOrdersDao"/>

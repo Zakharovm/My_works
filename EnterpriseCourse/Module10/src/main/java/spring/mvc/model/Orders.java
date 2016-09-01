@@ -1,5 +1,6 @@
 package spring.mvc.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 import org.hibernate.annotations.GenericGenerator;
@@ -20,6 +21,7 @@ public class Orders {
 
     @ManyToOne
     @JoinColumn(name = "employee_id")
+    @JsonBackReference
     private Waiter waiter;
 
     @ManyToMany(fetch = FetchType.EAGER)

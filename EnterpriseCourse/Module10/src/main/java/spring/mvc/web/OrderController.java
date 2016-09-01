@@ -20,12 +20,17 @@ public class OrderController {
         return orderService.getAllOrders();
     }
 
-    @RequestMapping(value = "/order/{status}", method = RequestMethod.GET)
-    public List<Orders> certainOrders(@PathVariable Status status) {
-        return orderService.getAllCertainOrders(status);
+    @RequestMapping(value = "/order/open", method = RequestMethod.GET)
+    public List<Orders> certainOrders() {
+        return orderService.getAllCertainOrders(Status.Open);
     }
 
-    @RequestMapping(value = "/order/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "/order/closed", method = RequestMethod.GET)
+    public List<Orders> closedOrders() {
+        return orderService.getAllCertainOrders(Status.Closed);
+    }
+
+    @RequestMapping(value = "/order/id/{id}", method = RequestMethod.GET)
     public Orders order(@PathVariable Integer id) {
         return orderService.getOrder(id);
     }
