@@ -31,7 +31,7 @@ CREATE TABLE DISH (
 	WEIGHT		REAL NOT NULL );
 	
 INSERT INTO DISH VALUES (1, 'Caesar Salad', 'Salad', 50.0, 250.0);	
-INSERT INTO DISH VALUES (2, 'Greece Salad', 'Salad', 40.0, 250.0);
+INSERT INTO DISH VALUES (2, 'Greek Salad', 'Salad', 40.0, 250.0);
 INSERT INTO DISH VALUES (3, 'Vegetable Salad', 'Salad', 45.0, 300.0);
 INSERT INTO DISH VALUES (4, 'Fries', 'Side_Dish', 30.0, 250.0);
 INSERT INTO DISH VALUES (5, 'Pasta', 'Side_Dish', 35.0, 250.0);

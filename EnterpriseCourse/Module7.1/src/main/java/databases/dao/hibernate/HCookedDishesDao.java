@@ -25,14 +25,14 @@ public class HCookedDishesDao implements CookedDishesDao {
     @Transactional
     public List<CookedDishes> findAll() {
         LOGGER.info("Selecting the list of prepared dishes. ");
-        return sessionFactory.getCurrentSession().createQuery("SELECT pd FROM PreparedDishes pd ORDER BY id").list();
+        return sessionFactory.getCurrentSession().createQuery("SELECT pd FROM CookedDishes pd ORDER BY id").list();
     }
 
     @Override
     public CookedDishes findByName(String name) {
         LOGGER.info("Finding the prepared dish by specific name: " + name);
         return (CookedDishes) sessionFactory.getCurrentSession()
-                .createQuery("SELECT pd FROM PreparedDishes pd WHERE pd.name like :name")
+                .createQuery("SELECT pd FROM CookedDishes pd WHERE pd.name like :name")
                 .setParameter("name", name)
                 .uniqueResult();
     }

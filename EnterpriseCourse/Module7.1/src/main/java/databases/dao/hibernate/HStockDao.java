@@ -66,8 +66,8 @@ public class HStockDao implements StockDao {
     @Override
     @Transactional
     public List<Stock> findPaucity() {
-        LOGGER.info("Selecting the list of ingredients that are almost ended ( < 10). ");
-        return sessionFactory.getCurrentSession().createQuery("SELECT s FROM Stock s WHERE s.quantity < 10").list();
+        LOGGER.info("Selecting the list of ingredients that are almost ended ( < 1000 grams). ");
+        return sessionFactory.getCurrentSession().createQuery("SELECT s FROM Stock s WHERE s.quantity < 1000").list();
     }
 
     public void setSessionFactory(SessionFactory sessionFactory) {

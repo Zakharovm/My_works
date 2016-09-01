@@ -13,7 +13,7 @@ public class Main {
     private EmployeeController employeeController;
     private DishController dishController;
     private OrdersController ordersController;
-    private PreparedDishesController preparedDishesController;
+    private CookedDishesController cookedDishesController;
     private MenuController menuController;
     private StockController stockController;
 
@@ -57,8 +57,8 @@ public class Main {
         ordersController.closeOrder(3);
         ordersController.printOrders();
 
-        preparedDishesController.addPreparedDish();
-        preparedDishesController.printPreparedDishes();
+        cookedDishesController.addCookedDish();
+        cookedDishesController.printCookedDishes();
 
         List<String> dishes3 = new ArrayList<>();
         dishes3.add("Fries");
@@ -66,7 +66,7 @@ public class Main {
         menuController.createMenu("Summer_dinner", dishes3);
 
         List<String> dishes4 = new ArrayList<>();
-        dishes4.add("Cake");
+        //dishes4.add("Cake");
 
         menuController.addDishes(dishes4, "Spring_morning");
         menuController.deleteDishes(dishes4, "Spring_morning");
@@ -94,8 +94,8 @@ public class Main {
         this.ordersController = ordersController;
     }
 
-    public void setPreparedDishesController(PreparedDishesController preparedDishesController) {
-        this.preparedDishesController = preparedDishesController;
+    public void setCookedDishesController(CookedDishesController cookedDishesController) {
+        this.cookedDishesController = cookedDishesController;
     }
 
     public void setMenuController(MenuController menuController) {

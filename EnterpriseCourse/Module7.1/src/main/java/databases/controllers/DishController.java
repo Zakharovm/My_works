@@ -27,7 +27,7 @@ public class DishController {
             dishDao.save(dish);
         }
 
-        Dish dish1 = getDish("Plov", Category.Garnish, 30.0F, 200.0F);
+        Dish dish1 = getDish("Plov", Category.Side_Dish, 30.0F, 200.0F);
 
         if (!allDishes.contains(dish1)) {
             dishDao.save(dish1);

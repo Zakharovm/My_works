@@ -15,14 +15,14 @@
     <bean id="employeeController" class="databases.controllers.EmployeeController"/>
     <bean id="dishController" class="databases.controllers.DishController"/>
     <bean id="ordersController" class="databases.controllers.OrdersController"/>
-    <bean id="preparedDishesController" class="databases.controllers.PreparedDishesController"/>
+    <bean id="cookedDishesController" class="databases.controllers.CookedDishesController"/>
     <bean id="menuController" class="databases.controllers.MenuController"/>
     <bean id="stockController" class="databases.controllers.StockController"/>
 
     <bean id="employeeDao" class="databases.dao.hibernate.HEmployeeDao"/>
     <bean id="dishDao" class="databases.dao.hibernate.HDishDao"/>
     <bean id="ordersDao" class="databases.dao.hibernate.HOrdersDao"/>
-    <bean id="preparedDishesDao" class="databases.dao.hibernate.HPreparedDishesDao"/>
+    <bean id="cookedDishesDao" class="databases.dao.hibernate.HCookedDishesDao"/>
     <bean id="menuDao" class="databases.dao.hibernate.HMenuDao"/>
     <bean id="ingredientDao" class="databases.dao.hibernate.HIngredientDao"/>
     <bean id="stockDao" class="databases.dao.hibernate.HStockDao"/>

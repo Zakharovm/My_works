@@ -19,13 +19,13 @@ public class CookedDishesController {
 
     @Transactional
     public void addCookedDish() {
-        CookedDishes dish = getDish("Aleksandr", "Napoleon", 12, new Date());
+        CookedDishes dish = getDish("Lena", "Napoleon", 12, new Date());
         cookedDishesDao.save(dish);
 
     }
 
     @Transactional
-    public List<CookedDishes> getAllPreparedDishes() {
+    public List<CookedDishes> getAllCookedDishes() {
         return cookedDishesDao.findAll();
 
     }
@@ -41,8 +41,8 @@ public class CookedDishesController {
     }
 
     @Transactional
-    public void printPreparedDishes() {
-        getAllPreparedDishes().forEach(System.out::println);
+    public void printCookedDishes() {
+        getAllCookedDishes().forEach(System.out::println);
     }
 
     public void setCookedDishesDao(CookedDishesDao cookedDishesDao) {
