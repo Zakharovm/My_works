@@ -1,0 +1,108 @@
+h1 {
+    padding: 0 10px 0 10px;
+    font: bold 36px "Gabriola";
+    color: green;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    font: bold 32px "Gabriola";
+    color: #800000;
+}
+
+h3 {
+    font: bold 22px "Gabriola";
+    color: black;
+}
+
+p {
+    font: italic bold 18px "Palatino Linotype";
+    text-align: center;
+}
+
+img {
+    padding: 5px;
+}
+
+#zagol {
+    margin: 5px auto 20px auto;
+    text-align: center;
+}
+
+.employee {
+    float: left;
+    width: 312px;
+    height: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 5px 5px 5px 5px;
+}
+
+.dish_img {
+    border-radius: 10px;
+}
+
+.contacts {
+    border-collapse: collapse;
+    border: solid 2px black;
+    border-radius: 10px;
+    background-color: honeydew;
+    float: left;
+    width: 320px;
+    height: 75px;
+    padding: 2px;
+    text-align: center;
+}
+
+.contacts_index_phone, .contacts_index_location {
+    position: absolute;
+    top: 92px;
+    border-collapse: collapse;
+    border: solid 2px black;
+    border-radius: 10px;
+    background-color: honeydew;
+    float: left;
+    width: 327px;
+    height: 75px;
+    padding: 2px;
+    text-align: center;
+}
+
+.contacts_index_phone {
+    right: 340px;
+}
+
+.contacts_index_location {
+    left: 340px;
+}
+
+.contacts p {
+    font: italic bold 18px "Palatino Linotype";
+}
+
+.cont-map-title {
+    margin: 20px 0 10px;
+    text-transform: uppercase;
+    font: bold 28px 'Gabriola';
+    color: #000000;
+}
+
+.cont-map iframe, #map_canvas {
+    border: 2px solid #fff;
+}
+
+span {
+    font: bold 22px Gabriola;
+    color: black;
+}
+
+.username {
+    font: bold 22px Gabriola;
+    color: red;
+}
+
+.text-container {
+    text-align: center;
+    padding: 10px 20px;
+}
+

@@ -1,0 +1,164 @@
+td, th, tr {
+    border: 1px solid #000000;
+    padding: 3px 5px 3px 5px;
+    text-align: center;
+
+}
+
+.table-data {
+    border-collapse: separate;
+    width: 990px;
+    font: 14px "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    border-radius: 10px;
+    border-spacing: 0;
+    text-align: center;
+}
+
+.table-data th {
+    font-weight: bold;
+    background: #20BAC6;
+    color: white;
+    text-shadow: 0 1px 1px #2D2020;
+    padding: 10px 20px;
+}
+
+.table-data th, .table-data td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+}
+
+.table-data th:first-child, .table-data td:first-child {
+    padding-left: 10px;
+    text-align: left;
+}
+
+.table-data th:first-child {
+    border-top-left-radius: 10px;
+}
+
+.table-data th:last-child {
+    border-top-right-radius: 10px;
+    border-right: none;
+}
+
+.table-data td {
+    background: #BCEBDD;
+}
+
+.table-data tr:last-child td:first-child {
+    border-radius: 0 0 0 10px;
+}
+
+.table-data tr:last-child td:last-child {
+    border-radius: 0 0 10px 0;
+}
+
+.table-data tr td:last-child {
+    border-right: none;
+}
+
+#dish {
+    border-collapse: separate;
+    width: 600px;
+    font: 14px "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    border-radius: 10px;
+    border-spacing: 0;
+    text-align: center;
+}
+
+#dish th {
+    font-weight: bold;
+    background: #ac2925;
+    color: white;
+    text-shadow: 0 1px 1px #2D2020;
+    padding: 10px 10px;
+    margin: auto;
+}
+
+#dish th, #dish td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+}
+
+#dish th:first-child {
+    border-top-left-radius: 10px;
+}
+
+#dish th:last-child {
+    border-top-right-radius: 10px;
+    border-right: none;
+}
+
+#dish td {
+    background: papayawhip;
+}
+
+#dish tr:last-child td:first-child {
+    border-radius: 0 0 0 10px;
+}
+
+#dish tr:last-child td:last-child {
+    border-radius: 0 0 10px 0;
+}
+
+#dish tr td:last-child {
+    border-right: none;
+}
+
+table {
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.action-row {
+    width: 230px;
+}
+
+#menu {
+    width: 450px;
+    background: none;
+}
+
+#menu .bold {
+    font-weight: bold;
+}
+
+#menu th, #menu td, #menu tr {
+    font: 22px Gabriola;
+    width: 150px;
+    background: none;
+    border: none;
+}
+
+.dish_name {
+    width: 230px;
+}
+
+.dish_price {
+    width: 110px;
+}
+
+.dish_weight {
+    width: 110px;
+}
+
+.composition {
+    width:370px;
+    border: none;
+}
+
+.composition td, .composition tr {
+    border: none;
+}
+
+.composition .left {
+    width: 200px;
+    text-align: left;
+}
+
+.composition .right {
+    width: 170px;
+    text-align: left;
+}
